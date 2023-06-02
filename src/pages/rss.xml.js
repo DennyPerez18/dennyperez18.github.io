@@ -8,9 +8,6 @@ export async function get(context) {
 		title: SITE_TITLE,
 		description: "Welcome to my blog's RSS feed!",
 		site: context.site,
-		items: posts.map((post) => ({
-			...post.data,
-			link: `/blog/${post.slug}/`,
-		})),
+		items: []
 	});
 }
