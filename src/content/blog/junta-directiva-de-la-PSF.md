@@ -18,18 +18,15 @@ incluyen:
 
 - Establecer políticas y estrategias para la organización.
 
-- Supervisar la gestión financiera de la organización y aprobar el
-  > presupuesto anual.
+- Supervisar la gestión financiera de la organización y aprobar el presupuesto anual.
 
 - Nombrar comités y supervisar su trabajo.
 
-- Tomar decisiones importantes en nombre de la organización, como la
-  > selección de la sede de las conferencias de Python.
+- Tomar decisiones importantes en nombre de la organización, como la selección de la sede de las conferencias de Python.
 
 - Representar a la organización en reuniones y eventos importantes.
 
-- Proporcionar orientación y liderazgo a la comunidad de Python en
-  > general.
+- Proporcionar orientación y liderazgo a la comunidad de Python en general.
 
 Los miembros de la Junta Directiva son voluntarios y se espera que
 actúen en beneficio de la comunidad de Python y de la misión de la PSF.
