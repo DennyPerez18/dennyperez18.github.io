@@ -1,7 +1,7 @@
 ---
 title: "Conoce la Python Software Foundation"
 description: "PSF"
-pubDate: "Enero 15 2023"
+pubDate: "Jan 15 2023"
 heroImage: "/Conoce la PSF.png"
 ---
 
