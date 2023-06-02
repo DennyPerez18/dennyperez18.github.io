@@ -6,7 +6,7 @@ heroImage: "/Junta Directiva PSF.png"
 categories: ["PSF"]
 ---
 
-## Junta Directiva de la PSF. Roles y Responsabilidades
+## Roles y Responsabilidades
 
 La Junta Directiva (Board Directors) de la Python Software Foundation
 (PSF) es responsable de tomar decisiones importantes para la
