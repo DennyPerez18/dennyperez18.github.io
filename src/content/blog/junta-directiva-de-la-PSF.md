@@ -130,6 +130,5 @@ importantes, que los proyectos avancen y que el lenguaje de programación
 Python siga prosperando.  
   
 Si eres una persona interesada en aprender más sobre la Python Software
-Foundation y cómo puedes unirte a la comunidad de Python, ¡<u>\[visita su
-sitio web\]</u>(https://www.python.org/psf/about/) hoy mismo!
-[<u>\[aqui\]</u>](https://www.python.org/psf/about/)
+Foundation y cómo puedes unirte a la comunidad de Python, ¡[<u>visita su
+sitio web</u>](https://www.python.org/psf/about/) hoy mismo!
