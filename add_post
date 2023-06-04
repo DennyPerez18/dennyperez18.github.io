@@ -1,40 +1,54 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env python3
 
-# Creates a new post
+import re
+import subprocess
+import sys
+from datetime import datetime
+from pathlib import Path
 
-# Dependencies:
-# date
-# pandoc
-# sed
 
-# -------------------------------- Functions -------------------------------- #
+def err(code: int, msg: str) -> int:
+    print(f"Err: {msg}", file=sys.stderr)
+    return code
 
-Err()
-{
-    printf "err: %s\n" "$2" 1>&2
-    # shellcheck disable=2086
-    (($1 > 0)) && exit $1
-}
 
-# ----------------------------- Input Processing ----------------------------- #
+def main(args: list[str]) -> int:
+    if len(args) == 1:
+        return err(1, "Argument(s) required.")
 
-(($# == 0)) && Err 1 "Argument(s) required."
+    docx_file = Path(args[1])
 
-DocxFile="$1"
+    if docx_file.suffix != ".docx":
+        return err(1, f"{docx_file.name} is not a world document.")
 
-if [[ ${DocxFile##*.} != docx ]]; then
-    Err 1 "'$DocxFile' is not a world document."
-fi
+    md_file_contents = subprocess.check_output(
+        [
+            "pandoc",
+            "--wrap", "none",
+            "--extract-media", "./public/",
+            "-t", "gfm",
+            "--", docx_file,
+        ],
+    )
+    md_file_name = docx_file.stem.lower().strip().replace("_", "").replace(" ", "-")
+    md_file_path = f"./src/content/blog/{md_file_name}.md"
 
-# ----------------------------------- Main ----------------------------------- #
+    with open(md_file_path, "w+", encoding="utf-8") as md_file:
+        pattern = re.compile("^# (.+)")
+        substitution = pattern.sub(
+            rf"""---
+title: '\1'
+pubDate: '{datetime.today().strftime("%b %d %Y")}'
+heroImage: '\'
+categories: []
+---""",
+            md_file_contents.decode("utf-8"),
+        )
 
-MdFile=${DocxFile##*/}
-MdFile=${MdFile%%.*}
-MdFile=${MdFile:l} # to lowercase, zsh expecific
-MdFile=${MdFile// /-}
-MdFile="./src/content/blog/$MdFile.md"
+        md_file.write(substitution)
 
-pandoc --wrap none --extract-media ./public/ -t gfm -o "$MdFile" -- "$DocxFile"
+    return 0
 
-Frontmatter="---\ntitle: '\1'\npubDate: '"$(date +'%b %d %Y')"'\nheroImage: '\\\'\ncategories: []\n---"
-sed -i "s/^# \(.*\)/$Frontmatter/" -- "$MdFile"
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv))
