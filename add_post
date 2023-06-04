@@ -2,6 +2,11 @@
 
 # Creates a new post
 
+# Dependencies:
+# date
+# pandoc
+# sed
+
 # -------------------------------- Functions -------------------------------- #
 
 Err()
@@ -18,14 +23,18 @@ Err()
 DocxFile="$1"
 
 if [[ ${DocxFile##*.} != docx ]]; then
-    Err 1 "$DocxFile is not a world document."
+    Err 1 "'$DocxFile' is not a world document."
 fi
 
 # ----------------------------------- Main ----------------------------------- #
 
-MdFile=${DocxFile%%.*}
-MdFile=${MdFile,,}
+MdFile=${DocxFile##*/}
+MdFile=${MdFile%%.*}
+MdFile=${MdFile:l} # to lowercase, zsh expecific
 MdFile=${MdFile// /-}
 MdFile="./src/content/blog/$MdFile.md"
 
-pandoc --extract-media ./public/ -t markdown_github -o "$MdFile" "$DocxFile" | sed "s/{.underline}//g"
+pandoc --wrap none --extract-media ./public/ -t gfm -o "$MdFile" -- "$DocxFile"
+
+Frontmatter="---\ntitle: '\1'\npubDate: '"$(date +'%b %d %Y')"'\nheroImage: '\\\'\ncategories: []\n---"
+sed -i "s/^# \(.*\)/$Frontmatter/" -- "$MdFile"
