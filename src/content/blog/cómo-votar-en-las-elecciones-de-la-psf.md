@@ -1,5 +1,5 @@
 ---
-title: 'Cómo votar en las elecciones de la Junta Directiva de la Python Software Foundation.'
+title: 'Cómo votar en las elecciones de la Junta Directiva de la PSF.'
 pubDate: 'apr 16 2023'
 heroImage: '\Elecciones psf.png'
 categories: [PSF]
