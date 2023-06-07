@@ -1,7 +1,7 @@
 ---
 title: 'Capítulos Pyladies'
 pubDate: 'mar 15 2023'
-heroImage: '\Capitulo Pyladies.png'
+heroImage: '\Capitulos Pyladies.png'
 categories: ['Pyladies']
 ---
 
