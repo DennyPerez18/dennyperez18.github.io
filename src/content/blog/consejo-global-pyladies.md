@@ -2,7 +2,7 @@
 title: 'Consejo Global PyLadies'
 pubDate: 'mar 15 2023'
 heroImage: '\Consejo Global Pyladies.png'
-categories: [Pyladies]
+categories: ["Pyladies"]
 ---
 
 ## ¡Uniendo a la Comunidad Python a Nivel Internacional!
