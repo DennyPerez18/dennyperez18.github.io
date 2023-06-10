@@ -14,8 +14,8 @@ La Python Software Foundation (PSF) es una organización sin fines de lucro dedi
 La selección de los miembros de la Junta Directiva de la PSF se realiza a través de un proceso electoral democrático. Estas elecciones permiten a la comunidad de Python participar activamente en la elección de los líderes que representarán sus intereses en la organización. A continuación, describiremos los pasos clave del proceso de selección:
 
 **1- Convocatoria de nominaciones:**  
-**  
-**La PSF emite una convocatoria abierta para recibir nominaciones de candidatos para la Junta Directiva. Cualquier miembro activo de la PSF puede nominar a una persona, incluyéndose a sí mismos, siempre que cumplan con los requisitos establecidos.
+
+La PSF emite una convocatoria abierta para recibir nominaciones de candidatos para la Junta Directiva. Cualquier miembro activo de la PSF puede nominar a una persona, incluyéndose a sí mismos, siempre que cumplan con los requisitos establecidos.
 
 **2- Revisión de las nominaciones:**
 
