@@ -29,7 +29,8 @@ He sido voluntaria en varias conferencias de Python en diferentes áreas, entre 
 
 Además, he tenido la oportunidad de participar como ponente en numerosos eventos y conferencias, como Python Panamá, Python Nicaragua, Python Dominicana, Python Bolivia, PyCon Brasil y PyCon US.
 
-En la actualidad, además de mi participación en el servidor Discord de Python en Español, soy coorganizadora de PyCon Latam desde 2020, coorganizadora de la comunidad Python Chile (donde ayudé a establecer la primera PyCon Chile en 2021)
+En la actualidad, además de mi participación en el servidor Discord de Python en Español, soy coorganizadora de PyCon Latam desde 2020, coorganizadora de la comunidad Python Chile (donde ayudé a establecer la primera PyCon Chile en 2021) Desde el año pasado soy Co-chair del PyCon Charlas Track en PyConUS y community manager de la conferencia SciPy Latam en Argentina y Chair de voluntarios en PyCascades. En este año comencé a colaborar como co-organizadora de PyJamas Conf.
+
 
 ###  **Comunidad PyLadies**
 
