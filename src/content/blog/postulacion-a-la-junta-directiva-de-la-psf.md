@@ -36,8 +36,6 @@ En la actualidad, además de mi participación en el servidor Discord de Python 
 
 En la comunidad PyLadies, soy cofundadora del primer capítulo en Chile, PyLadies Santiago, establecido en 2021. También he colaborado como cofundadora en otros dos capítulos de PyLadies, donde actualmente estoy coordinando: PyLadies en Español, un capitulo creado especialmente para empoderar a las personas de toda Latinoamérica y España a crecer mas como comunidad hispanohablante y PyLadies Santo Domingo. Además, lidero una comunidad dentro del Servidor de Discord de Python en Español llamada "Casi Viernes con PyLadies". Este espacio, que se reúne todos los jueves, tiene como objetivo compartir conocimientos sobre cómo crear comunidades de mujeres en torno al lenguaje de programación Python, y al mismo tiempo, aprender más sobre la comunidad PyLadies en general. Mi meta final es expandir la red de capítulos de PyLadies en toda Latinoamérica y España, brindando más oportunidades y apoyo a mujeres interesadas en la programación.
 
-En términos de organización de conferencias, he desempeñado un papel activo en varias de ellas. En PyCon Latam, PyCon Chile, PyCascades y Pyjamas Conf, he contribuido a la planificación, organización y ejecución exitosa de estos eventos, asegurando que los asistentes tengan una experiencia enriquecedora y significativa.
-
 ##  Objetivos como miembro de la Junta Directiva
 
 Como miembro de la Junta Directiva de la Python Software Foundation, tengo metas claras y definidas para continuar contribuyendo al crecimiento y fortalecimiento de la comunidad
