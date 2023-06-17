@@ -17,19 +17,19 @@ categories: ["PSF"]
 
 ## Introducción
 
-I’m Denny Pérez. Mi viaje en la comunidad de Python comenzó hace 5 años cuando asistí a PyCon US en Cleveland en 2018. Como contadora de profesión con más de 10 años de experiencia, decidí cambiar de carrera cuando emigré a Canadá y me adentré en el apasionante mundo de la programación en Python.
+Hola. Mi nombre es Denny Pérez. Mi viaje en la comunidad de Python comenzó hace cinco años cuando asistí a PyCon US en Cleveland en 2018. Como contadora profesional con más de diez años de experiencia, decidí cambiar de carrera cuando emigré a Canadá y me sumergí en el apasionante mundo de la programacion en Python.
 
-Como miembro de PSF Fellow y madre de tres hijos, he aprendido que la comunidad de Python no solo está compuesta por programadores y desarrolladores que mejoran los paquetes, sino también por personas detrás de escena que organizan conferencias, meetups y talleres. Me encuentro entre este segundo grupo. Aunque soy una principiante en Python, mi contribución se enfoca en la gestión de proyectos, marketing, eventos y community management. Aprendo de los desarrolladores mientras dan charlas y comparten sus experiencias en los eventos que ayudo a crear. Ser voluntaria no es tarea fácil, pero la comunidad de Python siempre ha sido un apoyo invaluable. Muchos de los éxitos que he logrado en mi trayectoria no habrían sido posibles sin el valioso apoyo de mis amigos y colaboradores. A lo largo de mi trabajo, he sido una defensora inquebrantable de la diversidad, la equidad y la inclusión. Creo firmemente en la importancia de crear entornos en los que todas las personas, sin importar su origen, género o capacidad, tengan igualdad de oportunidades para participar y prosperar.
+Soy PSF Fellow y madre de tres niños. En mi trayecto en esta comunidad he aprendido que la comunidad de Python no solo está compuesta por programadores y desarrolladores que mejoran el código y los packages, sino también por personas detrás de escena que organizan conferencias, Meetups y talleres. Yo pertenezco a este segundo grupo. Aunque no trabajo programando en Python, mi contribución se centra en la gestión de proyectos, marketing, eventos y gestión de comunidades. Aprendo de los desarrolladores mientras dan charlas y comparten sus experiencias en los eventos que ayudo a crear. Ser voluntaria es un desafío, pero la comunidad de Python siempre ha sido un apoyo invaluable. Muchos de los éxitos que he alcanzado en mi carrera no hubieran sido posibles sin el valioso apoyo de mis amigos y colaboradores. He sido un defensora incansable de la diversidad, la equidad y la inclusión a lo largo de mi trabajo. Creo firmemente en la creación de entornos en los que todas las personas, independientemente de su origen, género o capacidad, tengan las mismas oportunidades para participar y prosperar.
 
 ## Contribuciones a la comunidad Python
 
-En los últimos 5 años, he trabajado arduamente para empoderar a la comunidad de habla hispana en diversos países. Desde 2019, he estado en contacto con diferentes grupos y actividades relacionadas con Python y el código abierto. Como fundadora del grupo "Chicas en Programación Mtl", organicé eventos en persona y actué como mentora, enseñando Python desde cero a mujeres latinas en Montreal. Aunque la pandemia ralentizó el grupo, busqué otras iniciativas para ayudar y me uní como coordinadora al Servidor de Discord de Python en Español, una comunidad que busca unir a hispanohablantes de Python.
+Durante los últimos cinco años, he trabajado arduamente para empoderar a la comunidad de habla hispana en varios países. Desde 2019, he estado involucrada con diferentes grupos y actividades relacionadas con Python. Como fundadora del grupo "Chicas en Programación Mtl", comence a organizar eventos y preparé un programa para asesorar el aprendisaje de Python desde cero a latinas en Montreal. Aunque la pandemia ralentizó el grupo, busqué otras iniciativas para ayudar y me uní como coordinadora del Servidor Discord de Python en Español. Esta comunidad tiene como objetivo reunir a los hispanohablantes de Python.
 
-He sido voluntaria en varias conferencias de Python en diferentes áreas, entre ellas PyCon US 2018 y 2019 (stand de PyLadies y subasta), PyCon Latam 2019 (anfitriona y coordinadora del equipo de voluntariado), PyCon Canadá 2019 (registro y regalos), Python Brasil 2021 (anfitriona y organizadora de sesiones), PyCon US 2021 (moderadora de salas de chat de PyCharlas) y PyCascades 2022 (moderadora de salas de chat).
+He sido voluntaria en varias conferencias de Python en diferentes funciones, incluidas PyCon US 2018 y 2019 (booth y subasta de PyLadies), PyCon Latam 2019, PyCon Canadá 2019 (rregistro y swags), Python Brasil 2021 (organizadora sesiones), PyCon US 2021 (moderadora de la sala de chat de PyCon Charlas), PyCascades 2022 (moderadora de los chats) entre otras.
 
-Además, he tenido la oportunidad de participar como ponente en numerosos eventos y conferencias, como Python Panamá, Python Nicaragua, Python Dominicana, Python Bolivia, PyCon Brasil y PyCon US.
+Además, he tenido la oportunidad de hablar en numerosos eventos y conferencias, como Python Panamá, Python Nicaragua, Python Dominicana, Python Bolivia, PyCon Brasil y PyCon US, entre otras.
 
-En la actualidad, además de mi participación en el servidor Discord de Python en Español, soy coorganizadora de PyCon Latam desde 2020, coorganizadora de la comunidad Python Chile (donde ayudé a establecer la primera PyCon Chile en 2021) Desde el año pasado soy Co-chair del PyCon Charlas Track en PyConUS y community manager de la conferencia SciPy Latam en Argentina y Chair de voluntarios en PyCascades. En este año comencé a colaborar como co-organizadora de PyJamas Conf.
+Además de mi participación en el Servidor Discord de Python en Español, he sido co-organizadora de PyCon Latam desde 2020 y co-organizadora de la comunidad de Python Chile (donde ayudé a establecer la primera PyCon Chile en 2021). Desde el año pasado, he sido co-chair del track de las PyCon Charlas en PyCon US, la community manager de la conferencia SciPy Latam en Argentina y parte del equipo organizador en PyCascades. Este año comencé a colaborar como co-organizadora de Pyjamas Conf.
 
 
 ###  **Comunidad PyLadies**
@@ -44,30 +44,42 @@ Los objetivos de mi candidatura se enfocan en cuatro ideas principales:
 
 1. **Abogacía Internacional de la PSF**
 
-Establecer un blog oficial de PSF en español para aumentar la visibilidad de los "héroes locales" en la comunidad de Python. Este blog destacará las historias de éxito y los logros de los desarrolladores, sirviendo de inspiración para otros.
+Mejorar el blog oficial de PSF a otras comunidades con comunidades activas traduciendo la documentación, como el grupo en Español, para ayudar con las publicaciones del blog oficial para aumentar la visibilidad de los "héroes locales" en la comunidad de Python. Estas nuevas publicaciones destacarán las historias de éxito y los logros de los desarrolladores, inspirando a otros, con el objetivo principal de acercar la PSF a nuestros miembros.
 
-Crear una plataforma para que los creadores de contenido de Python de habla hispana muestren su trabajo y promuevan sus publicaciones en redes sociales como Twitter, aumentando su exposición y alcance.
+Crear una plataforma para que los creadores de contenido de Python y que no hablen inglés muestren su trabajo y promuevan sus publicaciones en plataformas de redes sociales como YouTube, ampliando su exposición y alcance, y teniendo un equipo de moderación basado en la comunidad para verificar que el contenido cumpla con el código de conducta de PSF.
 
 2. **Involucrar a los estudiantes**
 
-Revitalizar el rol de Embajador de Python y desarrollar programas para involucrar activamente a los estudiantes, fomentando su participación en la comunidad de Python.
+Redefinir el rol de Python Ambassador y desarrollar programas para involucrar activamente a los estudiantes, fomentando su participación en la comunidad de Python.
+Colaborar con instituciones educativas para promover Python y proporcionar recursos que permitan a los estudiantes aprender e interactuar con el lenguaje. Esto se logrará mediante:
 
-Colaborar con instituciones educativas para promover Python y proporcionar recursos que permitan a los estudiantes aprender e interactuar con el lenguaje.
+- Reunir a miembros de PSF interesados para dar charlas informativas y del lenguaje en universidades.
+- Proporcionar retroalimentación a los estudiantes sobre el contenido del programa.
+- Notificar sobre oportunidades de conferencias y otras actividades.
+- Informar sobre las opciones que tienen las comunidades con respecto a la ayuda del PSF.
 
 3. **Fortalecimiento de la colaboración con PyLadies**
 
-Fomentar una relación sólida y colaborativa entre PyLadies y la PSF, trabajando directamente con el consejo global de PyLadies.
+Fomentar una relación sólida y de colaboración entre PyLadies y PSF, trabajando directamente con el consejo global de PyLadies.
+Animar a los capítulos de PyLadies en todo el mundo a involucrarse más en los programas y grupos de trabajo de PSF, contribuyendo así al crecimiento y desarrollo del ecosistema de Python. Esto se puede lograr mediante:
 
-Animar a los capítulos de PyLadies de todo el mundo a involucrarse más en los programas y grupos de trabajo de la PSF, contribuyendo así al crecimiento y desarrollo del ecosistema de Python.
+-  Abrir convocatorias globales.
+- Convocatorias basadas en el idioma para los capítulos en curso.
+- Sesiones de preguntas y respuestas para nuevos capítulos interesados.
+- Empoderar otras iniciativas de diversidad como Women in Tech, Django Girls, etc
 
 4. **Establecer mejores prácticas de traducción**
 
-Desarrollar e implementar las mejores prácticas para la traducción de activos y documentación de la PSF, garantizando precisión y coherencia en diferentes idiomas.
+Después del éxito de muchas traducciones de idiomas para la documentación de Python y otros pocos recursos, es hora de que nosotros como PSF definamos flujos de trabajo y recomendaciones para nuevos equipos de personas, para que puedan tener la información necesaria para traducir el material, incluida la documentación.
 
-Hacer hincapié en la accesibilidad en los esfuerzos de traducción, asegurando que los materiales traducidos sean accesibles para todos los miembros de la comunidad, incluidas aquellas personas con discapacidades.
+Me gustaría conectar comunidades como en Frances y en Español para definir una propuesta de buenas prácticas i18n para la documentación. También usaría este conocimiento para ampliar las posibilidades de traducir el sitio de Python y otros recursos críticos como el blog profund.
+
+Esto asegurará que las comunidades de todos los rincones del mundo tengan la base y un equipo de personas para comenzar a exponer recursos en sus culturas e idiomas.
 
 ##  **Conclusión**
 
 En resumen, como miembro del Board de Directores de la PSF, me comprometo a brindar oportunidades a la comunidad de Python y a trabajar incansablemente para lograr una mayor diversidad, equidad e inclusión. Creo firmemente en la importancia de crear entornos donde todas las personas, independientemente de su origen, género o capacidad, tengan igualdad de oportunidades para participar y prosperar. Estoy lista para asumir este desafío y contribuir de manera significativa al crecimiento y éxito continuo de la comunidad de Python.  
 
 ¡Gracias por considerar mi candidatura!
+
+[Encuentrame en las redes](https://linktr.ee/Dennyperez18)
