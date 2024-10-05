@@ -1,7 +1,7 @@
 ---
 title: 'Membresías de la PSF'
 pubDate: 'apr 25 2023'
-heroImage: '\membresias PSF.png'
+heroImage: '../../images/membresias PSF.png'
 categories: [PSF]
 ---
 

@@ -2,7 +2,7 @@
 title: "Conoce la Python Software Foundation"
 description: "PSF"
 pubDate: "Jan 15 2023"
-heroImage: "/Conoce la PSF.png"
+heroImage: "../../images/Conoce la PSF.png"
 categories: ["PSF"]
 ---
 

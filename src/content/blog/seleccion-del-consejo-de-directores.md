@@ -1,7 +1,7 @@
 ---
 title: 'Proceso de seleccion de la junta Directiva de la PSF'
 pubDate: 'mar 02 2023'
-heroImage: '\Seleccion Junta de Directores PSF.png'
+heroImage: '../../images/Seleccion Junta de Directores PSF.png'
 categories: ["PSF"]
 ---
 

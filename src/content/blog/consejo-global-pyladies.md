@@ -1,7 +1,7 @@
 ---
 title: 'Consejo Global PyLadies'
 pubDate: 'feb 22 2023'
-heroImage: '\Consejo Global Pyladies.png'
+heroImage: '../../images/Consejo Global Pyladies.png'
 categories: ["Pyladies"]
 ---
 
