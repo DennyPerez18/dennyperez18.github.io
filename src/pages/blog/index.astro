@@ -29,7 +29,7 @@ const posts = (await getCollection("blog")).sort(
                     {
                         posts.map((post) => (
                             <section class="space-y-4">
-                                <div class="overflow-hidden rounded-md transition-all hover:scale-105">
+                                <div class="overflow-hidden rounded-md transition-all hover:scale-105 focus:scale-105">
                                     <a href={`/blog/${post.slug}/`}>
                                         <img src={post.data.heroImage} />
                                     </a>
