@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply text-black;
+    @apply text-black;
 
-  overscroll-behavior: none;
+    overscroll-behavior: none;
 }
