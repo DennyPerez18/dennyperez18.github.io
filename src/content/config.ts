@@ -5,22 +5,30 @@ const blog = defineCollection({
         z.object({
             title: z.string(),
             description: z.string().optional(),
-            // Transform `string` to `Date` object
-            pubDate: z
-                .string()
-                .or(z.date())
-                .transform((val) => new Date(val)),
+            pubDate: z.coerce.date(),
             heroImage: image(),
             categories: z.string().array(),
         }),
 });
 
+// TODO: Load data from a toml file.
+// TODO: Tags field.
 const project = defineCollection({
     schema: ({ image }) =>
         z.object({
             title: z.string(),
             role: z.string(),
-            years: z.string(),
+            // TODO: A class would probably make handling these less messy.
+            years: z.string().transform((val) => {
+                let [start, end] = val.split("-").map((val) => val.trim());
+
+                let parsedEnd;
+                if (end != "Actual") parsedEnd = parseInt(end)
+                else parsedEnd = end;
+
+                return { start: parseInt(start), end: parsedEnd };
+            }),
+            // TODO: Rename to `url`.
             link: z.string().url(),
             icon: image().optional(),
         }),

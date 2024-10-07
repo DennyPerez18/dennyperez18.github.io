@@ -2,6 +2,7 @@
 title: "Python Software Foundation"
 role: "Director"
 years: "2023 - Actual"
+icon: "../../images/psf.png"
 link: "https://pyfound.blogspot.com/2023/06/announcing-2023-psf-board-election.html"
 ---
 

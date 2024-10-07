@@ -1,7 +1,7 @@
 ---
 title: "GitTogethers"
 role: "Community Leader"
-years: "2023 - Actual"
+years: "2022 - Actual"
 link: "https://github.com/gittogethers"
 icon: "../../images/GitTogether.png"
 ---
