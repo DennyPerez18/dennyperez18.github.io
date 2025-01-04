@@ -1,4 +1,6 @@
 import { defineCollection, z } from "astro:content";
+import { file } from "astro/loaders";
+import { parse as parseToml } from "toml";
 
 const blog = defineCollection({
     schema: ({ image }) =>
@@ -11,27 +13,26 @@ const blog = defineCollection({
         }),
 });
 
-// TODO: Load data from a toml file.
 // TODO: Tags field.
-const project = defineCollection({
+const projects = defineCollection({
+    loader: file("src/content/projects.toml", { parser: (text) => parseToml(text).projects, }),
     schema: ({ image }) =>
         z.object({
-            title: z.string(),
             role: z.string(),
             // TODO: A class would probably make handling these less messy.
             years: z.string().transform((val) => {
                 let [start, end] = val.split("-").map((val) => val.trim());
 
                 let parsedEnd;
-                if (end != "Actual") parsedEnd = parseInt(end)
+                if (end != "Actual") parsedEnd = parseInt(end);
                 else parsedEnd = end;
 
                 return { start: parseInt(start), end: parsedEnd };
             }),
-            // TODO: Rename to `url`.
-            link: z.string().url(),
+            url: z.string().url(),
             icon: image().optional(),
+            description: z.string(),
         }),
 });
 
-export const collections = { blog, project };
+export const collections = { blog, projects };

@@ -2,22 +2,33 @@
 import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 
-type Props = CollectionEntry<"project">;
+type Props = CollectionEntry<"projects">;
 
 const {
-    data: { title, role, years, link, icon },
-    body,
+    id: title,
+    data: { role, years, url, icon, description },
 } = Astro.props;
 ---
 
 <!-- TODO: A hover effect for both <section> and <a> would be cool. -->
 <section class="space-y-1 rounded shadow shadow-slate-400 bg-slate-200 px-2 pb-2">
-    <a href={link}>
-        <div class="flex items-center gap-1 pt-2">
-            {icon && <Image src={icon} width={25} alt=`${title}'s Icon` />}
-            <h3 class="text-lg leading-4">
-                {title}
-            </h3>
+    <a href={url}>
+        <div class="flex justify-between items-center gap-x-1">
+            <div class="flex items-center gap-1 pt-2">
+                {icon && <Image src={icon} width={25} alt=`${title}'s Icon` />}
+                <h3 class="text-lg leading-4">
+                    {title}
+                </h3>
+            </div>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 fill-slate-500"
+                viewBox="0 0 24 24"
+            >
+                <path
+                    d="M10 3v2H5v14h14v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm7.586 2H13V3h8v8h-2V6.414l-7 7L10.586 12z"
+                />
+            </svg>
         </div>
         <div class="flex justify-between pt-1">
             <p class="text-xs">{role}</p>
@@ -26,6 +37,6 @@ const {
     </a>
     <hr class="border-slate-400" />
     <p class="text-justify text-slate-800">
-        {body}
+        {description}
     </p>
 </section>
