@@ -1,4 +1,4 @@
-[[projects]]
+[[communities]]
 id = "Python Software Foundation"
 role = "Directora"
 years = "2023 - Actual"
@@ -9,7 +9,7 @@ La Python Software Foundation es una organización sin fines de lucro dedicada \
 a promover la tecnología de código abierto relacionada con el lenguaje de \
 programación Python."""
 
-[[projects]]
+[[communities]]
 id = "PyCascades"
 role = "Equipo de Organización"
 years = "2022 - Actual"
@@ -21,7 +21,7 @@ que celebra a la comunidad de desarrolladores y usuarios de Python de la costa \
 oeste. El equipo organizador incluye miembros de los grupos de usuarios de Python \
 en Vancouver, Seattle, Portland y Montreal."""
 
-[[projects]]
+[[communities]]
 id = "Python en Español"
 role = "Equipo de Coordinación"
 years = "2021 - Actual"
@@ -33,7 +33,7 @@ países hispanohablantes para generar un lugar central donde se puede encontrar 
 canales con actividades, recursos, consejos, conferencias, meetups, noticias, \
 proyectos y mucho más temas relacionados a Python."""
 
-[[projects]]
+[[communities]]
 id = "PyConUS Charlas"
 role = "Co-Chair"
 years = "2022 - Actual"
@@ -45,7 +45,7 @@ abierto a toda la comunidad, que tiene lugar cada año en PyCon US. PyCon US \
 Charlas will showcase Spanish-speaking Pythonistas by giving them space at the \
 world’s largest PyCon to give and hear talks in Spanish."""
 
-[[projects]]
+[[communities]]
 id = "Python Chile"
 role = "Equipo de Coordinación"
 years = "2021 - Actual"
@@ -57,7 +57,7 @@ a lo largo Chile, fortaleciendo a los miembros de la comunidad para generar un \
 impacto positivo en el desarrollo de Python a nivel nacional y mundial. Esta \
 comunidad organiza 2 conferencias y varios eventos educativos al año."""
 
-[[projects]]
+[[communities]]
 id = "PyLatam"
 role = "Equipo de Organización"
 years = "2020 - Actual"
@@ -68,7 +68,7 @@ PyCon Latam es una versión de PyconUS que tiene como objetivo reunir a los \
 desarrolladores de Python de toda América Latina e interactuar con la comunidad \
 de Python en general."""
 
-[[projects]]
+[[communities]]
 id = "PyLadies Santiago"
 role = "Co-Organizadora"
 years = "2021 - Actual"
@@ -79,7 +79,7 @@ Comunidad Pyladies de la ciudad Santiago de Chile, enfocada en promover la \
 participación y el incremento de más mujeres a la tecnología y el código con \
 Python."""
 
-[[projects]]
+[[communities]]
 id = "PyLadies Santo Domingo"
 role = "Co-Organizadora"
 years = "2023 - Actual"
@@ -90,7 +90,7 @@ Comunidad Pyladies de la ciudad Santo Domingo, RD, enfocada en promover la \
 participación y el incremento de más mujeres a la tecnología y el código con \
 Python."""
 
-[[projects]]
+[[communities]]
 id = "PyLadies Montreal"
 role = "Co-Organizadora"
 years = "2024 - Actual"
@@ -101,7 +101,7 @@ El capítulo de PyLadies en Montreal es un grupo internacional enfocado en \
 incentivar la participación de más mujeres en la comunidad de Python y en la \
 programación."""
 
-[[projects]]
+[[communities]]
 id = "PyLadiesCon"
 role = "Equipo de Organización"
 years = "2023 - Actual"
@@ -114,7 +114,7 @@ espacio inclusivo para compartir conocimientos, crear redes y colaborar a \
 través de charlas, talleres y paneles, con el objetivo de aumentar la \
 diversidad y representación en la tecnología."""
 
-[[projects]]
+[[communities]]
 id = "Python Montreal"
 role = "Equipo de voluntarios"
 years = "2024 - Actual"
@@ -126,7 +126,7 @@ entusiastas de Python en Montreal, haciendo que la programación en Python sea \
 accesible para todos y promoviendo la responsabilidad social en todas nuestras \
 actividades."""
 
-[[projects]]
+[[communities]]
 id = "GitTogethers" 
 role = "Community Leader" 
 years = "2023 - Actual"

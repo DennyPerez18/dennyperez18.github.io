@@ -14,8 +14,10 @@ const blog = defineCollection({
 });
 
 // TODO: Tags field.
-const projects = defineCollection({
-    loader: file("src/content/projects.toml", { parser: (text) => parseToml(text).projects, }),
+const communities = defineCollection({
+    loader: file("src/content/communities.toml", {
+        parser: (text) => parseToml(text).communities,
+    }),
     schema: ({ image }) =>
         z.object({
             role: z.string(),
@@ -35,4 +37,4 @@ const projects = defineCollection({
         }),
 });
 
-export const collections = { blog, projects };
+export const collections = { blog, communities };
