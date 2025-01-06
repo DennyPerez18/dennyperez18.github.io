@@ -12,7 +12,12 @@ import HeaderLink from "./HeaderLink.astro";
             href="/">Denny Perez</a
         >
         <input id="nav-toggle" class="peer hidden h-8 w-8" type="checkbox" />
-        <label for="nav-toggle" class="sm:hidden">
+        <label
+            for="nav-toggle"
+            aria-expanded="false"
+            class="peer-checked:hidden sm:hidden"
+        >
+            <span class="sr-only">Menu</span>
             <!-- material-symbols:menu -->
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -21,17 +26,23 @@ import HeaderLink from "./HeaderLink.astro";
             >
                 <path d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z"></path>
             </svg>
-            <!-- TODO: Change to a close button when checkbox is checked-->
+        </label>
+        <label
+            for="nav-toggle"
+            aria-expanded="true"
+            class="peer-[&:not(:checked)]:hidden sm:hidden"
+        >
+            <span class="sr-only">Menu</span>
             <!-- material-symbols:close -->
-            <!-- <svg -->
-            <!--     xmlns="http://www.w3.org/2000/svg" -->
-            <!--     class="h-8 w-8" -->
-            <!--     viewBox="0 0 24 24" -->
-            <!-- > -->
-            <!--     <path -->
-            <!--         d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" -->
-            <!--     ></path> -->
-            <!-- </svg> -->
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8"
+                viewBox="0 0 24 24"
+            >
+                <path
+                    d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"
+                ></path>
+            </svg>
         </label>
         <div
             class="absolute left-0 top-12 hidden w-full items-center bg-white p-5 peer-checked:flex sm:static sm:flex sm:min-h-fit sm:w-auto sm:py-0"
