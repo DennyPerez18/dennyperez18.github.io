@@ -5,16 +5,65 @@ import HeaderLink from "./HeaderLink.astro";
 
 <header>
     <nav
-        class="flex items-center justify-between px-10 py-6 font-['Montserrat'] uppercase leading-none lg:px-20 xl:px-40 2xl:px-72"
+        class="mx-auto flex w-[90%] items-center justify-between py-4 uppercase"
     >
-        <a class="text-2xl hover:text-slate-500 focus:text-slate-500" href="/"
-            >Denny Perez</a
+        <a
+            class="font-[Montserrat] text-2xl hover:text-slate-500 focus:text-slate-500"
+            href="/">Denny Perez</a
         >
-        <HeaderLink
-            class="text-lg hover:text-slate-500 focus:text-slate-500"
-            href="/blog"
+        <input id="nav-toggle" class="peer hidden h-8 w-8" type="checkbox" />
+        <label for="nav-toggle" class="sm:hidden">
+            <!-- material-symbols:menu -->
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8"
+                viewBox="0 0 24 24"
+            >
+                <path d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z"></path>
+            </svg>
+            <!-- TODO: Change to a close button when checkbox is checked-->
+            <!-- material-symbols:close -->
+            <!-- <svg -->
+            <!--     xmlns="http://www.w3.org/2000/svg" -->
+            <!--     class="h-8 w-8" -->
+            <!--     viewBox="0 0 24 24" -->
+            <!-- > -->
+            <!--     <path -->
+            <!--         d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z" -->
+            <!--     ></path> -->
+            <!-- </svg> -->
+        </label>
+        <div
+            class="absolute left-0 top-12 hidden w-full items-center bg-white p-5 peer-checked:flex sm:static sm:flex sm:min-h-fit sm:w-auto sm:py-0"
         >
-            Blog
-        </HeaderLink>
+            <ul
+                class="flex flex-col gap-5 sm:flex-row sm:items-center sm:gap-[4vw]"
+            >
+                <li>
+                    <HeaderLink
+                        class="hover:text-slate-500 focus:text-slate-500"
+                        href="/about"
+                    >
+                        About Me
+                    </HeaderLink>
+                </li>
+                <li>
+                    <HeaderLink
+                        class="hover:text-slate-500 focus:text-slate-500"
+                        href="/projects"
+                    >
+                        Projects
+                    </HeaderLink>
+                </li>
+                <li>
+                    <HeaderLink
+                        class="hover:text-slate-500 focus:text-slate-500"
+                        href="/blog"
+                    >
+                        Blog
+                    </HeaderLink>
+                </li>
+            </ul>
+        </div>
     </nav>
 </header>
