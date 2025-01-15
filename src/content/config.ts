@@ -13,7 +13,6 @@ const blog = defineCollection({
         }),
 });
 
-// TODO: Tags field.
 const communities = defineCollection({
     loader: file("src/content/communities.toml", {
         parser: (text) => parseToml(text).communities,
@@ -37,4 +36,16 @@ const communities = defineCollection({
         }),
 });
 
-export const collections = { blog, communities };
+const projects = defineCollection({
+    schema: ({ image }) =>
+        z.object({
+            title: z.string(),
+            // TODO: This should probably fail if they don't have the correct
+            // dimmensions.
+            banner: image(),
+            order: z.number().positive(),
+        }),
+});
+
+// NOTE: Don't forget to `npm run astro sync` to get any type information.
+export const collections = { blog, communities, projects };

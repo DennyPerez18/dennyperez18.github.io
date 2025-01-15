@@ -1,0 +1,29 @@
+---
+import Footer from "../components/Footer.astro";
+import Head from "../components/Head.astro";
+import Header from "../components/Header.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+
+import { getCollection } from "astro:content";
+
+const projects = (await getCollection("projects")).sort(
+    (a, b) => a.data.order - b.data.order,
+);
+---
+
+<html lang="es" class="scroll-smooth">
+    <Head title="Projects" />
+    <Header />
+    <main>
+        <ul class="grid justify-items-center gap-y-5 pt-5 sm:pt-0 md:gap-y-8">
+            {
+                projects.map((p) => (
+                    <li>
+                        <ProjectCard {...p} />
+                    </li>
+                ))
+            }
+        </ul>
+    </main>
+    <Footer />
+</html>
