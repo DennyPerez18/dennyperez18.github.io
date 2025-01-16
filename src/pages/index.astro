@@ -10,7 +10,7 @@ import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 
 import "@fontsource/montserrat/900.css";
-import avatar from "../images/avatar.png";
+import heroAvatar from "../images/heroAvatar.jpg";
 
 const communities = (await getCollection("communities")).sort((a, b) => {
     const startDiff = b.data.years.start - a.data.years.start;
@@ -30,18 +30,24 @@ const communities = (await getCollection("communities")).sort((a, b) => {
 // TODO: Flow component.
 // TODO: Create a default page layout.
 // TODO: Add some pretty animations where needed.
+// TODO: Organize `../images/`.
+// TODO: Force content sources to provide `alt` for images.
 ---
 
 <html lang="es">
     <Head title={SITE_TITLE} />
     <Header />
     <main class="bg-slate-200 text-center">
-        <Container class="lg:py-[9.35rem]" large={true}>
+        <Container class="lg:py-[11vh]" large={true}>
             <div
                 class="grid grid-cols-1 items-center justify-items-center gap-3 lg:grid-cols-2"
             >
-                <!-- TODO: Change `/avatar.png` background color -->
-                <Image src={avatar} alt="Denny's Avatar" />
+                <Image
+                    class="aspect-square rounded-full object-cover object-[center,10%]"
+                    width={500}
+                    src={heroAvatar}
+                    alt="Denny's Image"
+                />
                 <section>
                     <h1 class="mb-2 font-['Montserrat'] text-7xl">
                         Denny Perez
@@ -51,7 +57,6 @@ const communities = (await getCollection("communities")).sort((a, b) => {
                     </p>
                     <hr class="mx-16 mb-5 border-black" />
                     <ul class="space-y-5 text-xl">
-                        <!-- TODO: Maybe change `[focus,hover]: bg-white` to another color? -->
                         <li>
                             <a
                                 class="flex h-20 justify-center rounded-lg border-2 border-black transition hover:bg-white hover:text-black focus:bg-white focus:text-black lg:mx-10"
@@ -138,7 +143,7 @@ const communities = (await getCollection("communities")).sort((a, b) => {
             <div
                 class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-4 lg:grid-cols-3"
             >
-                {communities.map((p) => <CommunityCard {...p} />)}
+                {communities.map((c) => <CommunityCard {...c} />)}
             </div>
         </Container>
     </section>
