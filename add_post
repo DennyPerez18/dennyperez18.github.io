@@ -35,6 +35,8 @@ def main(args: list[str]) -> int:
 
     with open(md_file_path, "w+", encoding="utf-8") as md_file:
         pattern = re.compile("^# (.+)")
+        # FIXME: This breaks the moment a document doesn't have a title.
+        # I should just replace the first heading on the document.
         substitution = pattern.sub(
             rf"""---
 title: '\1'
@@ -46,6 +48,8 @@ categories: []
         )
 
         md_file.write(substitution)
+
+    # TODO: Format with prettier (`prettier --prose-wrap always -w`).
 
     return 0
 

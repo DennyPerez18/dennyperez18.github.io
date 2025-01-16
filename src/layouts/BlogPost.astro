@@ -19,18 +19,17 @@ const { title, description, pubDate, heroImage } = Astro.props;
         <Header />
         <main>
             <Container>
-                <div class="mx-auto max-w-screen-md">
-                    <article class="prose prose-xl prose-hr:my-3">
-                        <Image
-                            class="overflow-hidden rounded-md"
-                            src={heroImage}
-                            alt=""
-                        />
-                        Fecha de publicación: <FormattedDate date={pubDate} />
-                        <hr />
-                        <slot />
-                    </article>
-                </div>
+                <!-- TODO: Margins are _way too big_ on mobile -->
+                <article class="prose mx-auto lg:prose-xl prose-hr:my-3">
+                    <Image
+                        class="overflow-hidden rounded-md"
+                        src={heroImage}
+                        alt=""
+                    />
+                    Fecha de publicación: <FormattedDate date={pubDate} />
+                    <hr />
+                    <slot />
+                </article>
             </Container>
         </main>
         <Footer />
