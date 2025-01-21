@@ -1,13 +1,9 @@
 ---
 import Container from "../components/Container.astro";
-import Footer from "../components/Footer.astro";
-import Head from "../components/Head.astro";
-import Header from "../components/Header.astro";
+import Base from "../layouts/Base.astro";
 ---
 
-<html lang="es">
-    <Head title="About Me" description="Sobre mi" />
-    <Header />
+<Base title="About Me" description="Sobre mi">
     <main>
         <Container class="prose prose-xl sm:text-justify" usePy={false}>
             <h1 class="pt-3 text-center text-4xl">Sobre mi</h1>
@@ -60,5 +56,4 @@ import Header from "../components/Header.astro";
             </p>
         </Container>
     </main>
-    <Footer />
-</html>
+</Base>

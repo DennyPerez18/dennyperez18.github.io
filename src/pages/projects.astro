@@ -1,8 +1,6 @@
 ---
-import Footer from "../components/Footer.astro";
-import Head from "../components/Head.astro";
-import Header from "../components/Header.astro";
 import ProjectCard from "../components/ProjectCard.astro";
+import Base from "../layouts/Base.astro";
 
 import { getCollection } from "astro:content";
 
@@ -11,9 +9,7 @@ const projects = (await getCollection("projects")).sort(
 );
 ---
 
-<html lang="es" class="scroll-smooth">
-    <Head title="Projects" />
-    <Header />
+<Base title="Projects">
     <main>
         <ul class="grid justify-items-center gap-y-5 pt-5 sm:pt-0 md:gap-y-8">
             {
@@ -25,5 +21,4 @@ const projects = (await getCollection("projects")).sort(
             }
         </ul>
     </main>
-    <Footer />
-</html>
+</Base>

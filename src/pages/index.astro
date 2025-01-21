@@ -1,9 +1,7 @@
 ---
-import Head from "../components/Head.astro";
 import Container from "../components/Container.astro";
-import Footer from "../components/Footer.astro";
-import Header from "../components/Header.astro";
 import CommunityCard from "../components/CommunityCard.astro";
+import Base from "../layouts/Base.astro";
 import { SITE_TITLE } from "../consts";
 
 import { Image } from "astro:assets";
@@ -28,15 +26,12 @@ const communities = (await getCollection("communities")).sort((a, b) => {
 
 // TODO: use `astro-icon`.
 // TODO: Flow component.
-// TODO: Create a default page layout.
 // TODO: Add some pretty animations where needed.
 // TODO: Organize `../images/`.
 // TODO: Force content sources to provide `alt` for images.
 ---
 
-<html lang="es">
-    <Head title={SITE_TITLE} />
-    <Header />
+<Base title={SITE_TITLE}>
     <main class="bg-slate-200 text-center">
         <Container class="lg:py-[11vh]" large={true}>
             <div
@@ -149,5 +144,4 @@ const communities = (await getCollection("communities")).sort((a, b) => {
             </div>
         </Container>
     </section>
-    <Footer />
-</html>
+</Base>
