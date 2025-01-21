@@ -1,6 +1,6 @@
 ---
 title: "La escuelita de Github"
-banner: "../../images/La escuelita de GitHub.png"
+banner: "../../images/projects/La escuelita de GitHub.png"
 order: 2
 ---
 

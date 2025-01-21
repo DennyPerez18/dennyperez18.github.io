@@ -1,7 +1,7 @@
 ---
 title: 'Introducción a GitHub Pages: Crea tu Primer Sitio Web'
 pubDate: 'Jun 13 2024'
-heroImage: '../../images/GitHub Pages.png'
+heroImage: '../../images/blog/GitHub Pages.png'
 categories: ['la escuelita de github']
 ---
 

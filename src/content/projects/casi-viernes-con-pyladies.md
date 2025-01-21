@@ -1,6 +1,6 @@
 ---
 title: "Casi Viernes con PyLadies"
-banner: "../../images/Casi Viernes con PyLadiesB.png"
+banner: "../../images/projects/Casi Viernes con PyLadiesB.png"
 order: 3
 ---
 

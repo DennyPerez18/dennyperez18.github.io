@@ -1,7 +1,7 @@
 ---
 title: 'Aprende y Enseña con GitHub Classroom: Simplificando la Educación Tecnológica'
 pubDate: 'Mar 14 2024'
-heroImage: '../../images/GitHub Classroom.png'
+heroImage: '../../images/blog/GitHub Classroom.png'
 categories: ['la escuelita de github']
 ---
 

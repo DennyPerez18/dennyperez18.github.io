@@ -1,6 +1,6 @@
 ---
 title: "Women Techmakers Using..."
-banner: "../../images/Women Techmakers Using.png"
+banner: "../../images/projects/Women Techmakers Using.png"
 order: 4
 ---
 

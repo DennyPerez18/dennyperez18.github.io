@@ -1,7 +1,7 @@
 ---
 title: 'Conviértete en un GitHub Campus Expert'
 pubDate: 'Sep 19 2024'
-heroImage: '../../images/Campus Experts.png'
+heroImage: '../../images/blog/Campus Experts.png'
 categories: ['la escuelita de github']
 ---
 

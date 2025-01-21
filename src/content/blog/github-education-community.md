@@ -1,7 +1,7 @@
 ---
 title: 'Conéctate y Aprende con la GitHub Education Community'
 pubDate: 'Feb 15 2024'
-heroImage: '../../images/GitHub Education.png'
+heroImage: '../../images/blog/GitHub Education.png'
 categories: ['la escuelita de github']
 ---
 

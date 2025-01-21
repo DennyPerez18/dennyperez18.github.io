@@ -2,7 +2,7 @@
 title: "Junta Directiva de la PSF"
 description: "PSF"
 pubDate: "Feb 14 2023"
-heroImage: "../../images/Junta Directiva PSF.png"
+heroImage: "../../images/blog/Junta Directiva PSF.png"
 categories: ["PSF"]
 ---
 

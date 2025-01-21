@@ -1,7 +1,7 @@
 ---
 title: 'Postulación a la Junta Directiva de la Python Software Foundation (PSF)'
 pubDate: 'Jun 14 2023'
-heroImage: '../../images/Postulacion al board.png'
+heroImage: '../../images/blog/Postulacion al board.png'
 categories: ["PSF"]
 ---
 

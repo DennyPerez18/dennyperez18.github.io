@@ -1,6 +1,6 @@
 ---
 title: "PSF Advocacy Focus"
-banner: "../../images/PSF Advocacy Focus.png"
+banner: "../../images/projects/PSF Advocacy Focus.png"
 order: 1
 ---
 

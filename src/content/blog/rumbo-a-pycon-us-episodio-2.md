@@ -1,7 +1,7 @@
 ---
 title: 'Ep. 2 - Rumbo a PyCon US 2023 edicion especial 20 aniversario'
 pubDate: 'Mar 08 2023'
-heroImage: '../../images/Rumbo a PyCon US Ep.2.png'
+heroImage: '../../images/blog/Rumbo a PyCon US Ep.2.png'
 categories: [PSF]
 ---
 

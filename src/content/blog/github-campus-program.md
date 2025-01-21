@@ -1,7 +1,7 @@
 ---
 title: 'Transforma tu Institución con el GitHub Campus Program'
 pubDate: 'Jul 18 2024'
-heroImage: '../../images/Campus Program.png'
+heroImage: '../../images/blog/Campus Program.png'
 categories: ['la escuelita de github']
 ---
 

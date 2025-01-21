@@ -1,0 +1,18 @@
+---
+import Footer from "../components/Footer.astro";
+import Head from "../components/Head.astro";
+import Header from "../components/Header.astro";
+import { type ComponentProps } from "astro/types";
+
+type Props = ComponentProps<typeof Head>;
+---
+
+<html lang="es" class="scroll-smooth">
+    <Head {...Astro.props} />
+    <Header />
+    <body>
+        <slot />
+    </body>
+    <!-- FIXME: Stick footer to the bottom of the page if not enough content -->
+    <Footer />
+</html>

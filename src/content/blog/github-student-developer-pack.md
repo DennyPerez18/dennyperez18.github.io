@@ -1,7 +1,7 @@
 ---
 title: 'Descubre el GitHub Student Developer Pack'
 pubDate: 'Aug 15 2024'
-heroImage: '../../images/Student developer Pack.png'
+heroImage: '../../images/blog/Student developer Pack.png'
 categories: ['la escuelita de github']
 ---
 
