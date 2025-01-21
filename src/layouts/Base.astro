@@ -9,10 +9,9 @@ type Props = ComponentProps<typeof Head>;
 
 <html lang="es" class="scroll-smooth">
     <Head {...Astro.props} />
-    <Header />
-    <body>
+    <body class="flex min-h-[100dvh] flex-col">
+        <Header />
         <slot />
+        <Footer />
     </body>
-    <!-- FIXME: Stick footer to the bottom of the page if not enough content -->
-    <Footer />
 </html>
