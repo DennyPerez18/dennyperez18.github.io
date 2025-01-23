@@ -1,0 +1,42 @@
+---
+import Container from "../components/Container.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+import { Image } from "astro:assets";
+
+type Card = {
+    title: string;
+    url: string;
+    image: ImageMetadata;
+    date?: Date;
+};
+
+type Props = { items: Card[] };
+
+const items = Astro.props.items;
+---
+
+<Container>
+    <ul
+        class="grid grid-cols-1 gap-y-3 md:grid-cols-2 md:gap-x-16 md:gap-y-7 lg:gap-x-32"
+    >
+        {
+            items.map(({ title, url, image, date }) => (
+                <li class="space-y-4">
+                    <div class="overflow-hidden rounded-md transition-all hover:scale-105">
+                        <a href={url}>
+                            <Image src={image} alt="" />
+                        </a>
+                    </div>
+                    <h3 class="text-3xl font-bold leading-snug">
+                        <a class="hover:underline" href={url}>
+                            {title}
+                        </a>
+                    </h3>
+                    {date != undefined ? (
+                        <FormattedDate class="text-lg" date={date} />
+                    ) : undefined}
+                </li>
+            ))
+        }
+    </ul>
+</Container>

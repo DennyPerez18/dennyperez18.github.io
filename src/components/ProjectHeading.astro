@@ -17,20 +17,18 @@ const { Content } = await render();
 ---
 
 <section class="space-y-5 md:space-y-8">
-    <a href={`#${slug}`} name={slug}>
-        <h2
-            class="px-2 text-center font-['Montserrat'] text-2xl font-bold md:text-4xl"
-        >
-            {title}
-        </h2>
+    <h2
+        class="px-2 text-center font-['Montserrat'] text-2xl font-bold md:text-4xl"
+    >
+        {title}
+    </h2>
+    <a class="block" href=`/projects/${slug}`>
+        <Image
+            class="mx-auto md:container md:max-w-screen-xl"
+            src={banner}
+            alt=""
+        />
     </a>
-    <Image
-        class="mx-auto md:container md:max-w-screen-xl"
-        src={banner}
-        alt=""
-    />
-    <!-- TODO: All this should be collased; if url has a matching #anchor
-               automatically expand this section -->
     <Container usePy={false} large={true}>
         <div class="prose md:prose-xl md:max-w-full">
             <Content />

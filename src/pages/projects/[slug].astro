@@ -1,0 +1,51 @@
+---
+import ProjectHeading from "../../components/ProjectHeading.astro";
+import Base from "../../layouts/Base.astro";
+import CardGrid from "../../layouts/CardGrid.astro";
+
+import { type CollectionEntry, getCollection } from "astro:content";
+
+type Card = {
+    title: string;
+    url: string;
+    image: ImageMetadata;
+};
+
+export async function getStaticPaths() {
+    const projects = await getCollection("projects");
+    const blog = await getCollection("blog");
+
+    return projects.map((project) => {
+        const items = project.data.items ?? [];
+        const cards = items.map((item) => {
+            if ("title" in item) return item;
+
+            const post = blog.find((post) => post.slug === item.blog.id)!;
+            return {
+                title: post.data.title,
+                url: `/blog/${post.slug}`,
+                image: post.data.heroImage,
+            };
+        });
+
+        project.data.items = [];
+
+        return {
+            params: { slug: project.slug },
+            props: { ...project, cards },
+        };
+    });
+}
+
+type Props = CollectionEntry<"projects"> & { cards: Card[] };
+
+const props = Astro.props;
+---
+
+<Base title={props.data.title}>
+    <main >
+        <ProjectHeading {...props} />
+        <hr class="mt-4 mx-auto max-w-screen-xl" />
+        <CardGrid items={props.cards} />
+    </main>
+</Base>

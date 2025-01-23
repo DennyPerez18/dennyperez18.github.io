@@ -1,6 +1,6 @@
 ---
-import ProjectCard from "../components/ProjectCard.astro";
-import Base from "../layouts/Base.astro";
+import ProjectHeading from "../../components/ProjectHeading.astro";
+import Base from "../../layouts/Base.astro";
 
 import { getCollection } from "astro:content";
 
@@ -15,7 +15,7 @@ const projects = (await getCollection("projects")).sort(
             {
                 projects.map((p) => (
                     <li>
-                        <ProjectCard {...p} />
+                        <ProjectHeading {...p} />
                     </li>
                 ))
             }

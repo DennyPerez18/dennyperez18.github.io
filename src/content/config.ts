@@ -1,4 +1,9 @@
-import { defineCollection, z } from "astro:content";
+import {
+    defineCollection,
+    reference,
+    z,
+    type ImageFunction,
+} from "astro:content";
 import { file } from "astro/loaders";
 import { parse as parseToml } from "toml";
 
@@ -20,7 +25,7 @@ const communities = defineCollection({
     schema: ({ image }) =>
         z.object({
             role: z.string(),
-            // TODO: A class would probably make handling these less messy.
+            // TODO: Convert `Actual` to the current year.
             years: z.string().transform((val) => {
                 let [start, end] = val.split("-").map((val) => val.trim());
 
@@ -36,6 +41,17 @@ const communities = defineCollection({
         }),
 });
 
+const projectItemSchema = (image: ImageFunction) =>
+    z.union([
+        z.object({
+            title: z.string(),
+            url: z.string().url(),
+            image: image(),
+        }),
+        // TODO: .transform() into the object above.
+        z.object({ blog: reference("blog") }),
+    ]);
+
 const projects = defineCollection({
     schema: ({ image }) =>
         z.object({
@@ -44,6 +60,8 @@ const projects = defineCollection({
             // dimmensions.
             banner: image(),
             order: z.number().positive(),
+            // FIXME: Remove optional when all projects have content.
+            items: z.array(projectItemSchema(image)).optional(),
         }),
 });
 

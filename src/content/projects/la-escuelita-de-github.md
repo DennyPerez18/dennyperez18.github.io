@@ -1,7 +1,15 @@
 ---
-title: "La escuelita de Github"
-banner: "../../images/projects/La escuelita de GitHub.png"
+title: La escuelita de Github
+banner: ../../images/projects/La escuelita de GitHub.png
 order: 2
+items:
+- blog: github-campus-expert
+- blog: github-pages-crea-tu-sitio-web
+- blog: github-campus-program
+- blog: github-education-community
+- blog: github-classroom
+- blog: github-student-developer-pack
+- blog: github-codespaces
 ---
 
 La Escuelita de GitHub es un proyecto enfocado en fortalecer la comunidad
