@@ -17,11 +17,13 @@ const { Content } = await render();
 ---
 
 <section class="space-y-5 md:space-y-8">
+    <!-- FIXME: Should be `h1` on /projects/[slug] -->
     <h2
         class="px-2 text-center font-['Montserrat'] text-2xl font-bold md:text-4xl"
     >
         {title}
     </h2>
+    <!-- FIXME: no <a> on /projects/[slug] -->
     <a class="block" href=`/projects/${slug}`>
         <Image
             class="mx-auto md:container md:max-w-screen-xl"

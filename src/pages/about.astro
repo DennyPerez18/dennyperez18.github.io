@@ -1,9 +1,9 @@
 ---
 import Container from "../components/Container.astro";
 import Base from "../layouts/Base.astro";
-import { Image } from "astro:assets";
-
-import aboutImg from "../images/about.png";
+// import { Image } from "astro:assets";
+//
+// import aboutImg from "../images/about.png";
 ---
 
 <Base title="About Me" description="Sobre mi">
@@ -11,12 +11,13 @@ import aboutImg from "../images/about.png";
         <Container class="prose prose-xl max-w-screen-2xl" usePy={false}>
             <h1 class="pt-3 text-center text-4xl">Sobre mi</h1>
             <div class="flex justify-center gap-10">
-                <Image
-                    class="hidden xl:block w-[650px]"
-                    src={aboutImg}
-                    width={600}
-                    alt=""
-                />
+                <!-- FIXME: Doesn't work correctly -->
+                <!-- <Image -->
+                <!--     class="hidden xl:block w-[650px]" -->
+                <!--     src={aboutImg} -->
+                <!--     width={600} -->
+                <!--     alt="" -->
+                <!-- /> -->
                 <section class="max-w-[75ch] sm:text-justify">
                     <p>
                         Soy Denny Pérez, Analista de Calidad de Software en <a
