@@ -1,5 +1,6 @@
 ---
 title: Casi Viernes con PyLadies
+showItemTitles: false
 banner: ../../images/projects/Casi Viernes con PyLadiesB.png
 order: 3
 items:

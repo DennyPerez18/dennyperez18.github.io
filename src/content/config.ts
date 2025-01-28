@@ -56,6 +56,7 @@ const projects = defineCollection({
     schema: ({ image }) =>
         z.object({
             title: z.string(),
+            showItemTitles: z.boolean().default(true),
             // TODO: This should probably fail if they don't have the correct
             // dimmensions.
             banner: image(),
@@ -65,5 +66,5 @@ const projects = defineCollection({
         }),
 });
 
-// NOTE: Don't forget to `npm run astro sync` to get any type information.
+// NOTE: Don't forget to `astro sync` to get any type information.
 export const collections = { blog, communities, projects };

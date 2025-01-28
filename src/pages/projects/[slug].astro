@@ -3,26 +3,25 @@ import ProjectHeading from "../../components/ProjectHeading.astro";
 import Base from "../../layouts/Base.astro";
 import CardGrid from "../../layouts/CardGrid.astro";
 
+import type { ComponentProps } from "astro/types";
 import { type CollectionEntry, getCollection } from "astro:content";
 
-type Card = {
-    title: string;
-    url: string;
-    image: ImageMetadata;
-};
+type CardProps = ComponentProps<typeof CardGrid>;
 
 export async function getStaticPaths() {
     const projects = await getCollection("projects");
     const blog = await getCollection("blog");
 
     return projects.map((project) => {
+        const showTitle = project.data.showItemTitles;
         const items = project.data.items ?? [];
         const cards = items.map((item) => {
-            if ("title" in item) return item;
+            if ("title" in item) return { ...item, showTitle };
 
             const post = blog.find((post) => post.slug === item.blog.id)!;
             return {
                 title: post.data.title,
+                showTitle,
                 url: `/blog/${post.slug}`,
                 image: post.data.heroImage,
             };
@@ -32,20 +31,20 @@ export async function getStaticPaths() {
 
         return {
             params: { slug: project.slug },
-            props: { ...project, cards },
+            props: { ...project, items: cards },
         };
     });
 }
 
-type Props = CollectionEntry<"projects"> & { cards: Card[] };
+type Props = CollectionEntry<"projects"> & CardProps;
 
 const props = Astro.props;
 ---
 
 <Base title={props.data.title}>
-    <main >
+    <main>
         <ProjectHeading {...props} />
-        <hr class="mt-4 mx-auto max-w-screen-xl" />
-        <CardGrid items={props.cards} />
+        <hr class="mx-auto mt-4 max-w-screen-xl" />
+        <CardGrid items={props.items} />
     </main>
 </Base>
