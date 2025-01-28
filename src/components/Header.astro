@@ -1,16 +1,16 @@
 ---
-import "@fontsource/montserrat/700.css";
 import HeaderLink from "./HeaderLink.astro";
+import { Image } from "astro:assets";
+import headerLogo from "../images/headerLogo.png";
 ---
 
 <header>
     <nav
         class="mx-auto flex w-[90%] items-center justify-between py-4 uppercase"
     >
-        <a
-            class="font-[Montserrat] text-2xl hover:text-slate-500 focus:text-slate-500"
-            href="/">Denny Perez</a
-        >
+        <a href="/">
+            <Image class="w-32" src={headerLogo} alt="Denny Perez" />
+        </a>
         <input id="nav-toggle" class="peer hidden h-8 w-8" type="checkbox" />
         <label
             for="nav-toggle"
@@ -45,7 +45,7 @@ import HeaderLink from "./HeaderLink.astro";
             </svg>
         </label>
         <div
-            class="absolute left-0 top-12 hidden w-full items-center bg-white p-5 peer-checked:flex sm:static sm:flex sm:min-h-fit sm:w-auto sm:py-0"
+            class="absolute left-0 top-14 hidden w-full items-center bg-white p-5 peer-checked:flex sm:static sm:flex sm:min-h-fit sm:w-auto sm:py-0"
         >
             <ul
                 class="flex flex-col gap-5 sm:flex-row sm:items-center sm:gap-[4vw]"
