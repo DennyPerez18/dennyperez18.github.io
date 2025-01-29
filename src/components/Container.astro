@@ -1,20 +1,20 @@
 ---
+import { cx } from "../utils.ts";
+
 type Props = {
     class?: string;
     usePy?: boolean;
-    large?: boolean;
 };
 
-const { usePy, large, class: className } = Astro.props;
+const { usePy, class: className } = Astro.props;
 ---
 
 <div
-    class:list={[
-        "container mx-auto px-8 xl:px-5",
-        large ? "max-w-screen-xl" : "max-w-screen-lg",
+    class={cx([
+        "container mx-auto max-w-screen-lg px-8 xl:px-5",
         (usePy ?? true) && "py-5 lg:py-8",
         className,
-    ]}
+    ])}
 >
     <slot />
 </div>

@@ -31,11 +31,12 @@ const communities = (await getCollection("communities")).sort((a, b) => {
 // TODO: utils to simplify sorting
 // TODO: group projects images per project
 // TODO: preload page links
+// TODO: view transitions
 ---
 
 <Base title={SITE_TITLE}>
     <main class="bg-slate-200 text-center">
-        <Container class="lg:py-[11vh]" large={true}>
+        <Container class="max-w-screen-xl lg:py-[11vh]">
             <div
                 class="grid grid-cols-1 items-center justify-items-center gap-3 lg:grid-cols-2"
             >
@@ -126,7 +127,7 @@ const communities = (await getCollection("communities")).sort((a, b) => {
         </Container>
     </main>
     <section>
-        <Container usePy={false} large={true} class="space-y-4">
+        <Container class="max-w-screen-xl space-y-4" usePy={false}>
             <a href="#comunidades" name="comunidades">
                 <h2 class="pt-8 text-center text-3xl">Comunidades</h2>
             </a>
