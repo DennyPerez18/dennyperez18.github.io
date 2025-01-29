@@ -18,7 +18,7 @@ items:
 - title: Optimizando el flujo de trabajo de desarrollo con GitHub Actions
   url: https://www.youtube.com/live/e-LnaX1hT50?si=2of7pJC-797KC7jn&t=2661
   image: ../../images/projects/Vanessa.png
-- title: "GitCommit: Un programa de colaboración entre Microsoft y Github"
+- title: "GitCommit: Un programa de colaboración entre Microsoft y GitHub"
   url: https://www.youtube.com/live/e-LnaX1hT50?si=VYHY1qPE8S8pUeY5&t=4411
   image: ../../images/projects/Karen.png
 ---
