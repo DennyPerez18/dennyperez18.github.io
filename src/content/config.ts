@@ -66,5 +66,17 @@ const projects = defineCollection({
         }),
 });
 
+const talks = defineCollection({
+    loader: file("src/content/talks.toml", {
+        parser: (text) => parseToml(text).talks,
+    }),
+    schema: z.object({
+        place: z.string(),
+        date: z.coerce.date(),
+        url: z.string().url(),
+        kind: z.enum(["Conference", "Panel", "Meetup"]),
+    }),
+});
+
 // NOTE: Don't forget to `astro sync` to get any type information.
-export const collections = { blog, communities, projects };
+export const collections = { blog, communities, projects, talks };

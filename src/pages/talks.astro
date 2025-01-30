@@ -1,0 +1,53 @@
+---
+import Container from "../components/Container.astro";
+import Base from "../layouts/Base.astro";
+
+import { getCollection } from "astro:content";
+
+import "@fontsource/montserrat/900.css";
+
+const talks = await getCollection("talks");
+talks.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const conf = talks.filter(({ data }) => data.kind == "Conference");
+const pane = talks.filter(({ data }) => data.kind == "Panel");
+const meet = talks.filter(({ data }) => data.kind == "Meetup");
+---
+
+<Base title="Talks">
+    <Container class="prose md:prose-xl max-w-screen-2xl space-y-3 md:space-y-7">
+        <h2 class="mb-0 font-['Montserrat']">Conferences</h2>
+        <ul>
+            {
+                conf.map(({ id: title, data: { url, place } }) => (
+                    <li>
+                        <a href={url}>{title}</a>
+                        <span> @ {place}</span>
+                    </li>
+                ))
+            }
+        </ul>
+        <h2 class="font-['Montserrat']">Podcasts & Panels</h2>
+        <ul>
+            {
+                pane.map(({ id: title, data: { url, place } }) => (
+                    <li>
+                        <a href={url}>{title}</a>
+                        <span> @ {place}</span>
+                    </li>
+                ))
+            }
+        </ul>
+        <h2 class="font-['Montserrat']">Meetups & Interviews</h2>
+        <ul>
+            {
+                meet.map(({ id: title, data: { url, place } }) => (
+                    <li>
+                        <a href={url}>{title}</a>
+                        <span> @ {place}</span>
+                    </li>
+                ))
+            }
+        </ul>
+    </Container>
+</Base>
