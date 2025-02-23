@@ -1,0 +1,38 @@
+---
+import Base from "../../../../layouts/Base.astro";
+import CardGrid from "../../../../layouts/CardGrid.astro";
+import { getCollection } from "astro:content";
+
+export const getStaticPaths = async () => {
+    const projects = await getCollection("projects", ({ data }) =>
+        data.items.some((item) => "group" in item),
+    );
+    const posts = await getCollection("projectPosts");
+    return projects
+        .flatMap(({ data, slug }) =>
+            data.items.map((item) => ({ ...item, slug })),
+        )
+        .map((data) => {
+            if (!("group" in data)) return;
+            const cards = posts
+                .filter(({ slug }) => slug.includes(data.group))
+                .map((post) => ({
+                    title: post.data.title,
+                    url: `/projects/${post.slug}`,
+                    image: post.data.image,
+                }));
+            return {
+                params: { slug: data.slug, group: data.group },
+                props: { ...data, cards },
+            };
+        });
+};
+
+const props = Astro.props;
+---
+
+<Base title={props.title}>
+    <main>
+        <CardGrid items={props.cards} />
+    </main>
+</Base>

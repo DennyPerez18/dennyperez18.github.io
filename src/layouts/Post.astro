@@ -2,27 +2,38 @@
 import FormattedDate from "../components/FormattedDate.astro";
 import Container from "../components/Container.astro";
 import Base from "./Base.astro";
-
 import { Image } from "astro:assets";
-import type { CollectionEntry } from "astro:content";
 
-type Props = CollectionEntry<"blog">["data"];
+type Props = {
+    title: string;
+    description?: string;
+    pubDate?: Date;
+    image: ImageMetadata;
+};
 
-const { title, description, pubDate, heroImage } = Astro.props;
+const { title, description, pubDate, image } = Astro.props;
 ---
 
-<Base title={title} description={description} image={heroImage}>
+<Base title={title} description={description} image={image}>
     <main>
         <Container>
             <!-- TODO: Margins are _way too big_ on mobile -->
             <article class="prose mx-auto lg:prose-xl prose-hr:my-3">
                 <Image
                     class="overflow-hidden rounded-md"
-                    src={heroImage}
+                    src={image}
                     alt=""
                 />
-                Fecha de publicación: <FormattedDate date={pubDate} />
+                {
+                    pubDate && (
+                        <span>
+                            Fecha de publicación:{" "}
+                            <FormattedDate date={pubDate} />
+                        </span>
+                    )
+                }
                 <hr />
+                <!-- TODO: Render an `h1` -->
                 <slot />
             </article>
         </Container>

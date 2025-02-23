@@ -13,6 +13,7 @@ const blog = defineCollection({
             title: z.string(),
             description: z.string().optional(),
             pubDate: z.coerce.date(),
+            // TODO: Rename to `image`
             heroImage: image(),
             categories: z.string().array(),
         }),
@@ -25,7 +26,6 @@ const communities = defineCollection({
     schema: ({ image }) =>
         z.object({
             role: z.string(),
-            // TODO: Convert `Actual` to the current year.
             years: z.string().transform((val) => {
                 let [start, end] = val.split("-").map((val) => val.trim());
 
@@ -48,9 +48,21 @@ const projectItemSchema = (image: ImageFunction) =>
             url: z.string().url(),
             image: image(),
         }),
-        // TODO: .transform() into the object above.
+        // TODO: `.transform()` into the object above.
+        z.object({ group: z.string(), title: z.string(), image: image() }),
+        // TODO: `.transform()` into the object above.
         z.object({ blog: reference("blog") }),
     ]);
+
+// FIXME: These posts should be at `/src/content/projects/posts/`, but currently
+// the `loader` property doesn't automatically render markdown files if defined.
+const projectPosts = defineCollection({
+    schema: ({ image }) =>
+        z.object({
+            title: z.string(),
+            image: image(),
+        }),
+});
 
 const projects = defineCollection({
     schema: ({ image }) =>
@@ -61,8 +73,7 @@ const projects = defineCollection({
             // dimmensions.
             banner: image(),
             order: z.number().positive(),
-            // FIXME: Remove optional when all projects have content.
-            items: z.array(projectItemSchema(image)).optional(),
+            items: z.array(projectItemSchema(image)),
         }),
 });
 
@@ -79,4 +90,4 @@ const talks = defineCollection({
 });
 
 // NOTE: Don't forget to `astro sync` to get any type information.
-export const collections = { blog, communities, projects, talks };
+export const collections = { blog, communities, projects, projectPosts, talks };

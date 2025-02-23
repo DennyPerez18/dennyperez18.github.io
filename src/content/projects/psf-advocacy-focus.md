@@ -2,6 +2,10 @@
 title: "PSF Advocacy Focus"
 banner: "../../images/projects/PSF Advocacy Focus.png"
 order: 1
+items:
+- group: people-from-psf-interviews
+  title: 'People From PSF: Interview Series'
+  image: '../../images/projects/psf-advocacy-focus/people-from-psf-interviews/Thumbnail.png'
 ---
 
 Como miembro del Board de Directores de la Python Software Foundation (PSF)

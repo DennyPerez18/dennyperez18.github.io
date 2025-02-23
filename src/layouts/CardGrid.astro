@@ -17,6 +17,7 @@ const items = Astro.props.items;
 ---
 
 <Container>
+    <!-- TODO: grid-cols-[repeat()] -->
     <ul
         class="grid grid-cols-1 gap-y-3 md:grid-cols-2 md:gap-x-16 md:gap-y-7 lg:gap-x-32"
     >
@@ -35,7 +36,7 @@ const items = Astro.props.items;
                             </a>
                         </h3>
                     )}
-                    <!-- TODO: Styling could be better  -->
+                    <!-- TODO: Styling could be better -->
                     {date && <FormattedDate class="text-lg" date={date} />}
                 </li>
             ))

@@ -29,9 +29,9 @@ const communities = (await getCollection("communities")).sort((a, b) => {
 // TODO: Add some pretty animations where needed.
 // TODO: Force content sources to provide `alt` for images.
 // TODO: utils to simplify sorting
-// TODO: group projects images per project
 // TODO: preload page links
 // TODO: view transitions
+// TODO: Keep images in the same folder as their required content collections.
 ---
 
 <Base title={SITE_TITLE}>
@@ -141,7 +141,7 @@ const communities = (await getCollection("communities")).sort((a, b) => {
             </p>
             <!-- TODO: Mesanry layout -->
             <div
-                class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-4 lg:grid-cols-3"
+                class="grid gap-6 md:gap-4 grid-cols-[repeat(auto-fit,minmax(min(325px,100%),1fr))]"
             >
                 {communities.map((c) => <CommunityCard {...c} />)}
             </div>
