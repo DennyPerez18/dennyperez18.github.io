@@ -9,6 +9,7 @@ import { getCollection } from "astro:content";
 
 import "@fontsource/montserrat/900.css";
 import heroAvatar from "../images/heroAvatar.jpg";
+import miniAvatar from "../images/miniAvatar.png";
 
 const communities = (await getCollection("communities")).sort((a, b) => {
     const startDiff = b.data.years.start - a.data.years.start;
@@ -58,66 +59,60 @@ const communities = (await getCollection("communities")).sort((a, b) => {
                         <li>
                             <a
                                 class="flex h-20 justify-center rounded-lg border-2 border-black transition hover:bg-white hover:text-black focus:bg-white focus:text-black lg:mx-10"
-                                href=""
+                                href="/about"
                             >
                                 <div
                                     class="flex items-center justify-center gap-2"
                                 >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="h-5 w-5"
-                                        viewBox="0 0 448 512"
-                                        fill="currentColor"
-                                    >
-                                        <path
-                                            d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4 .1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8 .1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3 .1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"
-                                        ></path>
-                                    </svg>
-                                    <p>Comunidad Python</p>
+                                    <Image
+                                        class="h-7 w-7"
+                                        src={miniAvatar}
+                                        alt="Denny's Avatar"
+                                    />
+                                    <p>Sobre mi</p>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a
                                 class="flex h-20 justify-center rounded-lg border-2 border-black transition hover:bg-white hover:text-black focus:bg-white focus:text-black lg:mx-10"
-                                href="https://www.youtube.com/playlist?list=PLiWnZAmBoObqMK1XYj0VcI5qQ8t3dZ4DX"
+                                href="#comunidades"
                             >
                                 <div
                                     class="flex items-center justify-center gap-2"
                                 >
+                                    <!-- fluent/people-community-32-filled -->
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        class="h-5 w-5"
-                                        fill="currentColor"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path
-                                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                                        class="h-7 w-7"
+                                        viewBox="0 0 32 32"
+                                        ><path
+                                            d="M16 5a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5m-4.5 2.5a4.5 4.5 0 1 1 9 0a4.5 4.5 0 0 1-9 0M6 8a2 2 0 1 0 0 4a2 2 0 0 0 0-4m-4 2a4 4 0 1 1 8 0a4 4 0 0 1-8 0m22 0a2 2 0 1 1 4 0a2 2 0 0 1-4 0m2-4a4 4 0 1 0 0 8a4 4 0 0 0 0-8M8.5 16.5q0-.334.053-.651l-4.7 1.259a2.5 2.5 0 0 0-1.767 3.062l.906 3.38a6 6 0 0 0 7.996 4.03a7.5 7.5 0 0 1-1.387-1.666a4 4 0 0 1-4.677-2.881l-.906-3.38a.5.5 0 0 1 .353-.613L8.5 17.934zm13.157 11.293a6 6 0 0 1-.646-.212a7.5 7.5 0 0 0 1.388-1.666a4 4 0 0 0 4.675-2.882l.905-3.381a.5.5 0 0 0-.353-.612L23.5 17.934V16.5q0-.332-.053-.65l4.697 1.258a2.5 2.5 0 0 1 1.767 3.062l-.906 3.38a6 6 0 0 1-7.348 4.243M12.5 14a2.5 2.5 0 0 0-2.5 2.5V22a6 6 0 0 0 12 0v-5.5a2.5 2.5 0 0 0-2.5-2.5zm-.5 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5V22a4 4 0 0 1-8 0z"
                                         ></path>
                                     </svg>
-                                    <p>Comunidad Github</p>
+                                    <p>Comunidades</p>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a
                                 class="flex h-20 justify-center rounded-lg border-2 border-black transition hover:bg-white hover:text-black focus:bg-white focus:text-black lg:mx-10"
-                                href=""
+                                href="/projects"
                             >
                                 <div
                                     class="flex items-center justify-center gap-2"
                                 >
+                                    <!-- ph:puzzle-piece -->
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        class="h-5 w-5"
-                                        fill="currentColor"
-                                        viewBox="0 0 640 512"
+                                        class="h-7 w-7"
+                                        viewBox="0 0 256 256"
+                                        ><path
+                                            fill="currentColor"
+                                            d="M220.27 158.54a8 8 0 0 0-7.7-.46a20 20 0 1 1 0-36.16a8 8 0 0 0 11.43-7.23V72a16 16 0 0 0-16-16h-36.22a35 35 0 0 0 .22-4a36.1 36.1 0 0 0-11.36-26.24a36 36 0 0 0-60.55 23.62a36.6 36.6 0 0 0 .14 6.62H64a16 16 0 0 0-16 16v32.22a35 35 0 0 0-4-.22a36.12 36.12 0 0 0-26.24 11.36a35.7 35.7 0 0 0-9.69 27a36.08 36.08 0 0 0 33.31 33.6a35.7 35.7 0 0 0 6.62-.14V208a16 16 0 0 0 16 16h144a16 16 0 0 0 16-16v-42.69a8 8 0 0 0-3.73-6.77M208 208H64v-42.69a8 8 0 0 0-11.43-7.23a20 20 0 1 1 0-36.16A8 8 0 0 0 64 114.69V72h46.69a8 8 0 0 0 7.23-11.43a20 20 0 1 1 36.16 0A8 8 0 0 0 161.31 72H208v32.23a35.7 35.7 0 0 0-6.62-.14A36 36 0 0 0 204 176a35 35 0 0 0 4-.22Z"
+                                        ></path></svg
                                     >
-                                        <path
-                                            d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
-                                        ></path>
-                                    </svg>
-                                    <p>Camino DevRel</p>
+                                    <p>Projectos</p>
                                 </div>
                             </a>
                         </li>
@@ -141,7 +136,7 @@ const communities = (await getCollection("communities")).sort((a, b) => {
             </p>
             <!-- TODO: Mesanry layout -->
             <div
-                class="grid gap-6 md:gap-4 grid-cols-[repeat(auto-fit,minmax(min(325px,100%),1fr))]"
+                class="grid grid-cols-[repeat(auto-fit,minmax(min(325px,100%),1fr))] gap-6 md:gap-4"
             >
                 {communities.map((c) => <CommunityCard {...c} />)}
             </div>
