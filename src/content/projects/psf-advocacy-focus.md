@@ -6,6 +6,12 @@ items:
 - group: people-from-psf-interviews
   title: 'People From PSF: Interview Series'
   image: '../../images/projects/psf-advocacy-focus/people-from-psf-interviews/Thumbnail.png'
+- title: 'Board Office Hours'
+  url: 'https://docs.google.com/document/d/1mF0nuF5eD5-BtxK7ExkiwE4IVyQDWmMHWqxe0Gd6K5E/edit?usp=sharing'
+  image: '../../images/projects/psf-board-office-hours.png'
+- title: 'Grants Program Office Hours'
+  url: 'https://docs.google.com/document/d/13jGCtT87mWRcaLbkCA4IjaUHxU9sHJjA7-fzjvB6RV4/edit?usp=sharing'
+  image: '../../images/projects/psf-grants-program-office-hours.png'
 ---
 
 Como miembro del Board de Directores de la Python Software Foundation (PSF)

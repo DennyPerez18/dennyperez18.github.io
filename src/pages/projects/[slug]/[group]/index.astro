@@ -12,8 +12,8 @@ export const getStaticPaths = async () => {
         .flatMap(({ data, slug }) =>
             data.items.map((item) => ({ ...item, slug })),
         )
+        .filter((data) => "group" in data)
         .map((data) => {
-            if (!("group" in data)) return;
             const cards = posts
                 .filter(({ slug }) => slug.includes(data.group))
                 .map((post) => ({
