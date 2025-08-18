@@ -1,5 +1,5 @@
 ---
-title: "People from PSF: Meet Deb Nicholson"
+title: "Meet Deb Nicholson"
 image: "../../../../images/projects/psf-advocacy-focus/people-from-psf-interviews/Deb.png"
 ---
 

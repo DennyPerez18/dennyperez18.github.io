@@ -1,5 +1,5 @@
 ---
-title: "People from PSF: Meet Olivia Sauls"
+title: "Meet Olivia Sauls"
 image: "../../../../images/projects/psf-advocacy-focus/people-from-psf-interviews/Olivia.png"
 ---
 

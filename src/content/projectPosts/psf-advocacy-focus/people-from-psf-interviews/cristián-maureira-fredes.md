@@ -1,8 +1,6 @@
 ---
-title: "People from PSF: Meet Cristián Maureira-Fredes"
-image:
-    "../../../../images/projects/psf-advocacy-focus/people-from-psf-interviews/Cristian
-    Maureira.png"
+title: "Meet Cristián Maureira-Fredes"
+image: "../../../../images/projects/psf-advocacy-focus/people-from-psf-interviews/Cristian.png"
 ---
 
 Welcome to our "People from PSF" interview series! In this series, we introduce

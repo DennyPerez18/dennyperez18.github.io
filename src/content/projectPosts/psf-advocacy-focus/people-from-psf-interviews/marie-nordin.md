@@ -1,5 +1,5 @@
 ---
-title: "People from PSF: Meet Marie Nordin"
+title: "Meet Marie Nordin"
 image: "../../../../images/projects/psf-advocacy-focus/people-from-psf-interviews/Marie.png"
 ---
 

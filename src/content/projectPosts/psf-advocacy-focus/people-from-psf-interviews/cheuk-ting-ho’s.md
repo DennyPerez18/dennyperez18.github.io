@@ -1,5 +1,5 @@
 ---
-title: "People from PSF: Meet Cheuk Ting Ho"
+title: "Meet Cheuk Ting Ho"
 image: "../../../../images/projects/psf-advocacy-focus/people-from-psf-interviews/Cheuk.png"
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "People from PSF: Meet Christopher Neugebauer"
+title: "Meet Christopher Neugebauer"
 image: "../../../../images/projects/psf-advocacy-focus/people-from-psf-interviews/Christopher.png"
 ---
 

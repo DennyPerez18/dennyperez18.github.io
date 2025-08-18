@@ -1,5 +1,5 @@
 ---
-title: "People from PSF: Meet Phyllis A. Dobbs"
+title: "Meet Phyllis A. Dobbs"
 image: "../../../../images/projects/psf-advocacy-focus/people-from-psf-interviews/Phyllis.png"
 ---
 
