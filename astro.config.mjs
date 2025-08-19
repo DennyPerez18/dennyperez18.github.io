@@ -5,6 +5,11 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
+    markdown: {
+        shikiConfig: {
+            theme: "catppuccin-latte",
+        },
+    },
     site: "https://dennyperez.dev/",
     integrations: [mdx(), sitemap(), tailwind()],
 });

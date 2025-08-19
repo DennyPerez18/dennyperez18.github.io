@@ -34,8 +34,7 @@ ideal para:
 
 ## **Paso a Paso: Crea tu Primer Sitio Web con GitHub Pages**
 
-1.  **Crea un repositorio en GitHub  
-    **
+1.  **Crea un repositorio en GitHub**
 
     -   Accede a tu cuenta de GitHub y haz clic en el botón "+" en la esquina
         superior derecha.
@@ -47,8 +46,7 @@ ideal para:
     -   Asegúrate de marcar la opción "Add a README file" para incluir un
         archivo inicial.
 
-2.  **Crea un archivo HTML simple  
-    **
+2.  **Crea un archivo HTML simple**
 
     -   En tu repositorio, haz clic en "Add file \> Create new file".
 
@@ -56,34 +54,24 @@ ideal para:
 
     -   Agrega el siguiente contenido:
 
-\<!DOCTYPE html\>
-
-\<html lang="es"\>
-
-\<head\>
-
-\<meta charset="UTF-8"\>
-
-\<meta name="viewport" content="width=device-width, initial-scale=1.0"\>
-
-\<title\>Mi Primer Sitio Web\</title\>
-
-\</head\>
-
-\<body\>
-
-\<h1\>¡Hola, mundo!\</h1\>
-
-\<p\>Este es mi primer sitio web creado usando GitHub Pages.\</p\>
-
-\</body\>
-
-\</html\>
+```html
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primer Sitio Web</title>
+  </head>
+  <body>
+    <h1>¡Hola, mundo!</h1>
+    <p>Este es mi primer sitio web creado usando GitHub Pages.</p>
+  </body>
+</html>
+```
 
 -   Haz clic en **Commit new file** para guardar el archivo.
 
-3.  **Habilita GitHub Pages  
-    **
+3.  **Habilita GitHub Pages**
 
     -   Ve a la pestaña **Settings** de tu repositorio.
 
@@ -94,8 +82,7 @@ ideal para:
     -   GitHub generará una URL para tu sitio, algo como
         https://tuusuario.github.io/mi-sitio-web/.
 
-4.  **Visita tu sitio web  
-    **
+4.  **Visita tu sitio web**
 
     -   Copia y pega la URL proporcionada en tu navegador. ¡Tu sitio web
         estático ahora está en línea!
@@ -112,32 +99,28 @@ Para mejorar el diseño de tu sitio, puedes agregar un archivo CSS:
 
     -   Agrega el siguiente contenido:
 
+```css
 body {
-
-font-family: Arial, sans-serif;
-
-background-color: \#f0f8ff;
-
-color: \#333;
-
-text-align: center;
-
-margin: 20px;
-
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  text-align: center;
+  margin: 20px;
 }
 
 h1 {
-
-color: \#4682b4;
-
+  color: #4682b4;
 }
+```
 
 2.  **Conecta el CSS al HTML**
 
     -   Edita el archivo index.html y agrega esta línea dentro de la etiqueta
-        \<head\>:
+        `<head>`:
 
-\<link rel="stylesheet" href="styles.css"\>
+```html
+<link rel="stylesheet" href="styles.css">
+```
 
 3.  **Guarda los cambios y revisa tu sitio**
 
