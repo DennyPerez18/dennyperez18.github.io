@@ -1,8 +1,9 @@
 ---
-import ProjectHeading from "../../../components/ProjectHeading.astro";
+import ProjectDesc from "../../../components/ProjectDesc.astro";
 import Base from "../../../layouts/Base.astro";
 import CardGrid from "../../../layouts/CardGrid.astro";
 
+import { Image } from "astro:assets";
 import type { ComponentProps } from "astro/types";
 import { type CollectionEntry, getCollection } from "astro:content";
 
@@ -48,7 +49,19 @@ const props = Astro.props;
 
 <Base title={props.data.title}>
     <main>
-        <ProjectHeading {...props} />
+        <section class="space-y-5 md:space-y-8">
+            <h1
+                class="px-2 text-center font-['Montserrat'] text-2xl font-bold md:text-4xl"
+            >
+                {props.data.title}
+            </h1>
+            <Image
+                class="mx-auto md:container md:max-w-screen-xl"
+                src={props.data.banner}
+                alt={props.data.title}
+            />
+            <ProjectDesc project={props} />
+        </section>
         <hr class="mx-auto mt-4 max-w-screen-xl" />
         <CardGrid items={props.items} />
     </main>
