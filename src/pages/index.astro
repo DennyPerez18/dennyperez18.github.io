@@ -1,29 +1,13 @@
 ---
 import Container from "../components/Container.astro";
-import CommunityCard from "../components/CommunityCard.astro";
 import Base from "../layouts/Base.astro";
 import { SITE_TITLE } from "../consts";
 
 import { Image } from "astro:assets";
-import { getCollection } from "astro:content";
 
 import "@fontsource/montserrat/900.css";
 import heroAvatar from "../images/heroAvatar.jpg";
 import miniAvatar from "../images/miniAvatar.png";
-
-const communities = (await getCollection("communities")).sort((a, b) => {
-    const startDiff = b.data.years.start - a.data.years.start;
-    if (startDiff != 0) return startDiff;
-
-    let aEnd;
-    let bEnd;
-    if (a.data.years.end == "Actual") aEnd = 9999;
-    else aEnd = a.data.years.end;
-    if (b.data.years.end == "Actual") bEnd = 9999;
-    else bEnd = b.data.years.end;
-
-    return +bEnd - +aEnd;
-});
 
 // TODO: use `astro-icon`.
 // TODO: Flow component (`<T class="space-y-5 md:space-y-8">`).
@@ -36,8 +20,8 @@ const communities = (await getCollection("communities")).sort((a, b) => {
 ---
 
 <Base title={SITE_TITLE}>
-    <main class="bg-slate-200 text-center">
-        <Container class="max-w-screen-xl lg:py-[11vh]">
+    <main class="flex flex-1 items-center bg-slate-200 text-center">
+        <Container class="max-w-screen-xl">
             <div
                 class="grid grid-cols-1 items-center justify-items-center gap-3 lg:grid-cols-2"
             >
@@ -76,7 +60,7 @@ const communities = (await getCollection("communities")).sort((a, b) => {
                         <li>
                             <a
                                 class="flex h-20 justify-center rounded-lg border-2 border-black transition hover:bg-white hover:text-black focus:bg-white focus:text-black lg:mx-10"
-                                href="#comunidades"
+                                href="/about#comunidades"
                             >
                                 <div
                                     class="flex items-center justify-center gap-2"
@@ -121,25 +105,4 @@ const communities = (await getCollection("communities")).sort((a, b) => {
             </div>
         </Container>
     </main>
-    <section>
-        <Container class="max-w-screen-xl space-y-4" usePy={false}>
-            <a href="#comunidades" name="comunidades">
-                <h2 class="pt-8 text-center text-3xl">Comunidades</h2>
-            </a>
-            <p class="prose-xl mx-auto pb-4 text-center sm:text-left">
-                He tenido el privilegio de colaborar activamente con diversas
-                comunidades tecnológicas que comparten mi pasión por el
-                aprendizaje, la inclusión y la colaboración. Estas experiencias
-                han sido clave para mi desarrollo profesional, permitiéndome
-                contribuir como mentora, organizadora y defensora de iniciativas
-                que fortalecen nuestras comunidades.
-            </p>
-            <!-- TODO: Mesanry layout -->
-            <div
-                class="grid grid-cols-[repeat(auto-fit,minmax(min(325px,100%),1fr))] gap-6 md:gap-4"
-            >
-                {communities.map((c) => <CommunityCard {...c} />)}
-            </div>
-        </Container>
-    </section>
 </Base>

@@ -1,0 +1,16 @@
+---
+type Props = {
+    title: string;
+    url: string;
+    description: string;
+    years?: string;
+};
+
+const { title, url, description, years } = Astro.props;
+---
+
+<li>
+    <a href={url}>{title}</a>
+    <span>: {description}</span>
+    {years && <span>({years})</span>}
+</li>

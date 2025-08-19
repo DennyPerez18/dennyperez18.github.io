@@ -1,24 +1,52 @@
 ---
-import Container from "../components/Container.astro";
 import Base from "../layouts/Base.astro";
-// import { Image } from "astro:assets";
-//
-// import aboutImg from "../images/about.png";
+import Container from "../components/Container.astro";
+import WorkReference from "../components/WorkReference.astro";
+
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+
+import "@fontsource/montserrat/900.css";
+import miniAvatar from "../images/aboutMeHeader.svg";
+
+const communities = await getCollection("communities");
+communities.sort((a, b) => {
+    const startDiff = b.data.years.start - a.data.years.start;
+    if (startDiff != 0) return startDiff;
+
+    let aEnd;
+    let bEnd;
+    if (a.data.years.end == "Actual") aEnd = 9999;
+    else aEnd = a.data.years.end;
+    if (b.data.years.end == "Actual") bEnd = 9999;
+    else bEnd = b.data.years.end;
+
+    return +bEnd - +aEnd;
+});
+
+const talks = await getCollection("talks");
+talks.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const conf = {
+    title: "Conferencias",
+    items: talks.filter(({ data }) => data.kind == "Conference"),
+};
+const pane = {
+    title: "Paneles Y Podcasts",
+    items: talks.filter(({ data }) => data.kind == "Panel"),
+};
+const meet = {
+    title: "Entrevistas Y Meetups",
+    items: talks.filter(({ data }) => data.kind == "Meetup"),
+};
 ---
 
 <Base title="About Me" description="Sobre mi">
     <main>
         <Container class="prose prose-xl" usePy={false}>
-            <h1 class="pt-3 text-center text-4xl">Sobre mi</h1>
-            <div class="flex justify-center gap-10">
-                <!-- FIXME: Doesn't work correctly -->
-                <!-- <Image -->
-                <!--     class="hidden xl:block w-[650px]" -->
-                <!--     src={aboutImg} -->
-                <!--     width={600} -->
-                <!--     alt="" -->
-                <!-- /> -->
-                <section class="max-w-[75ch] sm:text-justify">
+            <section>
+                <Image class="m-0 mb-12" src={miniAvatar} alt="Denny's Avatar" />
+                <div class="sm:text-justify">
                     <p>
                         Soy Denny Pérez, Analista de Calidad de Software en <a
                             href="https://nventive.com/en/">Nventive</a
@@ -66,13 +94,61 @@ import Base from "../layouts/Base.astro";
                         inclusivo y colaborativo, tanto en la tecnología como en
                         la vida cotidiana.
                     </p>
-                    <p>
-                        Aqui puedes ver el <a href="/#comunidades"
-                            >trabajo comunitario</a
-                        > en el que he estado involucrada.
-                    </p>
-                </section>
-            </div>
+                </div>
+            </section>
+            <section>
+                <a class="no-underline" href="#comunidades" name="comunidades">
+                    <h2 class="text-center font-['Montserrat'] text-4xl">
+                        Comunidades
+                    </h2>
+                </a>
+                <p class="prose-xl mx-auto pb-4 text-center sm:text-left">
+                    He tenido el privilegio de colaborar activamente con
+                    diversas comunidades tecnológicas que comparten mi pasión
+                    por el aprendizaje, la inclusión y la colaboración. Estas
+                    experiencias han sido clave para mi desarrollo profesional,
+                    permitiéndome contribuir como mentora, organizadora y
+                    defensora de iniciativas que fortalecen nuestras
+                    comunidades.
+                </p>
+                <ul>
+                    {
+                        communities.map(
+                            ({ id: title, data: { url, role, years } }) => (
+                                <WorkReference
+                                    title={title}
+                                    url={url}
+                                    description={role}
+                                    years={`${years.start}`}
+                                />
+                            ),
+                        )
+                    }
+                </ul>
+            </section>
+            <section>
+                <h2 class="text-center font-['Montserrat'] text-4xl">
+                    Charlas Y Eventos
+                </h2>
+                {
+                    [conf, pane, meet].map((talks) => (
+                        <>
+                            <h3 class="font-['Montserrat']">{talks.title}</h3>
+                            <ul>
+                                {talks.items.map(
+                                    ({ id: title, data: { url, place } }) => (
+                                        <WorkReference
+                                            title={title}
+                                            url={url}
+                                            description={place}
+                                        />
+                                    ),
+                                )}
+                            </ul>
+                        </>
+                    ))
+                }
+            </section>
         </Container>
     </main>
 </Base>
