@@ -5,9 +5,8 @@ years = "2023 - Actual"
 url = "https://pyfound.blogspot.com/2023/06/announcing-2023-psf-board-election.html"
 icon = "../images/communities/psf.png"
 description = """
-La Python Software Foundation es una organización sin fines de lucro dedicada \
-a promover la tecnología de código abierto relacionada con el lenguaje de \
-programación Python."""
+Organización sin fines de lucro dedicada a promover Python y su ecosistema de \
+software libre y de código abierto en todo el mundo."""
 
 [[communities]]
 id = "PyCascades"
@@ -16,10 +15,8 @@ years = "2022 - Actual"
 url = "https://pycascades.com/"
 icon = "../images/communities/PyCascades.png"
 description = """
-PyCascades es una conferencia regional de PyCon en el noroeste del Pacífico, \
-que celebra a la comunidad de desarrolladores y usuarios de Python de la costa \
-oeste. El equipo organizador incluye miembros de los grupos de usuarios de Python \
-en Vancouver, Seattle, Portland y Montreal."""
+Conferencia regional en el noroeste del Pacífico que une a comunidades de \
+Python de Vancouver, Seattle, Portland y Montreal."""
 
 [[communities]]
 id = "Python en Español"
@@ -28,10 +25,8 @@ years = "2021 - Actual"
 url = "https://hablemospython.dev/"
 icon = "../images/communities/PythonEn Español.png"
 description = """
-Python en Español es una iniciativa que nació del esfuerzo de personas de \
-países hispanohablantes para generar un lugar central donde se puede encontrar \
-canales con actividades, recursos, consejos, conferencias, meetups, noticias, \
-proyectos y mucho más temas relacionados a Python."""
+Iniciativa que reúne a la comunidad hispanohablante para compartir recursos, \
+conferencias, proyectos y actividades sobre Python."""
 
 [[communities]]
 id = "PyConUS Charlas"
@@ -40,10 +35,8 @@ years = "2022 - Actual"
 url = "https://us.pycon.org/2024/speaking/charlas/"
 icon = "../images/communities/pycon charlas.jpeg"
 description = """
-Las PyCon US Charlas son un track de 2 días completos de charlas en Español \
-abierto a toda la comunidad, que tiene lugar cada año en PyCon US. PyCon US \
-Charlas will showcase Spanish-speaking Pythonistas by giving them space at the \
-world’s largest PyCon to give and hear talks in Spanish."""
+Track de 2 días en PyCon US dedicado a charlas en español, destacando a \
+Pythonistas hispanohablantes en la conferencia más grande de Python."""
 
 [[communities]]
 id = "Python Chile"
@@ -52,10 +45,8 @@ years = "2021 - Actual"
 url = "https://pythonchile.cl/"
 icon = "../images/communities/Python Chile.png"
 description = """
-Nuestro objetivo es ser el lugar de encuentro de todos los entusiastas de Python \
-a lo largo Chile, fortaleciendo a los miembros de la comunidad para generar un \
-impacto positivo en el desarrollo de Python a nivel nacional y mundial. Esta \
-comunidad organiza 2 conferencias y varios eventos educativos al año."""
+Comunidad que organiza conferencias y eventos educativos, buscando impactar el \
+desarrollo de Python en Chile y a nivel mundial."""
 
 [[communities]]
 id = "PyLatam"
@@ -64,9 +55,8 @@ years = "2020 - Actual"
 url = "https://pylatam.org/"
 icon = "../images/communities/PyLatam.png"
 description = """
-PyCon Latam es una versión de PyconUS que tiene como objetivo reunir a los \
-desarrolladores de Python de toda América Latina e interactuar con la comunidad \
-de Python en general."""
+Conferencia latinoamericana que reúne a desarrolladores de Python de la región \
+y fomenta la conexión con la comunidad global."""
 
 [[communities]]
 id = "PyLadies Santiago"
@@ -75,9 +65,8 @@ years = "2021 - Actual"
 url = "https://www.meetup.com/pyladies-santiago-de-chile/"
 icon = "../images/communities/Pyladies Santiago Chile.png"
 description = """
-Comunidad Pyladies de la ciudad Santiago de Chile, enfocada en promover la \
-participación y el incremento de más mujeres a la tecnología y el código con \
-Python."""
+Capítulo en Santiago de Chile que promueve la participación de más mujeres en \
+tecnología y programación con Python."""
 
 [[communities]]
 id = "PyLadies Santo Domingo"
@@ -86,9 +75,8 @@ years = "2023 - Actual"
 url = "https://www.meetup.com/pyladiessdq/"
 icon = "../images/communities/PyLadies Santo Domingo.png"
 description = """
-Comunidad Pyladies de la ciudad Santo Domingo, RD, enfocada en promover la \
-participación y el incremento de más mujeres a la tecnología y el código con \
-Python."""
+Capítulo en Santo Domingo, RD, que fomenta la participación y el crecimiento \
+de mujeres en la tecnología y el código con Python."""
 
 [[communities]]
 id = "PyLadies Montreal"
@@ -97,9 +85,8 @@ years = "2023 - Actual"
 url = "https://www.meetup.com/pyladiesmtl/"
 icon = "../images/communities/PyLadies Montreal.jpg"
 description = """
-El capítulo de PyLadies en Montreal es un grupo internacional enfocado en \
-incentivar la participación de más mujeres en la comunidad de Python y en la \
-programación."""
+Capítulo internacional en Montreal que impulsa la inclusión de más mujeres en \
+la comunidad de Python y la programación."""
 
 [[communities]]
 id = "PyLadiesCon"
@@ -108,11 +95,8 @@ years = "2023 - Actual"
 url = "https://conference.pyladies.com/"
 icon = "../images/communities/PyLadiesCon.svg"
 description = """
-PyLadiesCon es una conferencia organizada por PyLadies enfocada en empoderar a \
-mujeres y personas no binarias dentro de la comunidad de Python. Ofrece un \
-espacio inclusivo para compartir conocimientos, crear redes y colaborar a \
-través de charlas, talleres y paneles, con el objetivo de aumentar la \
-diversidad y representación en la tecnología."""
+Conferencia global de PyLadies que empodera a mujeres y personas no binarias en \
+Python con charlas, talleres y paneles inclusivos."""
 
 [[communities]]
 id = "Python Montreal"
@@ -121,10 +105,8 @@ years = "2024 - Actual"
 url = "https://montrealpython.org/"
 icon = "../images/communities/Python Montreal.png"
 description = """
-Python Montreal, es una iniciativa cuya misión es fomentar una comunidad de \
-entusiastas de Python en Montreal, haciendo que la programación en Python sea \
-accesible para todos y promoviendo la responsabilidad social en todas nuestras \
-actividades."""
+Iniciativa que fomenta la comunidad Python en Montreal, promoviendo \
+accesibilidad, aprendizaje y responsabilidad social."""
 
 [[communities]]
 id = "GitTogethers" 
@@ -133,7 +115,5 @@ years = "2023 - Actual"
 url = "https://github.com/gittogethers"
 icon = "../images/communities/GitTogether.png"
 description = """
-GitTogethers es una organización que promueve eventos y colaboraciones liderados \
-por la comunidad dentro del ecosistema de GitHub. El objetivo es reunir a \
-desarrolladores, entusiastas del código abierto y comunidades tecnológicas \
-para aprender, compartir y crear algo increíble."""
+Organización que impulsa eventos y colaboraciones en GitHub, reuniendo a \
+desarrolladores y comunidades para aprender y crear."""

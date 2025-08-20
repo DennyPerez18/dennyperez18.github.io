@@ -1,0 +1,51 @@
+---
+import Base from "../layouts/Base.astro";
+import Container from "../components/Container.astro";
+import CommunityCard from "../components/CommunityCard.astro";
+
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+
+import communityHeader from "../images/communityHeader.png";
+
+const communities = await getCollection("communities");
+communities.sort((a, b) => {
+    const startDiff = b.data.years.start - a.data.years.start;
+    if (startDiff != 0) return startDiff;
+
+    let aEnd;
+    let bEnd;
+    if (a.data.years.end == "Actual") aEnd = 9999;
+    else aEnd = a.data.years.end;
+    if (b.data.years.end == "Actual") bEnd = 9999;
+    else bEnd = b.data.years.end;
+
+    return +bEnd - +aEnd;
+});
+---
+
+<Base title="Community">
+    <main class="space-y-8">
+        <Image
+            class="mx-auto md:container md:max-w-(--breakpoint-xl)"
+            src={communityHeader}
+            alt="Community Header"
+        />
+        <Container class="max-w-(--breakpoint-xl) space-y-8" usePy={false}>
+            <p class="prose md:prose-xl max-w-fit">
+                He tenido el privilegio de colaborar activamente con diversas
+                comunidades tecnológicas que comparten mi pasión por el
+                aprendizaje, la inclusión y la colaboración. Estas experiencias
+                han sido clave para mi desarrollo profesional, permitiéndome
+                contribuir como mentora, organizadora y defensora de iniciativas
+                que fortalecen nuestras comunidades.
+            </p>
+            <!-- TODO: Mesanry -->
+            <div
+                class="mb-4 grid grid-cols-[repeat(auto-fit,minmax(min(325px,100%),1fr))] gap-6"
+            >
+                {communities.map((props) => <CommunityCard {...props} />)}
+            </div>
+        </Container>
+    </main>
+</Base>
