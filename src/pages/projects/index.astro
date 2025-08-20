@@ -24,7 +24,7 @@ const projects = (await getCollection("projects")).sort(
                             </h1>
                             <a class="block" href={`/projects/${props.slug}`}>
                                 <Image
-                                    class="mx-auto transition-all duration-500 ease-in md:container hover:scale-[1.01] md:max-w-screen-xl"
+                                    class="mx-auto transition-all duration-500 ease-in md:container hover:scale-[1.01] md:max-w-(--breakpoint-xl)"
                                     src={props.data.banner}
                                     alt={props.data.title}
                                 />

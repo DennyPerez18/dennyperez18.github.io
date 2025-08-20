@@ -56,13 +56,13 @@ const props = Astro.props;
                 {props.data.title}
             </h1>
             <Image
-                class="mx-auto md:container md:max-w-screen-xl"
+                class="mx-auto md:container md:max-w-(--breakpoint-xl)"
                 src={props.data.banner}
                 alt={props.data.title}
             />
             <ProjectDesc project={props} />
         </section>
-        <hr class="mx-auto mt-4 max-w-screen-xl" />
+        <hr class="mx-auto mt-4 max-w-(--breakpoint-xl)" />
         <CardGrid items={props.items} />
     </main>
 </Base>

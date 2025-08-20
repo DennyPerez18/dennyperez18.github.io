@@ -21,12 +21,12 @@ import miniAvatar from "../images/miniAvatar.png";
 
 <Base title={SITE_TITLE}>
     <main class="flex flex-1 items-center bg-slate-200 text-center">
-        <Container class="max-w-screen-xl">
+        <Container class="max-w-(--breakpoint-xl)">
             <div
                 class="grid grid-cols-1 items-center justify-items-center gap-3 lg:grid-cols-2"
             >
                 <Image
-                    class="aspect-square rounded-full object-cover object-[center,10%]"
+                    class="aspect-square rounded-full object-cover object-[center_10%]"
                     width={500}
                     src={heroAvatar}
                     alt="Denny's Image"
@@ -38,11 +38,11 @@ import miniAvatar from "../images/miniAvatar.png";
                     <p class="mb-3 text-2xl font-light">
                         QA Analyst - Python Community Manager
                     </p>
-                    <hr class="mx-16 mb-5 border-black" />
+                    <hr class="mx-16 mb-5" />
                     <ul class="space-y-5 text-xl">
                         <li>
                             <a
-                                class="flex h-20 justify-center rounded-lg border-2 border-black transition hover:bg-white hover:text-black focus:bg-white focus:text-black lg:mx-10"
+                                class="flex h-20 justify-center rounded-lg border-2 transition hover:bg-white hover:text-black focus:bg-white focus:text-black lg:mx-10"
                                 href="/about"
                             >
                                 <div
@@ -59,7 +59,7 @@ import miniAvatar from "../images/miniAvatar.png";
                         </li>
                         <li>
                             <a
-                                class="flex h-20 justify-center rounded-lg border-2 border-black transition hover:bg-white hover:text-black focus:bg-white focus:text-black lg:mx-10"
+                                class="flex h-20 justify-center rounded-lg border-2 transition hover:bg-white hover:text-black focus:bg-white focus:text-black lg:mx-10"
                                 href="/about#comunidades"
                             >
                                 <div
@@ -80,7 +80,7 @@ import miniAvatar from "../images/miniAvatar.png";
                         </li>
                         <li>
                             <a
-                                class="flex h-20 justify-center rounded-lg border-2 border-black transition hover:bg-white hover:text-black focus:bg-white focus:text-black lg:mx-10"
+                                class="flex h-20 justify-center rounded-lg border-2 transition hover:bg-white hover:text-black focus:bg-white focus:text-black lg:mx-10"
                                 href="/projects"
                             >
                                 <div

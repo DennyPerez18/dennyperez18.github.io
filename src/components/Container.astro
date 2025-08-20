@@ -11,7 +11,7 @@ const { usePy, class: className } = Astro.props;
 
 <div
     class={cx([
-        "container mx-auto max-w-screen-lg px-8 xl:px-5",
+        "container mx-auto max-w-(--breakpoint-lg) px-8 xl:px-5",
         (usePy ?? true) && "py-5 lg:py-8",
         className,
     ])}

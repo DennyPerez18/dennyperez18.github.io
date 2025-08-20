@@ -15,7 +15,7 @@ const { project, summarize } = Astro.props;
 const { Content } = await project.render();
 ---
 
-<Container class="max-w-screen-xl" usePy={false}>
+<Container class="max-w-(--breakpoint-xl)" usePy={false}>
     <div
         class={cx([
             "prose md:prose-xl md:max-w-full",
