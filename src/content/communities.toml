@@ -117,3 +117,13 @@ icon = "../images/communities/GitTogether.png"
 description = """
 Organización que impulsa eventos y colaboraciones en GitHub, reuniendo a \
 desarrolladores y comunidades para aprender y crear."""
+
+[[communities]]
+id = "PyLadies En Español"
+role = "Co-Organizadora"
+years = "2022 - Actual"
+url = "https://hablemospython.dev/pyladies.html"
+icon = "../images/communities/Logo PyLadies en Español transparente.png"
+description = """
+Comunidad que empodera a mujeres en tecnología, impulsando capítulos en \
+países hispanohablantes con apoyo, colaboración y recursos compartidos."""
