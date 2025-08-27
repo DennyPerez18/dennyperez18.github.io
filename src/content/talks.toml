@@ -2,28 +2,24 @@
 id = "Colaborando con la Comunidad Python a través de la PSF"
 place = "Python Brasil 2021"
 date = "Oct 24 2021"
-url = "https://youtu.be/5YsdjfWhwOU?si=Ji8PC1iOn121zKsA"
 kind = "Conference"
 
 [[talks]]
 id = "Gestionando Comunidades Python: Creando y Manteniendo Espacios Colaborativos en Open Source"
 place = "PyCon Panamá 2024"
 date = "Oct 18 2024"
-url = "https://www.linkedin.com/posts/pythonpanama_pyconpanama2024-pycon-panama-activity-7252189551446650880-fV2-?utm_source=share&utm_medium=member_desktop"
 kind = "Conference"
 
 [[talks]]
 id = "Uniendo a las comunidades hispanohablantes de Python"
 place = "PyConUS 2022"
 date = "May 24 2022"
-url = "https://youtu.be/Vc0GW3nuODY?si=nkmJYBVNf0hM3wYq"
 kind = "Conference"
 
 [[talks]]
 id = "PyCon Colombia - Organizing Snakes"
 place = "PyCon Colombia 2024"
 date = "Oct 07 2024"
-url = "https://youtu.be/wnJvr8VRjwA?si=sVPOUDW4RAUdIjxc"
 kind = "Conference"
 
 # Podcasts & Panels
@@ -32,63 +28,54 @@ kind = "Conference"
 id = "Denny Perez on her journey into the Python Community"
 place = "Sad Python Girls Club Podcast"
 date = "Dec 06 2024"
-url = "https://open.spotify.com/episode/2tg7YqFOubyqLhIeDGDhvz?si=909nJaNoQXGTH3ASLwAx-w"
 kind = "Panel"
 
 [[talks]]
 id = "Denny Pérez: De contadora a coder, creando comunidades e inspirando mujeres"
 place = "Free CodeCamp En Español Podcast"
 date = "Jun 07 2024"
-url = "https://youtu.be/8O0injcz1pc?si=t1BKLrg9Ac82iIXt"
 kind = "Panel"
 
 [[talks]]
 id = "Denny Perez: Desarrollé el liderazgo en las comunidades"
 place = "BitaBit Podcast"
 date = "Aug 29 2023"
-url = "https://youtu.be/_PUN0oFUVBM?si=B1dY3i4tAIwB5D2T"
 kind = "Panel"
 
 [[talks]]
 id = "Lo mejor de Visual Studio Code Day 2022"
 place = "Microsoft Reactor"
 date = "Mar 16 2022"
-url = "https://www.youtube.com/live/RHJYSs0b5h8?si=XA-a4EEBG30mg8kg"
 kind = "Panel"
 
 [[talks]]
 id = "Panel PyLadies Chile"
 place = "PyCon Chile 2023"
 date = "Feb 03 2023"
-url = "https://youtu.be/b1hk6a1CzPg?si=bVxKmsRVtR0kMKC2"
 kind = "Panel"
 
 [[talks]]
 id = "PyLadies: Conmemorando el dia de la Mujer"
 place = "PyLadies Santiago Chile"
 date = "Mar 25 2023"
-url = "https://www.youtube.com/live/Kgc2aQsDTmo?si=MLAJvrnk5j46TXMM&t=4120"
 kind = "Panel"
 
 [[talks]]
 id = "Python en Acción con Denny Perez"
 place = "Charlas Tecnicas AWS Podcast"
 date = "Nov 05 2024"
-url = "https://open.spotify.com/episode/6cENDFevhoClCSIk3d323r?si=f99_fur7RVG7vBzKyHDyPQ"
 kind = "Panel"
 
 [[talks]]
 id = "Panel PyLadies: Un futuro acelerado: Igualdad de Genero e Inteligencia Artificial"
 place = "PyCon Colombia 2024"
 date = "Nov 25 2024"
-url = "https://youtu.be/VZ6Bs1EcxQ4?si=Oyj_Mt5lOq6LNaHH"
 kind = "Panel"
 
 [[talks]]
 id = "Community Organizers Summit"
 place = "PyConUS 2024"
 date = "May 18 2024"
-url = "https://us.pycon.org/2024/events/hatchery/community-organizers-summit/"
 kind = "Panel"
 
 # Meetups & Interviews
@@ -97,33 +84,28 @@ kind = "Panel"
 id = "Open Source con GitHub & Python: Oportunidades para Contribuir y Crecer en Comunidad"
 place = "PyLadies Colombia"
 date = "Oct 5 2024"
-url = "https://www.youtube.com/live/aTZ5JRhSpJE?si=ydxVw1ixHVUZvrQP"
 kind = "Meetup"
 
 [[talks]]
 id = "El poder de la comunidad en Python con Denny Pérez"
 place = "Código Facilito"
 date = "Mar 08 2023"
-url = "https://www.youtube.com/live/lsvniwS5dTc?si=NETNLUOQmr59Ullz"
 kind = "Meetup"
 
 [[talks]]
 id = "¿Cómo empezar con Python?"
 place = "Dominicode"
 date = "Oct 28 2020"
-url = "https://www.youtube.com/live/N5Vsdie-RfA?si=FJJeBiqqcthT4U_m"
 kind = "Meetup"
 
 [[talks]]
 id = "PyDev of the Week: Denny Perez"
 place = "Mouse & Python by Mike"
 date = "Jun 06 2022"
-url = "https://www.blog.pythonlibrary.org/2022/06/06/pydev-of-the-week-denny-perez/"
 kind = "Meetup"
 
 [[talks]]
 id = "Python Day: Todo lo que necesitas saber para votar en las Elecciones de PSF"
 place = "Python Nicaragua"
 date = "May 27 2021"
-url = "https://www.youtube.com/live/Rvm6cFMwGe0?si=XgurSz5mVa3GDZe5&t=2869"
 kind = "Meetup"

@@ -84,7 +84,6 @@ const talks = defineCollection({
     schema: z.object({
         place: z.string(),
         date: z.coerce.date(),
-        url: z.string().url(),
         kind: z.enum(["Conference", "Panel", "Meetup"]),
     }),
 });

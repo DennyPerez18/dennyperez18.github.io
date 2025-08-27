@@ -100,10 +100,9 @@ const meet = {
                             <h3 class="font-['Montserrat']">{talks.title}</h3>
                             <ul>
                                 {talks.items.map(
-                                    ({ id: title, data: { url, place } }) => (
+                                    ({ id: title, data: { place } }) => (
                                         <WorkReference
                                             title={title}
-                                            url={url}
                                             description={place}
                                         />
                                     ),
