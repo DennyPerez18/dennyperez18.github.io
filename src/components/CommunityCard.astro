@@ -12,9 +12,7 @@ const {
 ---
 
 <!-- TODO: A hover effect for both <section> and <a> would be cool. -->
-<section
-    class="space-y-1 rounded bg-slate-200 px-2 pb-2 shadow shadow-slate-400"
->
+<section class="space-y-1 rounded bg-(--clr-neutral-100) px-2 pb-2 shadow-md">
     <a href={url}>
         <div class="flex items-center justify-between gap-x-1">
             <div class="flex items-center gap-1 pt-2">
@@ -30,7 +28,9 @@ const {
             <!-- ri:share-box-line -->
             <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 fill-slate-500"
+                class="fill-(--clr-accent-700)"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
             >
                 <path
@@ -43,7 +43,7 @@ const {
             <p class="text-xs">{years.start} - {years.end}</p>
         </div>
     </a>
-    <hr class="border-slate-400" />
+    <hr class="mt-2 text-(--clr-accent-700)" />
     <p class="text-slate-800">
         {description}
     </p>

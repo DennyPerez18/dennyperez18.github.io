@@ -20,7 +20,9 @@ import MiniAvatar from "../images/miniAvatar.svg";
 ---
 
 <Base title={SITE_TITLE}>
-    <main class="flex flex-1 items-center bg-(--clr-neutral-100) text-center">
+    <main
+        class="flex flex-1 items-center bg-(--clr-neutral-100) text-center shadow-sm"
+    >
         <Container class="max-w-(--breakpoint-xl)">
             <div
                 class="grid grid-cols-1 items-center justify-items-center gap-3 lg:grid-cols-2"
@@ -38,9 +40,10 @@ import MiniAvatar from "../images/miniAvatar.svg";
                         Denny Pérez
                     </h1>
                     <p class="mb-3 text-2xl font-light">
-                        QA Analyst - Python Community Manager
+                        Software QA Analyst – Conference and Community Organizer
                     </p>
                     <hr class="mx-16 mb-5 text-(--clr-accent-700)" />
+                    <!-- FIXME: max-w-120 -->
                     <ul class="space-y-5 text-xl">
                         <li>
                             <a
