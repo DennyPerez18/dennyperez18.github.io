@@ -4,6 +4,7 @@
 :root {
     --clr-accent-200: hsl(278 35% 90%);
     --clr-accent-700: hsl(278 35% 62%);
+    --clr-accent-900: hsl(278 35% 50%);
 
     --clr-neutral-100: hsl(36 42% 95%);
 }
