@@ -2,7 +2,7 @@
 title: 'Conéctate y Aprende con la GitHub Education Community'
 pubDate: 'Feb 15 2024'
 heroImage: '../../images/blog/GitHub Education.png'
-categories: ['la escuelita de github']
+categories: ['La escuelita de Github']
 ---
 
 La tecnología no solo se trata de código, también se trata de las personas que

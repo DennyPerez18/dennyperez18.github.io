@@ -2,7 +2,7 @@
 title: 'Aprende y Colabora con GitHub Codespaces: Un Entorno Listo para Usar'
 pubDate: 'Apr 18 2024'
 heroImage: '../../images/blog/CodeSpace.png'
-categories: ['la escuelita de github']
+categories: ['La escuelita de Github']
 ---
 
 ¿Alguna vez has querido comenzar un proyecto sin perder tiempo configurando un

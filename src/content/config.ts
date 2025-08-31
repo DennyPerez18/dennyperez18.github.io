@@ -15,7 +15,9 @@ const blog = defineCollection({
             pubDate: z.coerce.date(),
             // TODO: Rename to `image`
             heroImage: image(),
+            // TODO: Rename to `tags`
             categories: z.string().array(),
+            // TODO: wordCount
         }),
 });
 

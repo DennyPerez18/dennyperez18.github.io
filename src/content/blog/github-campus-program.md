@@ -2,7 +2,7 @@
 title: 'Transforma tu Institución con el GitHub Campus Program'
 pubDate: 'Jul 18 2024'
 heroImage: '../../images/blog/Campus Program.png'
-categories: ['la escuelita de github']
+categories: ['La escuelita de Github']
 ---
 
 En la era digital, es esencial que las instituciones educativas proporcionen a
