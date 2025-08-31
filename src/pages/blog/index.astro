@@ -1,18 +1,32 @@
 ---
+import Container from "../../components/Container.astro";
+import FormattedDate from "../../components/FormattedDate.astro";
 import Base from "../../layouts/Base.astro";
-import CardGrid from "../../layouts/CardGrid.astro";
 
+import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 
-const blogColl = await getCollection("blog");
-blogColl.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-const posts = blogColl.map(({ slug, data: { title, heroImage, pubDate } }) => {
-    return { title, url: `/blog/${slug}`, image: heroImage, date: pubDate };
-});
+const blogs = await getCollection("blog");
+blogs.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
 <Base title="Denny's Blog" description="Welcome to my blog!">
     <main>
-        <CardGrid items={posts} />
+        <Container>
+            <ul
+                class="grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-3"
+            >
+                {
+                    blogs.map(({ slug, data: { heroImage, pubDate } }) => (
+                        <li class="flex flex-col gap-2 rounded border-2">
+                            <a href={`blog/${slug}`}>
+                                <Image src={heroImage} alt={""} />
+                            </a>
+                            <FormattedDate class="text-sm" date={pubDate} />
+                        </li>
+                    ))
+                }
+            </ul>
+        </Container>
     </main>
 </Base>
