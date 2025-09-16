@@ -6,34 +6,34 @@ import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 
 const projects = (await getCollection("projects")).sort(
-    (a, b) => a.data.order - b.data.order,
+  (a, b) => a.data.order - b.data.order,
 );
 ---
 
 <Base title="Projects">
-    <main>
-        <ul
-            class="grid justify-items-center gap-y-5 pb-14 pt-5 sm:pt-0 md:gap-y-14"
-        >
-            {
-                projects.map((props) => (
-                    <li>
-                        <section class="space-y-5 md:space-y-8">
-                            <h1 class="px-2 text-center font-['Montserrat'] text-2xl font-bold md:text-4xl">
-                                {props.data.title}
-                            </h1>
-                            <a class="block" href={`/projects/${props.slug}`}>
-                                <Image
-                                    class="mx-auto transition-all duration-500 ease-in md:container hover:scale-[1.01] md:max-w-(--breakpoint-xl)"
-                                    src={props.data.banner}
-                                    alt={props.data.title}
-                                />
-                            </a>
-                            <ProjectDesc project={props} summarize={true} />
-                        </section>
-                    </li>
-                ))
-            }
-        </ul>
-    </main>
+  <main>
+    <ul
+      class="grid justify-items-center gap-y-5 pt-5 pb-14 sm:pt-0 md:gap-y-14"
+    >
+      {
+        projects.map((props) => (
+          <li>
+            <section class="space-y-5 md:space-y-8">
+              <h1 class="px-2 text-center font-['Montserrat'] text-2xl font-bold md:text-4xl">
+                {props.data.title}
+              </h1>
+              <a class="block" href={`/projects/${props.slug}`}>
+                <Image
+                  class="mx-auto transition-all duration-500 ease-in hover:scale-[1.01] md:container md:max-w-(--breakpoint-xl)"
+                  src={props.data.banner}
+                  alt={props.data.title}
+                />
+              </a>
+              <ProjectDesc project={props} summarize={true} />
+            </section>
+          </li>
+        ))
+      }
+    </ul>
+  </main>
 </Base>

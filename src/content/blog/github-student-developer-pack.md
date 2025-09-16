@@ -1,8 +1,8 @@
 ---
-title: 'Descubre el GitHub Student Developer Pack'
-pubDate: 'Aug 15 2024'
-heroImage: '../../images/blog/Student developer Pack.png'
-categories: ['La escuelita de Github']
+title: "Descubre el GitHub Student Developer Pack"
+pubDate: "Aug 15 2024"
+heroImage: "../../images/blog/Student developer Pack.png"
+categories: ["La escuelita de Github"]
 ---
 
 Si eres estudiante y estás comenzando en el mundo de la programación, el
@@ -21,20 +21,20 @@ te permite experimentar y desarrollar proyectos sin preocuparte por los costos.
 
 **Beneficios destacados:**
 
--   **GitHub Pro:** Obtén características avanzadas como repositorios privados
-    ilimitados, insights detallados y funciones mejoradas para la colaboración.
+- **GitHub Pro:** Obtén características avanzadas como repositorios privados
+  ilimitados, insights detallados y funciones mejoradas para la colaboración.
 
--   **AWS Educate:** Aprende sobre computación en la nube y crea aplicaciones
-    escalables usando créditos gratuitos.
+- **AWS Educate:** Aprende sobre computación en la nube y crea aplicaciones
+  escalables usando créditos gratuitos.
 
--   **Canva Pro:** Diseña gráficos profesionales para tus proyectos o
-    presentaciones.
+- **Canva Pro:** Diseña gráficos profesionales para tus proyectos o
+  presentaciones.
 
--   **DigitalOcean:** Aloja tus aplicaciones o sitios web en la nube con
-    créditos gratuitos.
+- **DigitalOcean:** Aloja tus aplicaciones o sitios web en la nube con créditos
+  gratuitos.
 
--   **Educación continua:** Acceso a cursos, plataformas de aprendizaje, y
-    herramientas que fomentan tu desarrollo profesional.
+- **Educación continua:** Acceso a cursos, plataformas de aprendizaje, y
+  herramientas que fomentan tu desarrollo profesional.
 
 Además de estos beneficios, tendrás acceso a más de 100 herramientas y recursos
 que abarcan desde el desarrollo de software hasta el diseño, marketing y

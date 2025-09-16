@@ -8,10 +8,10 @@ type Props = ComponentProps<typeof Head>;
 ---
 
 <html lang="es" class="scroll-smooth">
-    <Head {...Astro.props} />
-    <body class="flex min-h-dvh flex-col">
-        <Header />
-        <slot />
-        <Footer />
-    </body>
+  <Head {...Astro.props} />
+  <body class="flex min-h-dvh flex-col">
+    <Header />
+    <slot />
+    <Footer />
+  </body>
 </html>

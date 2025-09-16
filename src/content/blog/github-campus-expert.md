@@ -1,8 +1,8 @@
 ---
-title: 'Conviértete en un GitHub Campus Expert'
-pubDate: 'Sep 19 2024'
-heroImage: '../../images/blog/Campus Experts.png'
-categories: ['La escuelita de Github']
+title: "Conviértete en un GitHub Campus Expert"
+pubDate: "Sep 19 2024"
+heroImage: "../../images/blog/Campus Experts.png"
+categories: ["La escuelita de Github"]
 ---
 
 Si eres estudiante universitario apasionado por la tecnología y quieres liderar
@@ -20,17 +20,17 @@ de eventos, comunicación efectiva y liderazgo comunitario.
 
 **Beneficios destacados:**
 
--   **Capacitación personalizada:** Aprende a liderar y gestionar comunidades
-    tecnológicas con recursos exclusivos.
+- **Capacitación personalizada:** Aprende a liderar y gestionar comunidades
+  tecnológicas con recursos exclusivos.
 
--   **Soporte y financiamiento:** Obtén recursos para organizar eventos en tu
-    campus, como hackathons, talleres o meetups.
+- **Soporte y financiamiento:** Obtén recursos para organizar eventos en tu
+  campus, como hackathons, talleres o meetups.
 
--   **Red global de expertos:** Conecta con otros Campus Experts de todo el
-    mundo para compartir ideas y colaborar en proyectos.
+- **Red global de expertos:** Conecta con otros Campus Experts de todo el mundo
+  para compartir ideas y colaborar en proyectos.
 
--   **Visibilidad:** Destácate como líder en la comunidad tecnológica de tu
-    universidad y más allá.
+- **Visibilidad:** Destácate como líder en la comunidad tecnológica de tu
+  universidad y más allá.
 
 ## **¿Por qué ser un GitHub Campus Expert?**
 

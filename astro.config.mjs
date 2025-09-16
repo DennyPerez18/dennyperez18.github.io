@@ -5,14 +5,14 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-    site: "https://dennyperez.dev/",
-    integrations: [mdx(), sitemap()],
-    markdown: {
-        shikiConfig: {
-            theme: "catppuccin-latte",
-        },
+  site: "https://dennyperez.dev/",
+  integrations: [mdx(), sitemap()],
+  markdown: {
+    shikiConfig: {
+      theme: "catppuccin-latte",
     },
-    vite: {
-        plugins: [tailwindcss()],
-    },
+  },
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });

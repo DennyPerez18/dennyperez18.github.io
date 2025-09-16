@@ -10,36 +10,36 @@ import { type CollectionEntry, getCollection } from "astro:content";
 type CardProps = ComponentProps<typeof CardGrid>;
 
 export async function getStaticPaths() {
-    const projects = await getCollection("projects");
-    const blog = await getCollection("blog");
+  const projects = await getCollection("projects");
+  const blog = await getCollection("blog");
 
-    return projects.map((project) => {
-        const showTitle = project.data.showItemTitles;
-        const cards = project.data.items.map((item) => {
-            if ("url" in item) return { ...item, showTitle };
-            if ("group" in item)
-                return {
-                    ...item,
-                    url: `/projects/${project.slug}/${item.group}`,
-                    showTitle,
-                };
-
-            const post = blog.find((post) => post.slug === item.blog.id)!;
-            return {
-                title: post.data.title,
-                url: `/blog/${post.slug}`,
-                image: post.data.heroImage,
-                showTitle,
-            };
-        });
-
-        project.data.items = [];
-
+  return projects.map((project) => {
+    const showTitle = project.data.showItemTitles;
+    const cards = project.data.items.map((item) => {
+      if ("url" in item) return { ...item, showTitle };
+      if ("group" in item)
         return {
-            params: { slug: project.slug },
-            props: { ...project, items: cards },
+          ...item,
+          url: `/projects/${project.slug}/${item.group}`,
+          showTitle,
         };
+
+      const post = blog.find((post) => post.slug === item.blog.id)!;
+      return {
+        title: post.data.title,
+        url: `/blog/${post.slug}`,
+        image: post.data.heroImage,
+        showTitle,
+      };
     });
+
+    project.data.items = [];
+
+    return {
+      params: { slug: project.slug },
+      props: { ...project, items: cards },
+    };
+  });
 }
 
 type Props = CollectionEntry<"projects"> & CardProps;
@@ -48,21 +48,21 @@ const props = Astro.props;
 ---
 
 <Base title={props.data.title}>
-    <main>
-        <section class="space-y-5 md:space-y-8">
-            <h1
-                class="px-2 text-center font-['Montserrat'] text-2xl font-bold md:text-4xl"
-            >
-                {props.data.title}
-            </h1>
-            <Image
-                class="mx-auto md:container md:max-w-(--breakpoint-xl)"
-                src={props.data.banner}
-                alt={props.data.title}
-            />
-            <ProjectDesc project={props} />
-        </section>
-        <hr class="mx-auto mt-4 border-gray-500 max-w-(--breakpoint-xl)" />
-        <CardGrid items={props.items} />
-    </main>
+  <main>
+    <section class="space-y-5 md:space-y-8">
+      <h1
+        class="px-2 text-center font-['Montserrat'] text-2xl font-bold md:text-4xl"
+      >
+        {props.data.title}
+      </h1>
+      <Image
+        class="mx-auto md:container md:max-w-(--breakpoint-xl)"
+        src={props.data.banner}
+        alt={props.data.title}
+      />
+      <ProjectDesc project={props} />
+    </section>
+    <hr class="mx-auto mt-4 max-w-(--breakpoint-xl) border-gray-500" />
+    <CardGrid items={props.items} />
+  </main>
 </Base>

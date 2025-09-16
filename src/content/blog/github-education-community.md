@@ -1,8 +1,8 @@
 ---
-title: 'Conéctate y Aprende con la GitHub Education Community'
-pubDate: 'Feb 15 2024'
-heroImage: '../../images/blog/GitHub Education.png'
-categories: ['La escuelita de Github']
+title: "Conéctate y Aprende con la GitHub Education Community"
+pubDate: "Feb 15 2024"
+heroImage: "../../images/blog/GitHub Education.png"
+categories: ["La escuelita de Github"]
 ---
 
 La tecnología no solo se trata de código, también se trata de las personas que
@@ -20,17 +20,17 @@ innovar.
 
 **Beneficios destacados:**
 
--   **Conexiones globales:** Conéctate con estudiantes y educadores de todo el
-    mundo para intercambiar ideas y proyectos.
+- **Conexiones globales:** Conéctate con estudiantes y educadores de todo el
+  mundo para intercambiar ideas y proyectos.
 
--   **Recursos educativos:** Accede a tutoriales, webinars y cursos diseñados
-    para ayudarte a avanzar en tu aprendizaje.
+- **Recursos educativos:** Accede a tutoriales, webinars y cursos diseñados para
+  ayudarte a avanzar en tu aprendizaje.
 
--   **Resolución de problemas:** Encuentra soluciones a tus dudas técnicas con
-    la ayuda de una comunidad activa y solidaria.
+- **Resolución de problemas:** Encuentra soluciones a tus dudas técnicas con la
+  ayuda de una comunidad activa y solidaria.
 
--   **Soporte para educadores:** Descubre herramientas y mejores prácticas para
-    enriquecer la enseñanza.
+- **Soporte para educadores:** Descubre herramientas y mejores prácticas para
+  enriquecer la enseñanza.
 
 ## **¿Por qué deberías unirte a la GitHub Education Community?**
 

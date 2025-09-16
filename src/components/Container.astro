@@ -2,19 +2,19 @@
 import { cx } from "../utils.ts";
 
 type Props = {
-    class?: string;
-    usePy?: boolean;
+  class?: string;
+  usePy?: boolean;
 };
 
 const { usePy, class: className } = Astro.props;
 ---
 
 <div
-    class={cx([
-        "container mx-auto max-w-(--breakpoint-lg) px-8 xl:px-5",
-        (usePy ?? true) && "py-5 lg:py-8",
-        className,
-    ])}
+  class={cx([
+    "container mx-auto max-w-(--breakpoint-lg) px-8 xl:px-5",
+    (usePy ?? true) && "py-5 lg:py-8",
+    className,
+  ])}
 >
-    <slot />
+  <slot />
 </div>

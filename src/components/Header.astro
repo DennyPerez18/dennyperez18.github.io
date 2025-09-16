@@ -5,84 +5,80 @@ import headerLogo from "../images/headerLogoDark.png";
 ---
 
 <header>
-    <nav
-        class="mx-auto flex w-[90%] items-center justify-between py-4 uppercase"
+  <nav class="mx-auto flex w-[90%] items-center justify-between py-4 uppercase">
+    <a href="/">
+      <Image class="w-32" src={headerLogo} alt="Denny Perez" />
+    </a>
+    <input id="nav-toggle" class="peer hidden h-8 w-8" type="checkbox" />
+    <label
+      for="nav-toggle"
+      aria-expanded="false"
+      class="peer-checked:hidden sm:hidden"
     >
-        <a href="/">
-            <Image class="w-32" src={headerLogo} alt="Denny Perez" />
-        </a>
-        <input id="nav-toggle" class="peer hidden h-8 w-8" type="checkbox" />
-        <label
-            for="nav-toggle"
-            aria-expanded="false"
-            class="peer-checked:hidden sm:hidden"
-        >
-            <span class="sr-only">Menu</span>
-            <!-- material-symbols:menu -->
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-8 w-8"
-                viewBox="0 0 24 24"
-            >
-                <path d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z"></path>
-            </svg>
-        </label>
-        <label
-            for="nav-toggle"
-            aria-expanded="true"
-            class="peer-not-checked:hidden sm:hidden"
-        >
-            <span class="sr-only">Menu</span>
-            <!-- material-symbols:close -->
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-8 w-8"
-                viewBox="0 0 24 24"
-            >
-                <path
-                    d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"
-                ></path>
-            </svg>
-        </label>
-        <div
-            class="absolute top-14 left-0 hidden w-full items-center bg-white p-5 peer-checked:flex sm:static sm:flex sm:min-h-fit sm:w-auto sm:py-0"
-        >
-            <ul
-                class="flex flex-col gap-5 sm:flex-row sm:items-center sm:gap-[4vw]"
-            >
-                <li>
-                    <HeaderLink
-                        class="hover:text-(--clr-accent-700) focus:text-(--clr-accent-700)"
-                        href="/about"
-                    >
-                        About Me
-                    </HeaderLink>
-                </li>
-                <li>
-                    <HeaderLink
-                        class="hover:text-(--clr-accent-700) focus:text-(--clr-accent-700)"
-                        href="/community"
-                    >
-                        Community
-                    </HeaderLink>
-                </li>
-                <li>
-                    <HeaderLink
-                        class="hover:text-(--clr-accent-700) focus:text-(--clr-accent-700)"
-                        href="/projects"
-                    >
-                        Projects
-                    </HeaderLink>
-                </li>
-                <li>
-                    <HeaderLink
-                        class="hover:text-(--clr-accent-700) focus:text-(--clr-accent-700)"
-                        href="/blog"
-                    >
-                        Blog
-                    </HeaderLink>
-                </li>
-            </ul>
-        </div>
-    </nav>
+      <span class="sr-only">Menu</span>
+      <!-- material-symbols:menu -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-8 w-8"
+        viewBox="0 0 24 24"
+      >
+        <path d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z"></path>
+      </svg>
+    </label>
+    <label
+      for="nav-toggle"
+      aria-expanded="true"
+      class="peer-not-checked:hidden sm:hidden"
+    >
+      <span class="sr-only">Menu</span>
+      <!-- material-symbols:close -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-8 w-8"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"
+        ></path>
+      </svg>
+    </label>
+    <div
+      class="absolute top-14 left-0 hidden w-full items-center bg-white p-5 peer-checked:flex sm:static sm:flex sm:min-h-fit sm:w-auto sm:py-0"
+    >
+      <ul class="flex flex-col gap-5 sm:flex-row sm:items-center sm:gap-[4vw]">
+        <li>
+          <HeaderLink
+            class="hover:text-(--clr-accent-700) focus:text-(--clr-accent-700)"
+            href="/about"
+          >
+            About Me
+          </HeaderLink>
+        </li>
+        <li>
+          <HeaderLink
+            class="hover:text-(--clr-accent-700) focus:text-(--clr-accent-700)"
+            href="/community"
+          >
+            Community
+          </HeaderLink>
+        </li>
+        <li>
+          <HeaderLink
+            class="hover:text-(--clr-accent-700) focus:text-(--clr-accent-700)"
+            href="/projects"
+          >
+            Projects
+          </HeaderLink>
+        </li>
+        <li>
+          <HeaderLink
+            class="hover:text-(--clr-accent-700) focus:text-(--clr-accent-700)"
+            href="/blog"
+          >
+            Blog
+          </HeaderLink>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </header>

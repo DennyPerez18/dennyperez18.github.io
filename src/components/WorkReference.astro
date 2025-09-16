@@ -1,15 +1,15 @@
 ---
 type Props = {
-    title: string;
-    description: string;
-    years?: string;
+  title: string;
+  description: string;
+  years?: string;
 };
 
 const { title, description, years } = Astro.props;
 ---
 
 <li>
-    <span class="font-bold">{title}</span>
-    <span> @ {description}</span>
-    {years && <span>({years})</span>}
+  <span class="font-bold">{title}</span>
+  <span> @ {description}</span>
+  {years && <span>({years})</span>}
 </li>

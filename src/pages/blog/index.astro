@@ -11,51 +11,42 @@ blogs.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
 <Base title="Denny's Blog" description="Welcome to my blog!">
-    <main>
-        <Container>
-            <ul
-                class="grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-3"
-            >
-                {
-                    blogs.map(
-                        ({
-                            slug,
-                            data: { heroImage, pubDate, title, categories },
-                        }) => (
-                            <a
-                                class="rounded bg-(--clr-neutral-100)"
-                                href={`/blog/${slug}`}
-                            >
-                                <li class="flex flex-col gap-3 overflow-hidden pb-4">
-                                    <Image
-                                        class="transition-all duration-300 ease-in-out hover:scale-103"
-                                        src={heroImage}
-                                        alt={""}
-                                    />
-                                    <div class="px-3">
-                                        {/* TODO: Change underline color */}
-                                        <h2 class="text-lg font-bold hover:underline focus:underline">
-                                            {title}
-                                        </h2>
-                                        <FormattedDate
-                                            class="text-sm"
-                                            date={pubDate}
-                                        />
-                                        <ul class="flex flex-wrap gap-2 pt-3">
-                                            {categories.map((category) => (
-                                                <li class="rounded border px-2 py-0.5 text-sm text-(--clr-accent-900)">
-                                                    {/* TODO: This should be inside an <a> tag */}
-                                                    {category}
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </li>
-                            </a>
-                        ),
-                    )
-                }
-            </ul>
-        </Container>
-    </main>
+  <main>
+    <Container>
+      <ul
+        class="grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-3"
+      >
+        {
+          blogs.map(
+            ({ slug, data: { heroImage, pubDate, title, categories } }) => (
+              <a class="rounded bg-(--clr-neutral-100)" href={`/blog/${slug}`}>
+                <li class="flex flex-col gap-3 overflow-hidden pb-4">
+                  <Image
+                    class="transition-all duration-300 ease-in-out hover:scale-103"
+                    src={heroImage}
+                    alt={""}
+                  />
+                  <div class="px-3">
+                    {/* TODO: Change underline color */}
+                    <h2 class="text-lg font-bold hover:underline focus:underline">
+                      {title}
+                    </h2>
+                    <FormattedDate class="text-sm" date={pubDate} />
+                    <ul class="flex flex-wrap gap-2 pt-3">
+                      {categories.map((category) => (
+                        <li class="rounded border px-2 py-0.5 text-sm text-(--clr-accent-900)">
+                          {/* TODO: This should be inside an <a> tag */}
+                          {category}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </li>
+              </a>
+            ),
+          )
+        }
+      </ul>
+    </Container>
+  </main>
 </Base>

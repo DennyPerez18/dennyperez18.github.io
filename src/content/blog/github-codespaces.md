@@ -1,8 +1,8 @@
 ---
-title: 'Aprende y Colabora con GitHub Codespaces: Un Entorno Listo para Usar'
-pubDate: 'Apr 18 2024'
-heroImage: '../../images/blog/CodeSpace.png'
-categories: ['La escuelita de Github']
+title: "Aprende y Colabora con GitHub Codespaces: Un Entorno Listo para Usar"
+pubDate: "Apr 18 2024"
+heroImage: "../../images/blog/CodeSpace.png"
+categories: ["La escuelita de Github"]
 ---
 
 ¿Alguna vez has querido comenzar un proyecto sin perder tiempo configurando un
@@ -19,17 +19,17 @@ programar o colaborar con otros.
 
 **Beneficios destacados:**
 
--   **Entorno instantáneo:** Configura un espacio de trabajo en segundos, listo
-    con las dependencias y configuraciones necesarias.
+- **Entorno instantáneo:** Configura un espacio de trabajo en segundos, listo
+  con las dependencias y configuraciones necesarias.
 
--   **Flexibilidad:** Accede a tu proyecto desde cualquier dispositivo con una
-    conexión a Internet.
+- **Flexibilidad:** Accede a tu proyecto desde cualquier dispositivo con una
+  conexión a Internet.
 
--   **Colaboración en tiempo real:** Trabaja con tu equipo de manera eficiente,
-    compartiendo el mismo entorno de desarrollo.
+- **Colaboración en tiempo real:** Trabaja con tu equipo de manera eficiente,
+  compartiendo el mismo entorno de desarrollo.
 
--   **Compatibilidad:** Soporta múltiples lenguajes y frameworks populares, como
-    Python, JavaScript, Java, entre otros.
+- **Compatibilidad:** Soporta múltiples lenguajes y frameworks populares, como
+  Python, JavaScript, Java, entre otros.
 
 ## **¿Por qué usar GitHub Codespaces?**
 

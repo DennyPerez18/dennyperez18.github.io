@@ -20,91 +20,83 @@ import MiniAvatar from "../images/miniAvatar.svg";
 ---
 
 <Base title={SITE_TITLE}>
-    <main
-        class="flex flex-1 items-center bg-(--clr-neutral-100) text-center shadow-sm"
-    >
-        <Container class="max-w-(--breakpoint-xl)">
-            <div
-                class="grid grid-cols-1 items-center justify-items-center gap-3 lg:grid-cols-2"
-            >
-                <Image
-                    class="aspect-square rounded-full object-cover object-[center_10%]"
-                    width={500}
-                    src={heroAvatar}
-                    alt="Denny's Image"
-                />
-                <section>
-                    <h1
-                        class="mb-2 font-['Montserrat'] text-7xl text-(--clr-accent-700)"
-                    >
-                        Denny Pérez
-                    </h1>
-                    <p class="mb-3 text-2xl font-light">
-                        Software QA Analyst – Conference and Community Organizer
-                    </p>
-                    <hr class="mx-16 mb-5 text-(--clr-accent-700)" />
-                    <!-- FIXME: max-w-120 -->
-                    <ul class="space-y-5 text-xl">
-                        <li>
-                            <a
-                                class="flex h-20 justify-center rounded-lg border-2 transition hover:bg-(--clr-accent-200) hover:text-black focus:bg-(--clr-accent-200) focus:text-black lg:mx-10"
-                                href="/about"
-                            >
-                                <div
-                                    class="flex items-center justify-center gap-2"
-                                >
-                                    <MiniAvatar class="h-7 w-7" />
-                                    <p>Sobre mí</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                class="flex h-20 justify-center rounded-lg border-2 transition hover:bg-(--clr-accent-200) hover:text-black focus:bg-(--clr-accent-200) focus:text-black lg:mx-10"
-                                href="/community"
-                            >
-                                <div
-                                    class="flex items-center justify-center gap-2"
-                                >
-                                    <!-- fluent/people-community-32-filled -->
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="h-7 w-7"
-                                        viewBox="0 0 32 32"
-                                        ><path
-                                            fill="currentColor"
-                                            d="M16 5a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5m-4.5 2.5a4.5 4.5 0 1 1 9 0a4.5 4.5 0 0 1-9 0M6 8a2 2 0 1 0 0 4a2 2 0 0 0 0-4m-4 2a4 4 0 1 1 8 0a4 4 0 0 1-8 0m22 0a2 2 0 1 1 4 0a2 2 0 0 1-4 0m2-4a4 4 0 1 0 0 8a4 4 0 0 0 0-8M8.5 16.5q0-.334.053-.651l-4.7 1.259a2.5 2.5 0 0 0-1.767 3.062l.906 3.38a6 6 0 0 0 7.996 4.03a7.5 7.5 0 0 1-1.387-1.666a4 4 0 0 1-4.677-2.881l-.906-3.38a.5.5 0 0 1 .353-.613L8.5 17.934zm13.157 11.293a6 6 0 0 1-.646-.212a7.5 7.5 0 0 0 1.388-1.666a4 4 0 0 0 4.675-2.882l.905-3.381a.5.5 0 0 0-.353-.612L23.5 17.934V16.5q0-.332-.053-.65l4.697 1.258a2.5 2.5 0 0 1 1.767 3.062l-.906 3.38a6 6 0 0 1-7.348 4.243M12.5 14a2.5 2.5 0 0 0-2.5 2.5V22a6 6 0 0 0 12 0v-5.5a2.5 2.5 0 0 0-2.5-2.5zm-.5 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5V22a4 4 0 0 1-8 0z"
-                                        ></path>
-                                    </svg>
-                                    <p>Comunidades</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                class="flex h-20 justify-center rounded-lg border-2 transition hover:bg-(--clr-accent-200) hover:text-black focus:bg-(--clr-accent-200) focus:text-black lg:mx-10"
-                                href="/projects"
-                            >
-                                <div
-                                    class="flex items-center justify-center gap-2"
-                                >
-                                    <!-- ph:puzzle-piece -->
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        class="h-7 w-7"
-                                        viewBox="0 0 256 256"
-                                        ><path
-                                            fill="currentColor"
-                                            d="M220.27 158.54a8 8 0 0 0-7.7-.46a20 20 0 1 1 0-36.16a8 8 0 0 0 11.43-7.23V72a16 16 0 0 0-16-16h-36.22a35 35 0 0 0 .22-4a36.1 36.1 0 0 0-11.36-26.24a36 36 0 0 0-60.55 23.62a36.6 36.6 0 0 0 .14 6.62H64a16 16 0 0 0-16 16v32.22a35 35 0 0 0-4-.22a36.12 36.12 0 0 0-26.24 11.36a35.7 35.7 0 0 0-9.69 27a36.08 36.08 0 0 0 33.31 33.6a35.7 35.7 0 0 0 6.62-.14V208a16 16 0 0 0 16 16h144a16 16 0 0 0 16-16v-42.69a8 8 0 0 0-3.73-6.77M208 208H64v-42.69a8 8 0 0 0-11.43-7.23a20 20 0 1 1 0-36.16A8 8 0 0 0 64 114.69V72h46.69a8 8 0 0 0 7.23-11.43a20 20 0 1 1 36.16 0A8 8 0 0 0 161.31 72H208v32.23a35.7 35.7 0 0 0-6.62-.14A36 36 0 0 0 204 176a35 35 0 0 0 4-.22Z"
-                                        ></path></svg
-                                    >
-                                    <p>Proyectos</p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-            </div>
-        </Container>
-    </main>
+  <main
+    class="flex flex-1 items-center bg-(--clr-neutral-100) text-center shadow-sm"
+  >
+    <Container class="max-w-(--breakpoint-xl)">
+      <div
+        class="grid grid-cols-1 items-center justify-items-center gap-3 lg:grid-cols-2"
+      >
+        <Image
+          class="aspect-square rounded-full object-cover object-[center_10%]"
+          width={500}
+          src={heroAvatar}
+          alt="Denny's Image"
+        />
+        <section>
+          <h1 class="mb-2 font-['Montserrat'] text-7xl text-(--clr-accent-700)">
+            Denny Pérez
+          </h1>
+          <p class="mb-3 text-2xl font-light">
+            Software QA Analyst – Conference and Community Organizer
+          </p>
+          <hr class="mx-16 mb-5 text-(--clr-accent-700)" />
+          <!-- FIXME: max-w-120 -->
+          <ul class="space-y-5 text-xl">
+            <li>
+              <a
+                class="flex h-20 justify-center rounded-lg border-2 transition hover:bg-(--clr-accent-200) hover:text-black focus:bg-(--clr-accent-200) focus:text-black lg:mx-10"
+                href="/about"
+              >
+                <div class="flex items-center justify-center gap-2">
+                  <MiniAvatar class="h-7 w-7" />
+                  <p>Sobre mí</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                class="flex h-20 justify-center rounded-lg border-2 transition hover:bg-(--clr-accent-200) hover:text-black focus:bg-(--clr-accent-200) focus:text-black lg:mx-10"
+                href="/community"
+              >
+                <div class="flex items-center justify-center gap-2">
+                  <!-- fluent/people-community-32-filled -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-7 w-7"
+                    viewBox="0 0 32 32"
+                    ><path
+                      fill="currentColor"
+                      d="M16 5a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5m-4.5 2.5a4.5 4.5 0 1 1 9 0a4.5 4.5 0 0 1-9 0M6 8a2 2 0 1 0 0 4a2 2 0 0 0 0-4m-4 2a4 4 0 1 1 8 0a4 4 0 0 1-8 0m22 0a2 2 0 1 1 4 0a2 2 0 0 1-4 0m2-4a4 4 0 1 0 0 8a4 4 0 0 0 0-8M8.5 16.5q0-.334.053-.651l-4.7 1.259a2.5 2.5 0 0 0-1.767 3.062l.906 3.38a6 6 0 0 0 7.996 4.03a7.5 7.5 0 0 1-1.387-1.666a4 4 0 0 1-4.677-2.881l-.906-3.38a.5.5 0 0 1 .353-.613L8.5 17.934zm13.157 11.293a6 6 0 0 1-.646-.212a7.5 7.5 0 0 0 1.388-1.666a4 4 0 0 0 4.675-2.882l.905-3.381a.5.5 0 0 0-.353-.612L23.5 17.934V16.5q0-.332-.053-.65l4.697 1.258a2.5 2.5 0 0 1 1.767 3.062l-.906 3.38a6 6 0 0 1-7.348 4.243M12.5 14a2.5 2.5 0 0 0-2.5 2.5V22a6 6 0 0 0 12 0v-5.5a2.5 2.5 0 0 0-2.5-2.5zm-.5 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5V22a4 4 0 0 1-8 0z"
+                    ></path>
+                  </svg>
+                  <p>Comunidades</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                class="flex h-20 justify-center rounded-lg border-2 transition hover:bg-(--clr-accent-200) hover:text-black focus:bg-(--clr-accent-200) focus:text-black lg:mx-10"
+                href="/projects"
+              >
+                <div class="flex items-center justify-center gap-2">
+                  <!-- ph:puzzle-piece -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-7 w-7"
+                    viewBox="0 0 256 256"
+                    ><path
+                      fill="currentColor"
+                      d="M220.27 158.54a8 8 0 0 0-7.7-.46a20 20 0 1 1 0-36.16a8 8 0 0 0 11.43-7.23V72a16 16 0 0 0-16-16h-36.22a35 35 0 0 0 .22-4a36.1 36.1 0 0 0-11.36-26.24a36 36 0 0 0-60.55 23.62a36.6 36.6 0 0 0 .14 6.62H64a16 16 0 0 0-16 16v32.22a35 35 0 0 0-4-.22a36.12 36.12 0 0 0-26.24 11.36a35.7 35.7 0 0 0-9.69 27a36.08 36.08 0 0 0 33.31 33.6a35.7 35.7 0 0 0 6.62-.14V208a16 16 0 0 0 16 16h144a16 16 0 0 0 16-16v-42.69a8 8 0 0 0-3.73-6.77M208 208H64v-42.69a8 8 0 0 0-11.43-7.23a20 20 0 1 1 0-36.16A8 8 0 0 0 64 114.69V72h46.69a8 8 0 0 0 7.23-11.43a20 20 0 1 1 36.16 0A8 8 0 0 0 161.31 72H208v32.23a35.7 35.7 0 0 0-6.62-.14A36 36 0 0 0 204 176a35 35 0 0 0 4-.22Z"
+                    ></path></svg
+                  >
+                  <p>Proyectos</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </Container>
+  </main>
 </Base>

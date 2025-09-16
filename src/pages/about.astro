@@ -13,105 +13,94 @@ const talks = await getCollection("talks");
 talks.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
 const conf = {
-    title: "Conferencias",
-    items: talks.filter(({ data }) => data.kind == "Conference"),
+  title: "Conferencias",
+  items: talks.filter(({ data }) => data.kind == "Conference"),
 };
 const pane = {
-    title: "Paneles Y Podcasts",
-    items: talks.filter(({ data }) => data.kind == "Panel"),
+  title: "Paneles Y Podcasts",
+  items: talks.filter(({ data }) => data.kind == "Panel"),
 };
 const meet = {
-    title: "Entrevistas Y Meetups",
-    items: talks.filter(({ data }) => data.kind == "Meetup"),
+  title: "Entrevistas Y Meetups",
+  items: talks.filter(({ data }) => data.kind == "Meetup"),
 };
 ---
 
 <Base title="About Me" description="Sobre mi">
-    <main>
-        <Image
-            class="mx-auto md:container md:max-w-(--breakpoint-lg)"
-            src={aboutMeHeader}
-            alt="About Me Header"
-        />
-        <Container class="prose md:prose-xl" usePy={false}>
-            <section>
-                <div class="sm:text-justify">
-                    <p>
-                        Soy Denny Pérez, Analista de Calidad de Software en <a
-                            href="https://nventive.com/en/">Nventive</a
-                        >. Soy originaria de la República Dominicana y
-                        actualmente radicada en Canadá. Me gradué como
-                        Licenciada en Contabilidad en la Universidad Autónoma de
-                        Santo Domingo, y actualmente con más de 10 años de
-                        experiencia profesional en el área financiera.
-                    </p>
-                    <p>
-                        En 2015, mi vida tomó un giro transformador al emigrar a
-                        Canadá. Inspirada por el potencial de la tecnología,
-                        decidí estudiar una segunda carrera como profesional en
-                        Soporte y Gestión de Software, lo que abrió las puertas
-                        a un nuevo camino en el ámbito tecnológico. Durante este
-                        proceso, descubrí mi pasión por el lenguaje de
-                        programación Python y el impacto positivo de las
-                        comunidades tecnológicas.
-                    </p>
-                    <p>
-                        Desde entonces, he estado involucrada en diversas
-                        comunidades de tecnología, tanto en Latinoamérica como a
-                        nivel global. He asumido roles clave en la gestión de
-                        proyectos, marketing, organización de eventos y
-                        participación comunitaria, siempre con un fuerte
-                        compromiso con la diversidad, equidad e inclusión.
-                    </p>
-                    <p>
-                        En el 2022 fui nominada como <a
-                            href="https://pyfound.blogspot.com/2022/04/announcing-python-software-foundation.html"
-                            >PSF Fellow Member</a
-                        > un reconocimiento otorgado a las personas que contribuyen
-                        activamente en el ecosistema del lenguaje de programación
-                        Python. En el 2023, quedé electa como Directora de la <a
-                            href="https://pyfound.blogspot.com/2023/06/announcing-2023-psf-board-election.html"
-                            >Python Software Foundation</a
-                        > un rol que aún estoy desempeñando y que me permite promover
-                        la colaboración y el crecimiento de la comunidad global de
-                        Python.
-                    </p>
-                    <p>
-                        Además de mi vida profesional, soy madre de tres
-                        maravillosos hijos que son mi fuente constante de
-                        inspiración para seguir impulsando un futuro más
-                        inclusivo y colaborativo, tanto en la tecnología como en
-                        la vida cotidiana.
-                    </p>
-                    <p>
-                        Aqui puedes ver el <a href="/community"
-                            >trabajo comunitario</a
-                        > en el que he estado involucrada.
-                    </p>
-                </div>
-            </section>
-            <section>
-                <h2 class="text-center font-['Montserrat'] text-4xl">
-                    Charlas Y Eventos
-                </h2>
-                {
-                    [conf, pane, meet].map((talks) => (
-                        <>
-                            <h3 class="font-['Montserrat']">{talks.title}</h3>
-                            <ul>
-                                {talks.items.map(
-                                    ({ id: title, data: { place } }) => (
-                                        <WorkReference
-                                            title={title}
-                                            description={place}
-                                        />
-                                    ),
-                                )}
-                            </ul>
-                        </>
-                    ))
-                }
-            </section>
-        </Container>
-    </main>
+  <main>
+    <Image
+      class="mx-auto md:container md:max-w-(--breakpoint-lg)"
+      src={aboutMeHeader}
+      alt="About Me Header"
+    />
+    <Container class="prose md:prose-xl" usePy={false}>
+      <section>
+        <div class="sm:text-justify">
+          <p>
+            Soy Denny Pérez, Analista de Calidad de Software en <a
+              href="https://nventive.com/en/">Nventive</a
+            >. Soy originaria de la República Dominicana y actualmente radicada
+            en Canadá. Me gradué como Licenciada en Contabilidad en la
+            Universidad Autónoma de Santo Domingo, y actualmente con más de 10
+            años de experiencia profesional en el área financiera.
+          </p>
+          <p>
+            En 2015, mi vida tomó un giro transformador al emigrar a Canadá.
+            Inspirada por el potencial de la tecnología, decidí estudiar una
+            segunda carrera como profesional en Soporte y Gestión de Software,
+            lo que abrió las puertas a un nuevo camino en el ámbito tecnológico.
+            Durante este proceso, descubrí mi pasión por el lenguaje de
+            programación Python y el impacto positivo de las comunidades
+            tecnológicas.
+          </p>
+          <p>
+            Desde entonces, he estado involucrada en diversas comunidades de
+            tecnología, tanto en Latinoamérica como a nivel global. He asumido
+            roles clave en la gestión de proyectos, marketing, organización de
+            eventos y participación comunitaria, siempre con un fuerte
+            compromiso con la diversidad, equidad e inclusión.
+          </p>
+          <p>
+            En el 2022 fui nominada como <a
+              href="https://pyfound.blogspot.com/2022/04/announcing-python-software-foundation.html"
+              >PSF Fellow Member</a
+            > un reconocimiento otorgado a las personas que contribuyen activamente
+            en el ecosistema del lenguaje de programación Python. En el 2023, quedé
+            electa como Directora de la <a
+              href="https://pyfound.blogspot.com/2023/06/announcing-2023-psf-board-election.html"
+              >Python Software Foundation</a
+            > un rol que aún estoy desempeñando y que me permite promover la colaboración
+            y el crecimiento de la comunidad global de Python.
+          </p>
+          <p>
+            Además de mi vida profesional, soy madre de tres maravillosos hijos
+            que son mi fuente constante de inspiración para seguir impulsando un
+            futuro más inclusivo y colaborativo, tanto en la tecnología como en
+            la vida cotidiana.
+          </p>
+          <p>
+            Aqui puedes ver el <a href="/community">trabajo comunitario</a> en el
+            que he estado involucrada.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2 class="text-center font-['Montserrat'] text-4xl">
+          Charlas Y Eventos
+        </h2>
+        {
+          [conf, pane, meet].map((talks) => (
+            <>
+              <h3 class="font-['Montserrat']">{talks.title}</h3>
+              <ul>
+                {talks.items.map(({ id: title, data: { place } }) => (
+                  <WorkReference title={title} description={place} />
+                ))}
+              </ul>
+            </>
+          ))
+        }
+      </section>
+    </Container>
+  </main>
 </Base>

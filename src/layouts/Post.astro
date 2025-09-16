@@ -5,36 +5,31 @@ import Base from "./Base.astro";
 import { Image } from "astro:assets";
 
 type Props = {
-    title: string;
-    description?: string;
-    pubDate?: Date;
-    image: ImageMetadata;
+  title: string;
+  description?: string;
+  pubDate?: Date;
+  image: ImageMetadata;
 };
 
 const { title, description, pubDate, image } = Astro.props;
 ---
 
 <Base title={title} description={description} image={image}>
-    <main>
-        <Container>
-            <!-- TODO: Margins are _way too big_ on mobile -->
-            <article class="prose mx-auto lg:prose-xl prose-hr:my-3">
-                <Image
-                    class="overflow-hidden rounded-md"
-                    src={image}
-                    alt=""
-                />
-                {
-                    pubDate && (
-                        <span>
-                            Fecha de publicación:{" "}
-                            <FormattedDate date={pubDate} />
-                        </span>
-                    )
-                }
-                <hr />
-                <slot />
-            </article>
-        </Container>
-    </main>
+  <main>
+    <Container>
+      <!-- TODO: Margins are _way too big_ on mobile -->
+      <article class="prose lg:prose-xl prose-hr:my-3 mx-auto">
+        <Image class="overflow-hidden rounded-md" src={image} alt="" />
+        {
+          pubDate && (
+            <span>
+              Fecha de publicación: <FormattedDate date={pubDate} />
+            </span>
+          )
+        }
+        <hr />
+        <slot />
+      </article>
+    </Container>
+  </main>
 </Base>

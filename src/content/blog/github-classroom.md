@@ -1,8 +1,9 @@
 ---
-title: 'Aprende y Enseña con GitHub Classroom: Simplificando la Educación Tecnológica'
-pubDate: 'Mar 14 2024'
-heroImage: '../../images/blog/GitHub Classroom.png'
-categories: ['La escuelita de Github']
+title:
+  "Aprende y Enseña con GitHub Classroom: Simplificando la Educación Tecnológica"
+pubDate: "Mar 14 2024"
+heroImage: "../../images/blog/GitHub Classroom.png"
+categories: ["La escuelita de Github"]
 ---
 
 La enseñanza de tecnología y programación puede ser desafiante, pero **GitHub
@@ -20,17 +21,17 @@ aprendizaje.
 
 **Beneficios destacados:**
 
--   **Gestión simplificada:** Automatiza la creación de repositorios para
-    estudiantes, ahorrando tiempo en la organización de tareas.
+- **Gestión simplificada:** Automatiza la creación de repositorios para
+  estudiantes, ahorrando tiempo en la organización de tareas.
 
--   **Evaluación eficiente:** Utiliza GitHub Actions para configurar
-    evaluaciones automáticas de código y revisión de tareas.
+- **Evaluación eficiente:** Utiliza GitHub Actions para configurar evaluaciones
+  automáticas de código y revisión de tareas.
 
--   **Colaboración práctica:** Fomenta el trabajo en equipo con herramientas de
-    desarrollo utilizadas en la industria.
+- **Colaboración práctica:** Fomenta el trabajo en equipo con herramientas de
+  desarrollo utilizadas en la industria.
 
--   **Integración con GitHub:** Los estudiantes adquieren experiencia directa
-    con GitHub, preparándolos para el mundo profesional.
+- **Integración con GitHub:** Los estudiantes adquieren experiencia directa con
+  GitHub, preparándolos para el mundo profesional.
 
 ## **¿Por qué deberías usar GitHub Classroom?**
 

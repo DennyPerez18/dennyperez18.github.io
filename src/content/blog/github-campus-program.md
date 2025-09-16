@@ -1,8 +1,8 @@
 ---
-title: 'Transforma tu Institución con el GitHub Campus Program'
-pubDate: 'Jul 18 2024'
-heroImage: '../../images/blog/Campus Program.png'
-categories: ['La escuelita de Github']
+title: "Transforma tu Institución con el GitHub Campus Program"
+pubDate: "Jul 18 2024"
+heroImage: "../../images/blog/Campus Program.png"
+categories: ["La escuelita de Github"]
 ---
 
 En la era digital, es esencial que las instituciones educativas proporcionen a
@@ -21,20 +21,20 @@ promoviendo la colaboración entre estudiantes y educadores.
 
 **Beneficios destacados:**
 
--   **Acceso a GitHub Enterprise:** Proporciona características avanzadas para
-    la gestión de código y colaboración en proyectos, permitiendo a estudiantes
-    y profesores trabajar en un entorno profesional.
+- **Acceso a GitHub Enterprise:** Proporciona características avanzadas para la
+  gestión de código y colaboración en proyectos, permitiendo a estudiantes y
+  profesores trabajar en un entorno profesional.
 
--   **GitHub Classroom:** Una herramienta que simplifica la creación,
-    distribución y evaluación de tareas de programación, facilitando la gestión
-    de cursos y el seguimiento del progreso de los estudiantes.
+- **GitHub Classroom:** Una herramienta que simplifica la creación, distribución
+  y evaluación de tareas de programación, facilitando la gestión de cursos y el
+  seguimiento del progreso de los estudiantes.
 
--   **Soporte y capacitación:** Acceso a recursos educativos, talleres y soporte
-    técnico para integrar eficazmente GitHub en el plan de estudios.
+- **Soporte y capacitación:** Acceso a recursos educativos, talleres y soporte
+  técnico para integrar eficazmente GitHub en el plan de estudios.
 
--   **Comunidad global:** Formar parte de una red de instituciones educativas
-    que utilizan GitHub, permitiendo el intercambio de experiencias y mejores
-    prácticas.
+- **Comunidad global:** Formar parte de una red de instituciones educativas que
+  utilizan GitHub, permitiendo el intercambio de experiencias y mejores
+  prácticas.
 
 ## **¿Por qué debería tu institución unirse al GitHub Campus Program?**
 
