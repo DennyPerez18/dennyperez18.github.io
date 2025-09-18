@@ -4,16 +4,26 @@ import {
   z,
   type ImageFunction,
 } from "astro:content";
-import { file } from "astro/loaders";
+import { file, glob } from "astro/loaders";
 import { parse as parseToml } from "toml";
 
+// strips out "/index.md" prefix.
+const genContentId = (opts: { entry: string }) =>
+  opts.entry.replace(/\/index\.md[x]?$/, "");
+
 const blog = defineCollection({
+  loader: glob({
+    pattern: "**/index.md*",
+    base: "./src/content/blog",
+    generateId: genContentId,
+  }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),
       description: z.string().optional(),
       pubDate: z.coerce.date(),
-      // TODO: Rename to `image`
+      // FIXME: This property is not longer needed, since the path is always
+      // `blog/[id]/banner.[ext]`
       heroImage: image(),
       // TODO: Rename to `tags`
       categories: z.string().array(),
@@ -71,8 +81,6 @@ const projects = defineCollection({
     z.object({
       title: z.string(),
       showItemTitles: z.boolean().default(true),
-      // TODO: This should probably fail if they don't have the correct
-      // dimmensions.
       banner: image(),
       order: z.number().positive(),
       items: z.array(projectItemSchema(image)),

@@ -18,8 +18,8 @@ blogs.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
       >
         {
           blogs.map(
-            ({ slug, data: { heroImage, pubDate, title, categories } }) => (
-              <a class="rounded bg-(--clr-neutral-100)" href={`/blog/${slug}`}>
+            ({ id, data: { heroImage, pubDate, title, categories } }) => (
+              <a class="rounded bg-(--clr-neutral-100)" href={`/blog/${id}`}>
                 <li class="flex flex-col gap-3 overflow-hidden pb-4">
                   <Image
                     class="transition-all duration-300 ease-in-out hover:scale-103"
