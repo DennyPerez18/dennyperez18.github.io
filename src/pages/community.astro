@@ -6,7 +6,7 @@ import CommunityCard from "../components/CommunityCard.astro";
 import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 
-import communityHeader from "../images/communityHeader.png";
+import communityHeader from "../images/community-header.png";
 
 const communities = await getCollection("communities");
 communities.sort((a, b) => {

@@ -32,7 +32,7 @@ const blog = defineCollection({
 });
 
 const communities = defineCollection({
-  loader: file("src/content/communities.toml", {
+  loader: file("src/content/communities/communities.toml", {
     parser: (text) => parseToml(text).communities,
   }),
   schema: ({ image }) =>

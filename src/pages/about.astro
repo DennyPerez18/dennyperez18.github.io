@@ -7,7 +7,7 @@ import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 
 import "@fontsource/montserrat/900.css";
-import aboutMeHeader from "../images/aboutMeHeader.png";
+import aboutMeHeader from "../images/about-me-header.png";
 
 const talks = await getCollection("talks");
 talks.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
