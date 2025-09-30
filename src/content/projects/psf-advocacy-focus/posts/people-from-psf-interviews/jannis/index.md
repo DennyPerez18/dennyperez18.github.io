@@ -1,6 +1,6 @@
 ---
 title: "Meet Jannis Leidel"
-image: "../../../../images/projects/psf-advocacy-focus/people-from-psf-interviews/Jannis.png"
+image: "./banner.png"
 ---
 
 Welcome to our "People from PSF" interview series\! In this series, we introduce

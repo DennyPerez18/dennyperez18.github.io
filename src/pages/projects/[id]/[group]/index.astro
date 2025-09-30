@@ -9,18 +9,18 @@ export const getStaticPaths = async () => {
   );
   const posts = await getCollection("projectPosts");
   return projects
-    .flatMap(({ data, slug }) => data.items.map((item) => ({ ...item, slug })))
+    .flatMap(({ data, id }) => data.items.map((item) => ({ ...item, id })))
     .filter((data) => "group" in data)
     .map((data) => {
       const cards = posts
-        .filter(({ slug }) => slug.includes(data.group))
+        .filter(({ id }) => id.includes(data.group))
         .map((post) => ({
           title: post.data.title,
-          url: `/projects/${post.slug}`,
+          url: `/projects/${post.id}`,
           image: post.data.image,
         }));
       return {
-        params: { slug: data.slug, group: data.group },
+        params: { id: data.id, group: data.group },
         props: { ...data, cards },
       };
     });

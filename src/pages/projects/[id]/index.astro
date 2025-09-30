@@ -9,7 +9,7 @@ import { type CollectionEntry, getCollection } from "astro:content";
 
 type CardProps = ComponentProps<typeof CardGrid>;
 
-export async function getStaticPaths() {
+export const getStaticPaths = async () => {
   const projects = await getCollection("projects");
   const blog = await getCollection("blog");
 
@@ -20,7 +20,7 @@ export async function getStaticPaths() {
       if ("group" in item)
         return {
           ...item,
-          url: `/projects/${project.slug}/${item.group}`,
+          url: `/projects/${project.id}/${item.group}`,
           showTitle,
         };
 
@@ -36,7 +36,7 @@ export async function getStaticPaths() {
     project.data.items = [];
 
     return {
-      params: { slug: project.slug },
+      params: { id: project.id },
       props: { ...project, items: cards },
     };
   });

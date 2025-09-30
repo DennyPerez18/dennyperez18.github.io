@@ -1,6 +1,6 @@
 ---
-title: La escuelita de Github
-banner: ../../images/projects/La escuelita de GitHub.png
+title: "La escuelita de Github"
+banner: "./banner.png"
 order: 2
 items:
   - blog: github-campus-expert

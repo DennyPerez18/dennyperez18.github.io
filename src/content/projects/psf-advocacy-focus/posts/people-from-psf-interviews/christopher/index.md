@@ -1,6 +1,6 @@
 ---
 title: "Meet Christopher Neugebauer"
-image: "../../../../images/projects/psf-advocacy-focus/people-from-psf-interviews/Christopher.png"
+image: "./banner.png"
 ---
 
 Welcome to our "People from PSF" interview series! This series introduces the

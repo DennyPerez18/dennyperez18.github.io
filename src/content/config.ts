@@ -20,7 +20,6 @@ const blog = defineCollection({
   schema: ({ image }) =>
     z.object({
       title: z.string(),
-      description: z.string().optional(),
       pubDate: z.coerce.date(),
       // FIXME: This property is not longer needed, since the path is always
       // `blog/[id]/banner.[ext]`
@@ -66,9 +65,12 @@ const projectItemSchema = (image: ImageFunction) =>
     z.object({ blog: reference("blog") }),
   ]);
 
-// FIXME: These posts should be at `/src/content/projects/posts/`, but currently
-// the `loader` property doesn't automatically render markdown files if defined.
 const projectPosts = defineCollection({
+  loader: glob({
+    pattern: "*/posts/**/index.md*",
+    base: "./src/content/projects",
+    generateId: stripIndexMd,
+  }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),
@@ -77,6 +79,11 @@ const projectPosts = defineCollection({
 });
 
 const projects = defineCollection({
+  loader: glob({
+    pattern: "*/index.md",
+    base: "./src/content/projects",
+    generateId: stripIndexMd,
+  }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),

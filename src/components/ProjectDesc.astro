@@ -2,7 +2,7 @@
 import { cx } from "../utils.ts";
 
 import Container from "./Container.astro";
-import type { CollectionEntry } from "astro:content";
+import { type CollectionEntry, render } from "astro:content";
 
 import "@fontsource/montserrat/900.css";
 
@@ -12,12 +12,13 @@ type Props = {
 };
 
 const { project, summarize } = Astro.props;
-const { Content } = await project.render();
+const { Content } = await render(project);
 ---
 
 <Container class="max-w-(--breakpoint-xl)" usePy={false}>
   <div
     class={cx([
+      // TODO: the elipsis created by `line-clamp` should have an `<a>` tag.
       "prose md:prose-xl md:max-w-full",
       summarize && "prose-p:line-clamp-3",
     ])}

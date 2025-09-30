@@ -1,6 +1,6 @@
 ---
 title: "Meet Deb Nicholson"
-image: "../../../../images/projects/psf-advocacy-focus/people-from-psf-interviews/Deb.png"
+image: "./banner.png"
 ---
 
 Welcome to our "People from PSF" interview series! In this series, we introduce
