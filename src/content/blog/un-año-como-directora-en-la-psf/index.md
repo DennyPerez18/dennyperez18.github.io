@@ -2,7 +2,7 @@
 title: "Un Año como Directora en la PSF"
 pubDate: "Aug 30 2024"
 heroImage: "./banner.png"
-categories: ["PSF"]
+tags: ["PSF"]
 ---
 
 Hace un año comencé uno de los capítulos más significativos de mi vida en la

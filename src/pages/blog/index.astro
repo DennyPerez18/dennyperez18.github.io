@@ -18,7 +18,7 @@ blogs.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
       >
         {
           blogs.map(
-            ({ id, data: { heroImage, pubDate, title, categories } }) => (
+            ({ id, data: { heroImage, pubDate, title, tags } }) => (
               <a class="rounded bg-(--clr-neutral-100)" href={`/blog/${id}`}>
                 <li class="flex flex-col gap-3 overflow-hidden pb-4">
                   <Image
@@ -33,10 +33,10 @@ blogs.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
                     </h2>
                     <FormattedDate class="text-sm" date={pubDate} />
                     <ul class="flex flex-wrap gap-2 pt-3">
-                      {categories.map((category) => (
+                      {tags.map((tag) => (
                         <li class="rounded border px-2 py-0.5 text-sm text-(--clr-accent-900)">
                           {/* TODO: This should be inside an <a> tag */}
-                          {category}
+                          {tag}
                         </li>
                       ))}
                     </ul>

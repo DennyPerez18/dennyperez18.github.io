@@ -2,7 +2,7 @@
 title: "Cómo votar en las elecciones de la Junta Directiva de la PSF."
 pubDate: "apr 16 2023"
 heroImage: "./banner.png"
-categories: [PSF]
+tags: [PSF]
 ---
 
 ## Guía paso a paso

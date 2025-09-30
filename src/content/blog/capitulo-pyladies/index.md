@@ -2,7 +2,7 @@
 title: "Capítulos Pyladies"
 pubDate: "mar 15 2023"
 heroImage: "./banner.png"
-categories: ["Pyladies"]
+tags: ["Pyladies"]
 ---
 
 ## Descubre qué es un Capítulo Pyladies y cómo solicitar uno

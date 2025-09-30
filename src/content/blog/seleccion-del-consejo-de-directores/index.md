@@ -2,7 +2,7 @@
 title: "Proceso de seleccion de la junta Directiva de la PSF"
 pubDate: "mar 02 2023"
 heroImage: "./banner.png"
-categories: ["PSF"]
+tags: ["PSF"]
 ---
 
 ## Elecciones y quien vota

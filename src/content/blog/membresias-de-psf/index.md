@@ -2,7 +2,7 @@
 title: "Membresías de la PSF"
 pubDate: "apr 25 2023"
 heroImage: "./banner.png"
-categories: [PSF]
+tags: [PSF]
 ---
 
 ## Beneficios al obtener una membresía y colaboración a la comunidad al hacerte miembro

@@ -3,7 +3,7 @@ title:
   "Aprende y Enseña con GitHub Classroom: Simplificando la Educación Tecnológica"
 pubDate: "Mar 14 2024"
 heroImage: "./banner.png"
-categories: ["La escuelita de Github"]
+tags: ["La escuelita de Github"]
 ---
 
 La enseñanza de tecnología y programación puede ser desafiante, pero **GitHub

@@ -2,7 +2,7 @@
 title: "Un Nuevo Capítulo: Directora en la PSF"
 pubDate: "Jul 15 2023"
 heroImage: "./banner.png"
-categories: ["PSF"]
+tags: ["PSF"]
 ---
 
 Estoy muy agradecida y emocionada de compartir que he sido elegida como

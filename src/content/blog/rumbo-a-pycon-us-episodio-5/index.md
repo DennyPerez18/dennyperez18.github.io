@@ -2,7 +2,7 @@
 title: "Ep.5 - Rumbo a PyCon US 2023 edicion especial 20 aniversario"
 pubDate: "apr 09 2023"
 heroImage: "./banner.png"
-categories: [PSF]
+tags: [PSF]
 ---
 
 Con motivo al aniversario numero 20 de la PyConUS he decidido crear una serie de

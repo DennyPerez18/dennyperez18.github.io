@@ -24,8 +24,7 @@ const blog = defineCollection({
       // FIXME: This property is not longer needed, since the path is always
       // `blog/[id]/banner.[ext]`
       heroImage: image(),
-      // TODO: Rename to `tags`
-      categories: z.string().array(),
+      tags: z.string().array(),
       // TODO: wordCount
     }),
 });

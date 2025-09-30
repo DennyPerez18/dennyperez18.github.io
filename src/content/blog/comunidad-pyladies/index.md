@@ -3,7 +3,7 @@ title: "Comunidad Pyladies"
 description: "My blog about Pyladies"
 pubDate: "jan 20 2023"
 heroImage: "./banner.png"
-categories: ["Pyladies"]
+tags: ["Pyladies"]
 ---
 
 ## ¡Bienvenidos a la comunidad Pyladies!

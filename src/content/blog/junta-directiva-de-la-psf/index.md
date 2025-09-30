@@ -3,7 +3,7 @@ title: "Junta Directiva de la PSF"
 description: "PSF"
 pubDate: "Feb 14 2023"
 heroImage: "./banner.png"
-categories: ["PSF"]
+tags: ["PSF"]
 ---
 
 ## Roles y Responsabilidades

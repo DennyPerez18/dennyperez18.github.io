@@ -2,7 +2,7 @@
 title: "Descubre el GitHub Student Developer Pack"
 pubDate: "Aug 15 2024"
 heroImage: "./banner.png"
-categories: ["La escuelita de Github"]
+tags: ["La escuelita de Github"]
 ---
 
 Si eres estudiante y estás comenzando en el mundo de la programación, el

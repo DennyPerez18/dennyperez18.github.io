@@ -2,7 +2,7 @@
 title: "Conviértete en un GitHub Campus Expert"
 pubDate: "Sep 19 2024"
 heroImage: "./banner.png"
-categories: ["La escuelita de Github"]
+tags: ["La escuelita de Github"]
 ---
 
 Si eres estudiante universitario apasionado por la tecnología y quieres liderar
