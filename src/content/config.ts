@@ -8,14 +8,14 @@ import { file, glob } from "astro/loaders";
 import { parse as parseToml } from "toml";
 
 // strips out "/index.md" prefix.
-const genContentId = (opts: { entry: string }) =>
+const stripIndexMd = (opts: { entry: string }) =>
   opts.entry.replace(/\/index\.md[x]?$/, "");
 
 const blog = defineCollection({
   loader: glob({
     pattern: "**/index.md*",
     base: "./src/content/blog",
-    generateId: genContentId,
+    generateId: stripIndexMd,
   }),
   schema: ({ image }) =>
     z.object({
