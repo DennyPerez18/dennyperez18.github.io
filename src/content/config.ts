@@ -68,7 +68,7 @@ const projectPosts = defineCollection({
   loader: glob({
     pattern: "*/posts/**/index.md*",
     base: "./src/content/projects",
-    generateId: stripIndexMd,
+    generateId: (opts) => stripIndexMd(opts).replace(/\/posts\//, "/"),
   }),
   schema: ({ image }) =>
     z.object({
