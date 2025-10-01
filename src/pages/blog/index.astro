@@ -1,52 +1,23 @@
 ---
-import Container from "../../components/Container.astro";
-import FormattedDate from "../../components/FormattedDate.astro";
 import Base from "../../layouts/Base.astro";
+import CardGrid from "../../layouts/CardGrid.astro";
 
-import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 
-const blogs = await getCollection("blog");
-blogs.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const blog = await getCollection("blog");
+blog.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const blogs = blog.map(({ data, id }) => ({
+  title: data.title,
+  url: `/blog/${id}`,
+  image: data.heroImage,
+  date: data.pubDate,
+  tags: data.tags,
+}));
 ---
 
 <Base title="Denny's Blog" description="Welcome to my blog!">
   <main>
-    <Container>
-      <ul
-        class="grid grid-cols-[repeat(auto-fit,minmax(min(300px,100%),1fr))] gap-3"
-      >
-        {
-          blogs.map(
-            ({ id, data: { heroImage, pubDate, title, tags } }) => (
-              <a class="rounded bg-(--clr-neutral-100)" href={`/blog/${id}`}>
-                <li class="flex flex-col gap-3 overflow-hidden pb-4">
-                  <Image
-                    class="transition-all duration-300 ease-in-out hover:scale-103"
-                    src={heroImage}
-                    alt={""}
-                  />
-                  <div class="px-3">
-                    {/* TODO: Change underline color */}
-                    <h2 class="text-lg font-bold hover:underline focus:underline">
-                      {title}
-                    </h2>
-                    <FormattedDate class="text-sm" date={pubDate} />
-                    <ul class="flex flex-wrap gap-2 pt-3">
-                      {tags.map((tag) => (
-                        <li class="rounded border px-2 py-0.5 text-sm text-(--clr-accent-900)">
-                          {/* TODO: This should be inside an <a> tag */}
-                          {tag}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </li>
-              </a>
-            ),
-          )
-        }
-      </ul>
-    </Container>
+    <CardGrid items={blogs} />
   </main>
 </Base>

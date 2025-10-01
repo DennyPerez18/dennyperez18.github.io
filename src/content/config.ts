@@ -54,7 +54,7 @@ const communities = defineCollection({
 const projectItemSchema = (image: ImageFunction) =>
   z.union([
     z.object({
-      title: z.string(),
+      title: z.string().optional(),
       url: z.string().url(),
       image: image(),
     }),
@@ -86,7 +86,6 @@ const projects = defineCollection({
   schema: ({ image }) =>
     z.object({
       title: z.string(),
-      showItemTitles: z.boolean().default(true),
       banner: image(),
       order: z.number().positive(),
       items: z.array(projectItemSchema(image)),
