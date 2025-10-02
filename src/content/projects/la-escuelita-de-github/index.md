@@ -1,7 +1,7 @@
 ---
 title: "La escuelita de Github"
 banner: "./banner.png"
-order: 2
+order: 3
 items:
   - blog: github-campus-expert
   - blog: github-pages-crea-tu-sitio-web

@@ -165,11 +165,10 @@ problemas, ¡Se aprecia enormemente tu ayuda!
 
 ¿Cómo puedes participar? Simplemente inicia sesión en tu perfil en el sitio web
 de PyCon, asegúrate de estar registrado para la conferencia y actualiza tu
-información de contacto para poder mantener el contacto contigo.
-Para registrarte en un turno de voluntariado disponible, haz clic en el símbolo
-\[+\] en la casilla correspondiente.
-Después de registrarte, verás tus turnos en tu panel de control. También puedes
-cancelar un turno si es necesario.
+información de contacto para poder mantener el contacto contigo. Para
+registrarte en un turno de voluntariado disponible, haz clic en el símbolo \[+\]
+en la casilla correspondiente. Después de registrarte, verás tus turnos en tu
+panel de control. También puedes cancelar un turno si es necesario.
 
 Accediendo a
 [<u>este enlace</u>](https://us.pycon.org/2023/volunteers/volunteering/) puedes

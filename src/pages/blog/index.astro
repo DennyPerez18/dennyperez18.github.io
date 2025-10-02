@@ -4,8 +4,12 @@ import CardGrid from "../../layouts/CardGrid.astro";
 
 import { getCollection } from "astro:content";
 
-const blog = await getCollection("blog");
-blog.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const blog = await getCollection("blog", (blog) => !blog.data.hidden);
+blog.sort(
+  (a, b) =>
+    (b.data.pubDate ?? new Date(0)).valueOf() -
+    (a.data.pubDate ?? new Date(0)).valueOf(),
+);
 
 const blogs = blog.map(({ data, id }) => ({
   title: data.title,

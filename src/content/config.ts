@@ -13,18 +13,22 @@ const stripIndexMd = (opts: { entry: string }) =>
 
 const blog = defineCollection({
   loader: glob({
-    pattern: "**/index.md*",
-    base: "./src/content/blog",
-    generateId: stripIndexMd,
+    pattern: "**/blog/**/index.md*",
+    base: "./src/content/",
+    generateId: (opts) => {
+      const split = stripIndexMd(opts).split("/");
+      return split[split.length - 1];
+    },
   }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),
-      pubDate: z.coerce.date(),
+      pubDate: z.coerce.date().optional(),
       // FIXME: This property is not longer needed, since the path is always
       // `blog/[id]/banner.[ext]`
       heroImage: image(),
       tags: z.string().array(),
+      hidden: z.boolean().default(false),
       // TODO: wordCount
     }),
 });

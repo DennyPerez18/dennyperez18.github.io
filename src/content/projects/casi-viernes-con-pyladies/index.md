@@ -1,7 +1,7 @@
 ---
 title: "Casi Viernes con PyLadies"
 banner: "./banner.png"
-order: 3
+order: 4
 items:
   - url: https://discord.gg/wSphdypJbr
     image: blog01.png

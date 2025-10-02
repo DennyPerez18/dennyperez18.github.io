@@ -74,8 +74,7 @@ Registrarse en PyCon US 2023 es sencillo y te permitirá asegurar tu lugar en la
 conferencia. Aquí te muestro los pasos para completar tu registro:
 
 1\. Ingresa al sitio web oficial de PyCon US 2023 para acceder al proceso de
-registro:
-[<u>https://us.pycon.org/2023/</u>](https://us.pycon.org/2023/)
+registro: [<u>https://us.pycon.org/2023/</u>](https://us.pycon.org/2023/)
 
 2\. Selecciona tu cuenta para hacer
 [<u>login</u>](https://us.pycon.org/2023/accounts/login/) y si aún no has creado
