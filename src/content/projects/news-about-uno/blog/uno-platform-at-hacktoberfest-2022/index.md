@@ -2,6 +2,7 @@
 title:
   "Uno Platform at Hacktoberfest 2022: Contribute, Learn, and Celebrate Open
   Source 🌍💜"
+pubDate: "Oct 1 2022"
 heroImage: "./banner.png"
 tags: []
 hidden: true

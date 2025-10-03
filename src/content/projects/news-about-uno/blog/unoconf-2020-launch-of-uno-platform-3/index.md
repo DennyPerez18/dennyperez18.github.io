@@ -1,5 +1,6 @@
 ---
 title: "UnoConf 2020: Virtual, Global, and Uno Platform 3.0 Launch 🚀"
+pubDate: "Aug 25 2020"
 heroImage: "./banner.png"
 tags: []
 hidden: true

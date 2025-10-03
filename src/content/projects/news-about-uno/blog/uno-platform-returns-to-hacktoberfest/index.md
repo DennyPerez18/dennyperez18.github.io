@@ -1,5 +1,6 @@
 ---
 title: "Uno Platform Returns to Hacktoberfest for 2020 🎉"
+pubDate: "Oct 3 2020"
 heroImage: "./banner.png"
 tags: []
 hidden: true

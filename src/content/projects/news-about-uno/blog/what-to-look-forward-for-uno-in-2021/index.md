@@ -1,5 +1,6 @@
 ---
 title: "What the Uno Platform Community Can Look Forward to in 2021 🌍✨"
+pubDate: "Jan 9 2021"
 heroImage: "./banner.png"
 tags: []
 hidden: true

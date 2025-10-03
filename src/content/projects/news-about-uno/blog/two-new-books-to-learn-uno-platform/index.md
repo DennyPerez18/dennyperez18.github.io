@@ -1,5 +1,6 @@
 ---
 title: "Two New Books to Learn Uno Platform 📚"
+pubDate: "Aug 31 2021"
 heroImage: "./banner.png"
 tags: []
 hidden: true

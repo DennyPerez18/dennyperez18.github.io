@@ -1,5 +1,6 @@
 ---
 title: "Uno Platform in 2022: Highlights and Milestones 🎄✨"
+pubDate: "Dec 25 2022"
 heroImage: "./banner.png"
 tags: []
 hidden: true

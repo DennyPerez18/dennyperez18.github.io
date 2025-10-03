@@ -4,24 +4,24 @@ banner: "./banner.png"
 order: 2
 items:
   - blog: announcing-uno-tech-bites
-  - blog: best-practices-for-oss-collaboration
-  - blog: uno-platform-at-hacktoberfest-2019
-  - blog: two-years-of-uno-platform
-  - blog: my-first-steps-with-uno-platform
-  - blog: a-new-step-for-uno-platform
+  - blog: a-new-step-for-uno-platform-contributors
   - blog: exploring-uno-platform-updated-guide
-  - blog: uno-platform-course-on-udemy
-  - blog: two-new-books-to-learn-uno-platform
-  - blog: uno-platform-2019-a-year-in-review
-  - blog: uno-platform-adds-support-for-vsc
-  - blog: uno-platform-at-hacktoberfest-2022
   - blog: uno-platform-in-2022-highlights-and-milestones
-  - blog: uno-platform-returns-to-hacktoberfest
-  - blog: uno-platform-2019-a-year-in-review
-  - blog: unoconf-2020-launch-of-uno-platform-3
-  - blog: unoconf-2021-recap-and-uno-platform-4
-  - blog: what-to-look-forward-for-uno-in-2021
+  - blog: uno-platform-at-hacktoberfest-2022
   - blog: why-uno-platform-still-matters-in-2022
+  - blog: best-practices-for-oss-collaboration
+  - blog: unoconf-2021-recap-and-uno-platform-4
+  - blog: two-new-books-to-learn-uno-platform
+  - blog: what-to-look-forward-for-uno-in-2021
+  - blog: unoconf-2020-launch-of-uno-platform-3
+  - blog: two-years-of-uno-platform
+  - blog: uno-platform-course-on-udemy
+  - blog: uno-platform-adds-support-for-vsc
+  - blog: uno-platform-2019-a-year-in-review
+  - blog: uno-platform-at-hacktoberfest-2019
+  - blog: uno-platform-returns-to-hacktoberfest
+  - blog: unoconf-2019-my-experience
+  - blog: my-first-steps-with-uno-platform
 ---
 
 He creado este espacio como una forma de reunir mis experiencias, aprendizajes y

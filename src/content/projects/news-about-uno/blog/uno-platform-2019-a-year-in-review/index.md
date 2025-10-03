@@ -1,5 +1,6 @@
 ---
 title: "UNO Platform 2019: A Year in Review"
+pubDate: "Dec 28 2019"
 heroImage: "./banner.png"
 tags: []
 hidden: true

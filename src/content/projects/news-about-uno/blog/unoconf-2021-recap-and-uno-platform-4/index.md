@@ -1,5 +1,6 @@
 ---
 title: "UnoConf 2021 Recap: Highlights and Uno Platform 4.0 Launch 🚀"
+pubDate: "Dec 15 2021"
 heroImage: "./banner.png"
 tags: []
 hidden: true

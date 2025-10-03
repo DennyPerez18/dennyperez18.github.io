@@ -1,5 +1,6 @@
 ---
 title: "UnoConf 2019: My Experience at the First UNO Conference"
+pubDate: "Sep 27 2019"
 heroImage: "./banner.png"
 tags: []
 hidden: true

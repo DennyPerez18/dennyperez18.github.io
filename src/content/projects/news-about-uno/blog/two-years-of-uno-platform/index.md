@@ -1,5 +1,6 @@
 ---
 title: "Celebrating Two Years of Uno Platform in Open Source 🎉"
+pubDate: "Jul 2 2020"
 heroImage: "./banner.png"
 tags: []
 hidden: true

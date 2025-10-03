@@ -1,5 +1,6 @@
 ---
 title: "Discovering UNO Platform: My First Steps"
+pubDate: "Jul 15 2019"
 heroImage: "./banner.png"
 tags: []
 hidden: true

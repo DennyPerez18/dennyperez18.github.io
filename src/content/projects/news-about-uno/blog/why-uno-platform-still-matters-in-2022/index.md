@@ -2,6 +2,7 @@
 title:
   "Why Uno Platform Still Matters in 2022: My Reflections on 50 Reasons to Use
   It 🌍"
+pubDate: "Jul 31 2022"
 heroImage: "./banner.png"
 tags: []
 hidden: true

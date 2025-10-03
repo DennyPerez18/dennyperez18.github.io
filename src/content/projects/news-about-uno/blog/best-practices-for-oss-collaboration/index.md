@@ -1,5 +1,6 @@
 ---
 title: "Best Practices for Open Source Collaboration with Uno Platform 🌍💜"
+pubDate: "Jul 6 2022"
 heroImage: "./banner.png"
 tags: []
 hidden: true

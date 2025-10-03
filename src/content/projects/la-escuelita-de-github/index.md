@@ -4,12 +4,12 @@ banner: "./banner.png"
 order: 3
 items:
   - blog: github-campus-expert
-  - blog: github-pages-crea-tu-sitio-web
-  - blog: github-campus-program
-  - blog: github-education-community
-  - blog: github-classroom
   - blog: github-student-developer-pack
+  - blog: github-campus-program
+  - blog: github-pages-crea-tu-sitio-web
   - blog: github-codespaces
+  - blog: github-classroom
+  - blog: github-education-community
 ---
 
 La Escuelita de GitHub es un proyecto enfocado en fortalecer la comunidad

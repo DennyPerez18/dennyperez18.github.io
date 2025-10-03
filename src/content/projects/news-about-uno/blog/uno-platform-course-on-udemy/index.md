@@ -1,5 +1,6 @@
 ---
 title: "Learning Uno Platform: New Course on Udemy 🎓"
+pubDate: "May 25 2020"
 heroImage: "./banner.png"
 tags: []
 hidden: true

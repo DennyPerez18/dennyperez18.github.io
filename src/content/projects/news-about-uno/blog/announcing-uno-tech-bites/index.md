@@ -1,5 +1,6 @@
 ---
 title: "Announcing Uno Tech Bites: Learn Uno Platform in Minutes"
+pubDate: "Mar 29 2024"
 heroImage: "./banner.png"
 tags: []
 hidden: true

@@ -14,6 +14,7 @@ export const getStaticPaths = async () => {
   const blog = await getCollection("blog");
 
   return projects.map((project) => {
+    // TODO(Unavailable): sort these automatically.
     const cards = project.data.items.map((item) => {
       if ("url" in item) return item;
       if ("group" in item)

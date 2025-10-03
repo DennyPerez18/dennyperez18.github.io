@@ -1,6 +1,7 @@
 ---
 title:
   "Learning Resources for 2023: Exploring Uno Platform’s Updated Guide 📚✨"
+pubDate: "Feb 2 2023"
 heroImage: "./banner.png"
 tags: []
 hidden: true

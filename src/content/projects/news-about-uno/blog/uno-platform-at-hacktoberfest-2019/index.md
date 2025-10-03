@@ -1,5 +1,6 @@
 ---
 title: "Celebrating Open Source: UNO Platform at Hacktoberfest 2019 🎉"
+pubDate: "Oct 12 2019"
 heroImage: "./banner.png"
 tags: []
 hidden: true
