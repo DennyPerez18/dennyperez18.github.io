@@ -3,6 +3,7 @@ title: "Blogging News About Uno Platform"
 banner: "./banner.png"
 order: 2
 items:
+  - blog: uno-platform-partners-with-microsoft
   - blog: announcing-uno-tech-bites
   - blog: a-new-step-for-uno-platform-contributors
   - blog: exploring-uno-platform-updated-guide
@@ -13,20 +14,19 @@ items:
   - blog: unoconf-2021-recap-and-uno-platform-4
   - blog: two-new-books-to-learn-uno-platform
   - blog: what-to-look-forward-for-uno-in-2021
+  - blog: uno-platform-returns-to-hacktoberfest
   - blog: unoconf-2020-launch-of-uno-platform-3
   - blog: two-years-of-uno-platform
   - blog: uno-platform-course-on-udemy
   - blog: uno-platform-adds-support-for-vsc
   - blog: uno-platform-2019-a-year-in-review
   - blog: uno-platform-at-hacktoberfest-2019
-  - blog: uno-platform-returns-to-hacktoberfest
   - blog: unoconf-2019-my-experience
   - blog: my-first-steps-with-uno-platform
 ---
 
-He creado este espacio como una forma de reunir mis experiencias, aprendizajes y
-las noticias más interesantes que encuentro sobre el ecosistema de Uno Platform.
-Este framework me llama mucho la atención por lo innovador que resulta al
-permitir crear aplicaciones multiplataforma a partir de una sola base de código,
-lo que hace más sencillo y práctico el desarrollo en distintos dispositivos y
-sistemas.
+I created this space as a way to gather my experiences, learnings, and the most
+interesting news I come across about the Uno Platform ecosystem. This framework
+really catches my attention because of how innovative it is—allowing developers
+to build cross-platform applications from a single codebase, making development
+across different devices and systems simpler and more practical.

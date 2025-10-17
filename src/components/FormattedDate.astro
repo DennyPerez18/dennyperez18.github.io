@@ -9,7 +9,7 @@ const { date, class: className } = Astro.props;
 
 <time class={className} datetime={date.toISOString()}>
   {
-    date.toLocaleDateString("es-us", {
+    date.toLocaleDateString("en-us", {
       year: "numeric",
       month: "long",
       day: "numeric",
