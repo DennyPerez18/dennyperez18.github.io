@@ -10,7 +10,7 @@ sitio web de PyLadiesCon. Puedes leer la versión en inglés aquí:
  👉
 [https://conference.pyladies.com/2025-pyladiescon-begins/](https://conference.pyladies.com/2025-pyladiescon-begins/)
 
-# **¡Estamos emocionadas de darte la bienvenida a PyLadiesCon 2025 y de iniciar todas nuestras keynotes, charlas, paneles y talleres\!**
+¡Estamos emocionadas de darte la bienvenida a PyLadiesCon 2025 y de iniciar todas nuestras keynotes, charlas, paneles y talleres\!
 
 ¡Prepárate para un fin de semana lleno de sesiones fascinantes en PyLadiesCon
 2025\!
